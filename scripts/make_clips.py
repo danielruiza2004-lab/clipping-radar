@@ -257,6 +257,8 @@ def main():
     with open(os.path.join(ROOT, "config.json"), encoding="utf-8") as f:
         cfg = json.load(f)
     c = cfg["clips"]
+    if os.environ.get("TEST_MAX_CLIPS"):  # modo prueba
+        c["clips_per_channel"] = c["max_clips_per_channel"] = int(os.environ["TEST_MAX_CLIPS"])
     with open(os.path.join(ROOT, "data", "latest.json"), encoding="utf-8") as f:
         radar = json.load(f)
 
