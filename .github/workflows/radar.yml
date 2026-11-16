@@ -1,0 +1,69 @@
+name: Radar de directos GTA 6
+
+on:
+  schedule:
+    # 03:30 UTC = 04:30 en Madrid (invierno). Da margen para tenerlo todo antes de las 8:00.
+    - cron: "30 3 * * *"
+  workflow_dispatch: {}   # botón para lanzarlo a mano y probar
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar herramientas
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q yt-dlp faster-whisper
+          # TwitchDownloaderCLI (para descargar el chat)
+          mkdir -p tools && cd tools
+          gh release download --repo lay295/TwitchDownloader --pattern '*CLI*Linux-x64*.zip'
+          unzip -oq *.zip && chmod +x TwitchDownloaderCLI
+          echo "TDCLI=$PWD/TwitchDownloaderCLI" >> "$GITHUB_ENV"
+          cd .. && mkdir -p fonts
+          curl -sSLf -o fonts/Montserrat-Black.ttf    https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/Montserrat-Black.ttf
+          curl -sSLf -o fonts/Montserrat-SemiBold.ttf https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/Montserrat-SemiBold.ttf
+
+      - name: Caché del modelo de subtítulos
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-small
+
+      - name: 1) Buscar directos y analizar chat
+        env:
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+        run: python3 scripts/fetch_vods.py
+
+      - name: 2) Cortar y editar los clips
+        run: python3 scripts/make_clips.py
+
+      - name: 3) Publicar los clips (Releases)
+        if: env.CLIPS_COUNT != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view "$CLIPS_TAG" > /dev/null 2>&1 || \
+            gh release create "$CLIPS_TAG" --title "Clips $CLIPS_TAG" --notes "Clips del radar de GTA 6"
+          gh release upload "$CLIPS_TAG" clips/*.mp4 --clobber
+
+      - name: 4) Guardar resultados
+        if: always()
+        run: |
+          git config user.name "clipping-radar"
+          git config user.email "radar@users.noreply.github.com"
+          git add data/
+          git commit -m "Radar $(date -u +%F)" || echo "Sin cambios"
+          git pull --rebase -q && git push
