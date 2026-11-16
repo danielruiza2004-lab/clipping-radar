@@ -4,7 +4,20 @@ on:
   schedule:
     # 03:30 UTC = 04:30 en Madrid (invierno). Da margen para tenerlo todo antes de las 8:00.
     - cron: "30 3 * * *"
-  workflow_dispatch: {}   # botón para lanzarlo a mano y probar
+  workflow_dispatch:     # botón para lanzarlo a mano
+    inputs:
+      prueba_juego:
+        description: "MODO PRUEBA: otro juego (ej. World of Warcraft). Vacío = GTA 6 normal"
+        required: false
+        default: ""
+      prueba_canales:
+        description: "MODO PRUEBA: canales separados por comas (ej. elxokas). Vacío = todos"
+        required: false
+        default: ""
+      prueba_max_clips:
+        description: "MODO PRUEBA: máximo de clips por canal. Vacío = normal"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -45,9 +58,13 @@ jobs:
         env:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+          TEST_GAME: ${{ inputs.prueba_juego }}
+          TEST_CHANNELS: ${{ inputs.prueba_canales }}
         run: python3 scripts/fetch_vods.py
 
       - name: 2) Cortar y editar los clips
+        env:
+          TEST_MAX_CLIPS: ${{ inputs.prueba_max_clips }}
         run: python3 scripts/make_clips.py
 
       - name: 3) Publicar los clips (Releases)
@@ -64,6 +81,6 @@ jobs:
         run: |
           git config user.name "clipping-radar"
           git config user.email "radar@users.noreply.github.com"
-          git add data/
+          git add data/ || true
           git commit -m "Radar $(date -u +%F)" || echo "Sin cambios"
           git pull --rebase -q && git push
