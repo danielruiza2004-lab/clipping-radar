@@ -242,6 +242,17 @@ def main():
     with open(os.path.join(ROOT, "config.json"), encoding="utf-8") as f:
         cfg = json.load(f)
 
+    # Modo prueba (lanzado a mano): otro juego / otros canales, 1 directo por canal
+    if os.environ.get("TEST_GAME"):
+        cfg["game_names"] = [os.environ["TEST_GAME"]]
+        cfg["title_keywords"] = []
+        cfg["max_vods_per_channel"] = 1
+        print(f"*** MODO PRUEBA: juego = {cfg['game_names'][0]}")
+    if os.environ.get("TEST_CHANNELS"):
+        keep = {x.strip().lower() for x in os.environ["TEST_CHANNELS"].split(",") if x.strip()}
+        cfg["channels"] = [c for c in cfg["channels"] if c["login"].lower() in keep] or [{"login": x, "lang": "es"} for x in keep]
+        print(f"*** MODO PRUEBA: canales = {sorted(keep)}")
+
     token = get_token(cid, secret)
     now = datetime.now(timezone.utc)
     since = now - timedelta(hours=cfg["lookback_hours"])
