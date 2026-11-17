@@ -1,5 +1,662 @@
 {
-  "generated_at": "2026-11-17T04:29:40.015610+00:00",
-  "since": "2026-11-15T22:29:40.015610+00:00",
-  "vods": []
+  "generated_at": "2026-11-17T07:28:57.097763+00:00",
+  "since": "2026-11-16T01:28:57.097763+00:00",
+  "vods": [
+    {
+      "channel": "elxokas",
+      "display_name": "elxokas",
+      "lang": "es",
+      "vod_id": "2930589038",
+      "vod_url": "https://www.twitch.tv/videos/2930589038",
+      "title": "🌍DÍA 13🌍LVL 56+ PVP🌍MONTE HYJAL🌍La guía de wow !JOURNEY 10% descuento / !GUILD LLENA, !DISCORD PARA LOS DE LAS GUILD🌍",
+      "game": "World of Warcraft",
+      "created_at": "2026-11-16T16:18:30Z",
+      "length_seconds": 42100,
+      "length_hms": "11:41:40",
+      "gta_ranges": [
+        {
+          "start_hms": "0:00:00",
+          "end_hms": "11:41:40"
+        }
+      ],
+      "chat_peaks": [
+        {
+          "start": 2070,
+          "end": 2195,
+          "start_hms": "0:34:30",
+          "end_hms": "0:36:35",
+          "score": 7.87,
+          "type": "risa",
+          "msgs_per_10s": 52,
+          "chat_sample": [
+            "om",
+            "KEKW",
+            "HypeEvil HypeEvil HypeEvil HypeEvil",
+            "JAJAAJAAJA",
+            "om",
+            "!journey",
+            "sajdsajkdsajdsaj",
+            "EL ROGUE ESTA ROTO SI O NO",
+            "Estoy subiendo de nivel con la Forever Leveling Guide de Journey. Los niveles 1 a 30 son gratis. El código elxokas te da 10% de descuento en la guía de 1 a 60 en https://getjourney.gg/?code=elxokas. El addon de Journey es gratis para todos. #ad",
+            "o7",
+            "om",
+            "om om"
+          ]
+        },
+        {
+          "start": 9470,
+          "end": 9575,
+          "start_hms": "2:37:50",
+          "end_hms": "2:39:35",
+          "score": 6.77,
+          "type": "risa",
+          "msgs_per_10s": 32,
+          "chat_sample": [
+            "D:",
+            "om ͏",
+            "@elxokas perdona por tocarte las pelotas pero que piensas del LOL New Dawn?",
+            "comoo",
+            "xdd",
+            "wtf ͏",
+            "JEH",
+            "D:",
+            "a<jikhubsdfgolkjh<bxdfoglij",
+            "AJAJJAJAJAJAJAJA",
+            "D: ͏",
+            "xd xd"
+          ]
+        },
+        {
+          "start": 11450,
+          "end": 11615,
+          "start_hms": "3:10:50",
+          "end_hms": "3:13:35",
+          "score": 17.02,
+          "type": "risa",
+          "msgs_per_10s": 74,
+          "chat_sample": [
+            "LUL LUL LUL LUL",
+            "JAJAJAJAJAJAJA",
+            "ddx",
+            "KEK",
+            "om",
+            "om",
+            "om ͏",
+            "JEH",
+            "om",
+            "om",
+            "WAJAJA",
+            "om"
+          ]
+        },
+        {
+          "start": 14500,
+          "end": 14615,
+          "start_hms": "4:01:40",
+          "end_hms": "4:03:35",
+          "score": 16.24,
+          "type": "risa",
+          "msgs_per_10s": 64,
+          "chat_sample": [
+            "om  ͏",
+            "LUL",
+            "o7",
+            "NIOOO",
+            "jajajajaja",
+            "AWE ASD JASDJADSJDASD",
+            "LOL ͏",
+            "om",
+            "JSJAAJAJAJAJJA",
+            "om",
+            "om",
+            "KASDKADS KASKDASKDAS"
+          ]
+        },
+        {
+          "start": 20120,
+          "end": 20245,
+          "start_hms": "5:35:20",
+          "end_hms": "5:37:25",
+          "score": 11.46,
+          "type": "risa",
+          "msgs_per_10s": 81,
+          "chat_sample": [
+            "XDDD",
+            "DD: ͏",
+            "hi tiktok",
+            "Hahahahhaa",
+            "WOT",
+            "Xd",
+            "JAJAJAJAJAJA",
+            "om",
+            "jaajajajajajaja",
+            "om",
+            "D:",
+            "clip"
+          ]
+        },
+        {
+          "start": 23650,
+          "end": 23725,
+          "start_hms": "6:34:10",
+          "end_hms": "6:35:25",
+          "score": 8.18,
+          "type": "risa",
+          "msgs_per_10s": 70,
+          "chat_sample": [
+            "KJASKJKAJSKJS",
+            "O7",
+            "JEH",
+            "om",
+            "XDDD",
+            "om",
+            "XDDD",
+            "om",
+            "JEH",
+            "JAJAJAJAJAJA",
+            "xokitas arregla el micro!!",
+            "om"
+          ]
+        },
+        {
+          "start": 30370,
+          "end": 30485,
+          "start_hms": "8:26:10",
+          "end_hms": "8:28:05",
+          "score": 8.49,
+          "type": "risa",
+          "msgs_per_10s": 39,
+          "chat_sample": [
+            "XD",
+            "wtf ͏",
+            "JJJAJAJAJAAJAJJAAJJAAJA",
+            "que vergüenza ajena jasjaskjdjaskdk",
+            "JEH ͏",
+            "a",
+            "xDDDDDDDDDDDDDDDDDDD",
+            "que cojones es esto",
+            "esto es españa ?? madremia",
+            "rojada historica",
+            "DIESOFCRINGE DIESOFCRINGE",
+            "dans dans dans dans dans dans"
+          ]
+        },
+        {
+          "start": 39100,
+          "end": 39205,
+          "start_hms": "10:51:40",
+          "end_hms": "10:53:25",
+          "score": 8.81,
+          "type": "risa",
+          "msgs_per_10s": 19,
+          "chat_sample": [
+            "XDDD",
+            "estos gallegos no conocen lo que es una torta frita paa",
+            "Xokitasssssss",
+            "JAJAJAJAJAJAAJAJAJAJ ME PASA",
+            "keek",
+            "Jerry",
+            "jajajajajajjaajjaja",
+            "xdd",
+            "lo que les falta",
+            "jHDJAJAJAJjaj",
+            "xdddd",
+            "xdd"
+          ]
+        }
+      ],
+      "viewer_clips": [
+        {
+          "title": "OMG XOKAS",
+          "views": 669,
+          "vod_offset": 20204,
+          "vod_offset_hms": "5:36:44",
+          "duration": 12.2,
+          "url": "https://www.twitch.tv/elxokas/clip/RepleteRoughOcelotLitty-ugEslRXG27cMVhqL"
+        },
+        {
+          "title": "EL PALO",
+          "views": 103,
+          "vod_offset": 14537,
+          "vod_offset_hms": "4:02:17",
+          "duration": 21.3,
+          "url": "https://www.twitch.tv/elxokas/clip/SmoothAlertSnoodBudBlast-MbfXFdW72SnZiBb4"
+        },
+        {
+          "title": "Miau",
+          "views": 87,
+          "vod_offset": 23634,
+          "vod_offset_hms": "6:33:54",
+          "duration": 19.2,
+          "url": "https://www.twitch.tv/elxokas/clip/FastLachrymoseLasagnaCclamChamp-glKjjXPxl6TmKui3"
+        },
+        {
+          "title": "performando a maximo nivel",
+          "views": 66,
+          "vod_offset": 14551,
+          "vod_offset_hms": "4:02:31",
+          "duration": 36,
+          "url": "https://www.twitch.tv/elxokas/clip/BloodyCallousMochaKevinTurtle-Fk3Lh5e3UhGLGoFo"
+        },
+        {
+          "title": "OHHHH MI BEBE",
+          "views": 55,
+          "vod_offset": 9762,
+          "vod_offset_hms": "2:42:42",
+          "duration": 34.8,
+          "url": "https://www.twitch.tv/elxokas/clip/ComfortableCreativeMushroomMVGame-IlWVOA2nD9nSM7Ds"
+        },
+        {
+          "title": "A xokas se le va la cabeza",
+          "views": 46,
+          "vod_offset": 20195,
+          "vod_offset_hms": "5:36:35",
+          "duration": 9.7,
+          "url": "https://www.twitch.tv/elxokas/clip/AgileVivaciousYakinikuCorgiDerp-UpXTEnzXZ-eMOKY6"
+        },
+        {
+          "title": "Recomendacion para Wow",
+          "views": 39,
+          "vod_offset": 13850,
+          "vod_offset_hms": "3:50:50",
+          "duration": 13.8,
+          "url": "https://www.twitch.tv/elxokas/clip/HelplessAmorphousSowCclamChamp-1lF8fqw9zPIb4hbh"
+        },
+        {
+          "title": "Argendios puesto en su sitio",
+          "views": 33,
+          "vod_offset": 13685,
+          "vod_offset_hms": "3:48:05",
+          "duration": 23.4,
+          "url": "https://www.twitch.tv/elxokas/clip/MushyResoluteArugulaVoHiYo-EJTJRzEp8djMiuaO"
+        },
+        {
+          "title": "TF en Forever?",
+          "views": 31,
+          "vod_offset": 9735,
+          "vod_offset_hms": "2:42:15",
+          "duration": 11.4,
+          "url": "https://www.twitch.tv/elxokas/clip/CourteousSpicyWaterCoolStoryBro-zgbPLPkZDpjJrBPg"
+        },
+        {
+          "title": ".",
+          "views": 27,
+          "vod_offset": 7390,
+          "vod_offset_hms": "2:03:10",
+          "duration": 51.3,
+          "url": "https://www.twitch.tv/elxokas/clip/PleasantTransparentMacaroniGrammarKing-ujaofOpAFVBnOJ4v"
+        },
+        {
+          "title": "haguas",
+          "views": 20,
+          "vod_offset": 5234,
+          "vod_offset_hms": "1:27:14",
+          "duration": 14.4,
+          "url": "https://www.twitch.tv/elxokas/clip/VenomousAbnegatePanTinyFace-DSn8na9TSBhr8x6u"
+        },
+        {
+          "title": "a",
+          "views": 15,
+          "vod_offset": 7668,
+          "vod_offset_hms": "2:07:48",
+          "duration": 33.4,
+          "url": "https://www.twitch.tv/elxokas/clip/BlitheHandsomeTroutStrawBeary-BK0AGyKQPZSu-Ne_"
+        },
+        {
+          "title": "No es mas",
+          "views": 14,
+          "vod_offset": 1340,
+          "vod_offset_hms": "0:22:20",
+          "duration": 10.7,
+          "url": "https://www.twitch.tv/elxokas/clip/SmilingBetterDumplingsPJSalt-pCthqSFE7Npn5CZM"
+        },
+        {
+          "title": "ataque de bautismo",
+          "views": 14,
+          "vod_offset": 13314,
+          "vod_offset_hms": "3:41:54",
+          "duration": 12.5,
+          "url": "https://www.twitch.tv/elxokas/clip/HomelyCallousCrocodileBrainSlug-M6TE6Wxthtl97q3f"
+        },
+        {
+          "title": "reimbows ban",
+          "views": 13,
+          "vod_offset": 3052,
+          "vod_offset_hms": "0:50:52",
+          "duration": 49.7,
+          "url": "https://www.twitch.tv/elxokas/clip/BloodyComfortableKumquatKappaRoss-cV8Efnl0FBZpFCQ9"
+        }
+      ]
+    },
+    {
+      "channel": "summit1g",
+      "display_name": "summit1g",
+      "lang": "en",
+      "vod_id": "2930897320",
+      "vod_url": "https://www.twitch.tv/videos/2930897320",
+      "title": "wow forever. 54 rogue. terrible player. - !journey for %10 off - !starforge @StarforgeSystems",
+      "game": "World of Warcraft",
+      "created_at": "2026-11-16T22:45:36Z",
+      "length_seconds": 31417,
+      "length_hms": "8:43:37",
+      "gta_ranges": [
+        {
+          "start_hms": "0:00:00",
+          "end_hms": "3:32:32"
+        },
+        {
+          "start_hms": "7:41:12",
+          "end_hms": "7:41:12"
+        }
+      ],
+      "chat_peaks": [
+        {
+          "start": 3540,
+          "end": 3625,
+          "start_hms": "0:59:00",
+          "end_hms": "1:00:25",
+          "score": 3.75,
+          "type": "risa",
+          "msgs_per_10s": 22,
+          "chat_sample": [
+            "bubble gut",
+            "@summit1g the combo points are from the flyplate addon? can't see the option",
+            "LULW",
+            "KEKW",
+            "McNuggets",
+            "LUL",
+            "classic",
+            "broo same. I gotta pay attention to what time I eat now. Fuck getting old lol",
+            "McNuggets",
+            "KEKW",
+            "got the Hershey squirts",
+            "i did the same lol"
+          ]
+        },
+        {
+          "start": 3820,
+          "end": 3925,
+          "start_hms": "1:03:40",
+          "end_hms": "1:05:25",
+          "score": 4.25,
+          "type": "risa",
+          "msgs_per_10s": 25,
+          "chat_sample": [
+            "om",
+            "based",
+            "strange thing to say lol",
+            "lol",
+            "100",
+            "yeah victorious bagglsBlue bagglsRed bagglsOrange bagglsPurple",
+            "lmao",
+            "LMAOOO",
+            "SHEEEESH",
+            "big facts",
+            "NO FUCKS GIVEN",
+            "W"
+          ]
+        },
+        {
+          "start": 5290,
+          "end": 5365,
+          "start_hms": "1:28:10",
+          "end_hms": "1:29:25",
+          "score": 5.86,
+          "type": "risa",
+          "msgs_per_10s": 23,
+          "chat_sample": [
+            "naoooo!",
+            "LOL",
+            "LOL ͏",
+            "LOL",
+            "Looking",
+            "LUL",
+            "3x LOL combo EZ",
+            "LOL",
+            "lol",
+            "l d",
+            "xdd",
+            "looooool"
+          ]
+        },
+        {
+          "start": 6560,
+          "end": 6655,
+          "start_hms": "1:49:20",
+          "end_hms": "1:50:55",
+          "score": 4.15,
+          "type": "hype",
+          "msgs_per_10s": 49,
+          "chat_sample": [
+            "67",
+            "Okay but why can't you read minds?",
+            "Don't take the ragebait bro",
+            "RIPBOZO",
+            "ban him",
+            "Lol",
+            "you wont beat his ass though",
+            "o7",
+            "o7",
+            "BAND",
+            "lol",
+            "o7"
+          ]
+        },
+        {
+          "start": 6970,
+          "end": 7035,
+          "start_hms": "1:56:10",
+          "end_hms": "1:57:15",
+          "score": 8.96,
+          "type": "risa",
+          "msgs_per_10s": 49,
+          "chat_sample": [
+            "LO",
+            "hahahahahahaha",
+            "\"why are you talking to me like this\" lol",
+            "LUL",
+            "hahahaha",
+            "lul",
+            "KEKW",
+            "lmao",
+            "LO",
+            "JinxLUL",
+            "LOL",
+            "LUL"
+          ]
+        },
+        {
+          "start": 10500,
+          "end": 10615,
+          "start_hms": "2:55:00",
+          "end_hms": "2:56:55",
+          "score": 4.49,
+          "type": "risa",
+          "msgs_per_10s": 20,
+          "chat_sample": [
+            "lol",
+            "56 and a half",
+            "you can go there 55-56. the xp is insane @summit1g",
+            "LOL",
+            "KEKW",
+            "lmao",
+            "mount hyjal is ok at 55",
+            "57 is good",
+            "56",
+            "55-56 is good to start for sure",
+            "your mount reminds me of baba from DL",
+            "brd and hyjal and u are 60"
+          ]
+        },
+        {
+          "start": 11820,
+          "end": 11905,
+          "start_hms": "3:17:00",
+          "end_hms": "3:18:25",
+          "score": 5.5,
+          "type": "risa",
+          "msgs_per_10s": 64,
+          "chat_sample": [
+            "KEK",
+            "BLABBERING",
+            "LUL",
+            "WE DO IT FOR THE ONES THAT CANT",
+            "@summit1g ur a goat me boy fuck em",
+            "xdd",
+            "LOL",
+            "KEK",
+            "missile banned",
+            "deserved",
+            "bawkHands",
+            "LOL"
+          ]
+        },
+        {
+          "start": 12680,
+          "end": 12785,
+          "start_hms": "3:31:20",
+          "end_hms": "3:33:05",
+          "score": 4.67,
+          "type": "hype",
+          "msgs_per_10s": 65,
+          "chat_sample": [
+            "YESSS",
+            "-5 PepeLaugh",
+            "OOOOO",
+            "cyrC",
+            "o7",
+            "o7",
+            "msashRAID msashRAID msashRAID",
+            "o7 ARC",
+            "lol",
+            "EZ",
+            "have a nice night brother",
+            "HELL YEAH"
+          ]
+        }
+      ],
+      "viewer_clips": [
+        {
+          "title": "Preach",
+          "views": 3042,
+          "vod_offset": 12331,
+          "vod_offset_hms": "3:25:31",
+          "duration": 55.1,
+          "url": "https://www.twitch.tv/summit1g/clip/AntsyClearEchidnaVoHiYo-djKaNjZ3dn238s_5"
+        },
+        {
+          "title": "fasefsa",
+          "views": 2812,
+          "vod_offset": 16782,
+          "vod_offset_hms": "4:39:42",
+          "duration": 52.6,
+          "url": "https://www.twitch.tv/summit1g/clip/LivelyProtectiveWasabiKevinTurtle-n3Ho6MVOov3gaUEP"
+        },
+        {
+          "title": "Summit1g! telling a chatter off",
+          "views": 139,
+          "vod_offset": 13275,
+          "vod_offset_hms": "3:41:15",
+          "duration": 14.3,
+          "url": "https://www.twitch.tv/summit1g/clip/SuccessfulAbrasiveJalapenoOSfrog-aF_OclyEAX6DUgIT"
+        },
+        {
+          "title": "Summit addresses the BBL allegations",
+          "views": 90,
+          "vod_offset": 29660,
+          "vod_offset_hms": "8:14:20",
+          "duration": 48,
+          "url": "https://www.twitch.tv/summit1g/clip/ShortSpeedyKalePeanutButterJellyTime-LtRm-sTZ4xRZGjtZ"
+        },
+        {
+          "title": "Oopsi",
+          "views": 90,
+          "vod_offset": 7840,
+          "vod_offset_hms": "2:10:40",
+          "duration": 36.6,
+          "url": "https://www.twitch.tv/summit1g/clip/GleamingPuzzledHorseOhMyDog-4QaKxBWmJQDYf8M9"
+        },
+        {
+          "title": "Good for gaming",
+          "views": 43,
+          "vod_offset": 2677,
+          "vod_offset_hms": "0:44:37",
+          "duration": 16.1,
+          "url": "https://www.twitch.tv/summit1g/clip/StormyMotionlessBatteryCopyThis-HGl8ytpuk7KJqb5t"
+        },
+        {
+          "title": "Boom",
+          "views": 37,
+          "vod_offset": 14480,
+          "vod_offset_hms": "4:01:20",
+          "duration": 21.6,
+          "url": "https://www.twitch.tv/summit1g/clip/HyperCrypticCatBatChest-r3KaQt2y5gYntXTY"
+        },
+        {
+          "title": "wow forever. 54 rogue. terrible player. - !journey for %10 off - !starforge @StarforgeSystems",
+          "views": 32,
+          "vod_offset": 11335,
+          "vod_offset_hms": "3:08:55",
+          "duration": 30,
+          "url": "https://www.twitch.tv/summit1g/clip/RelievedBoxyKumquatCopyThis-YHZ2vs3fZQ5whFoc"
+        },
+        {
+          "title": "the guy",
+          "views": 31,
+          "vod_offset": 3128,
+          "vod_offset_hms": "0:52:08",
+          "duration": 60,
+          "url": "https://www.twitch.tv/summit1g/clip/PopularSnappyKeyboardPogChamp-Br0VSrR_-FymYom0"
+        },
+        {
+          "title": "priests are just stupid bro",
+          "views": 21,
+          "vod_offset": 5514,
+          "vod_offset_hms": "1:31:54",
+          "duration": 41.3,
+          "url": "https://www.twitch.tv/summit1g/clip/CuteFunSardineBudStar-mc1n3K4SlLA4LW15"
+        },
+        {
+          "title": "Now we have a lighter",
+          "views": 15,
+          "vod_offset": 21490,
+          "vod_offset_hms": "5:58:10",
+          "duration": 59.9,
+          "url": "https://www.twitch.tv/summit1g/clip/DistinctDiligentLlamaPartyTime-2SsNYWsVLkbBWJ6a"
+        },
+        {
+          "title": "Exploits are cool",
+          "views": 15,
+          "vod_offset": 15826,
+          "vod_offset_hms": "4:23:46",
+          "duration": 31.4,
+          "url": "https://www.twitch.tv/summit1g/clip/SingleBlitheYakLitFam-8htGiT63tGmv1RTc"
+        },
+        {
+          "title": "wow forever. 54 rogue. terrible player. - !journey for %10 off - !starforge @StarforgeSystems",
+          "views": 10,
+          "vod_offset": 5169,
+          "vod_offset_hms": "1:26:09",
+          "duration": 44.9,
+          "url": "https://www.twitch.tv/summit1g/clip/CalmExquisiteSnakeKappaRoss-30ZBDXUAmZIh0P9L"
+        },
+        {
+          "title": "ggz",
+          "views": 9,
+          "vod_offset": 11700,
+          "vod_offset_hms": "3:15:00",
+          "duration": 23.3,
+          "url": "https://www.twitch.tv/summit1g/clip/VainNiceDumplingsDoubleRainbow-sA4FBEKznwSgy6KB"
+        },
+        {
+          "title": "Summit responds to my comment",
+          "views": 8,
+          "vod_offset": 20162,
+          "vod_offset_hms": "5:36:02",
+          "duration": 30,
+          "url": "https://www.twitch.tv/summit1g/clip/BeautifulCleverShrimpKeyboardCat-bH8DjF2wlqG-8v_y"
+        }
+      ]
+    }
+  ]
 }
