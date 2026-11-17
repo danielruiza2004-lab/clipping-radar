@@ -24,12 +24,15 @@ permissions:
 
 concurrency:
   group: radar
-  cancel-in-progress: false
+  cancel-in-progress: true
+
+env:
+  PYTHONUNBUFFERED: "1"   # ver el progreso en directo
 
 jobs:
   radar:
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
