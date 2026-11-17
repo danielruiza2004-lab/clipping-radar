@@ -3,56 +3,6 @@
   "release_tag": "clips-2026-11-17",
   "clips": [
     {
-      "channel": "illojuan",
-      "display_name": "IlloJuan",
-      "lang": "es",
-      "n": 1,
-      "type": "hype",
-      "score": 10.1,
-      "source": "chat",
-      "hook": "",
-      "layout": "face",
-      "facecam": [
-        0.0266,
-        0.3438,
-        0.1526,
-        0.212
-      ],
-      "duration": 90,
-      "vod_url": "https://www.twitch.tv/videos/2930700035",
-      "vod_title": "2 DÍAS 📅 ADIÓS GTA 5 👋🏻 QUE ALGUIEN ME PELLIZQUE 🥺 BUENOS AIRES ENDING 🥰 - Grand Theft Auto V #7 [FINAL]",
-      "vod_time": "7:24:20",
-      "transcript": "",
-      "file": "2026-11-17_illojuan_01_hype.mp4",
-      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-17/2026-11-17_illojuan_01_hype.mp4",
-      "size_mb": 34.7
-    },
-    {
-      "channel": "illojuan",
-      "display_name": "IlloJuan",
-      "lang": "es",
-      "n": 2,
-      "type": "risa",
-      "score": 8.24,
-      "source": "chat+clips",
-      "hook": "",
-      "layout": "face",
-      "facecam": [
-        0.0266,
-        0.3483,
-        0.1505,
-        0.2091
-      ],
-      "duration": 55,
-      "vod_url": "https://www.twitch.tv/videos/2930700035",
-      "vod_title": "2 DÍAS 📅 ADIÓS GTA 5 👋🏻 QUE ALGUIEN ME PELLIZQUE 🥺 BUENOS AIRES ENDING 🥰 - Grand Theft Auto V #7 [FINAL]",
-      "vod_time": "5:23:30",
-      "transcript": "",
-      "file": "2026-11-17_illojuan_02_risa.mp4",
-      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-17/2026-11-17_illojuan_02_risa.mp4",
-      "size_mb": 19.3
-    },
-    {
       "channel": "elxokas",
       "display_name": "elxokas",
       "lang": "es",
@@ -63,10 +13,10 @@
       "hook": "",
       "layout": "face",
       "facecam": [
-        0.0604,
-        0.4244,
-        0.1891,
-        0.2627
+        0.0377,
+        0.3417,
+        0.1766,
+        0.2454
       ],
       "duration": 90,
       "vod_url": "https://www.twitch.tv/videos/2930589038",
@@ -75,7 +25,7 @@
       "transcript": "",
       "file": "2026-11-17_elxokas_01_risa.mp4",
       "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-17/2026-11-17_elxokas_01_risa.mp4",
-      "size_mb": 41.5
+      "size_mb": 36.7
     },
     {
       "channel": "elxokas",
@@ -88,10 +38,10 @@
       "hook": "",
       "layout": "face",
       "facecam": [
-        0.0604,
-        0.4059,
-        0.1891,
-        0.2627
+        0.0377,
+        0.3417,
+        0.1766,
+        0.2454
       ],
       "duration": 90,
       "vod_url": "https://www.twitch.tv/videos/2930589038",
@@ -100,7 +50,7 @@
       "transcript": "",
       "file": "2026-11-17_elxokas_02_risa.mp4",
       "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-17/2026-11-17_elxokas_02_risa.mp4",
-      "size_mb": 24.8
+      "size_mb": 23.5
     }
   ]
 }
