@@ -195,14 +195,16 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 
 # ------------------------------------------------------------------- render
-def filter_graph(layout, face, ass_path):
+def filter_graph(layout, face, ass_path, game_x=None):
     ass = ass_path.replace("\\", "/").replace(":", "\\:")
     fonts = FONTS.replace(":", "\\:")
     if layout == "face":
         x, y, w, h = face
         # recorte del juego centrado, pero apartado de la facecam si se pisan
         cw = f"(ih*{W}/{H - FACE_H})"
-        if x > 0.5:      # facecam a la derecha -> el recorte termina donde empieza la cámara
+        if game_x is not None:  # el canal tiene cámara+chat a un lado: el juego empieza aquí
+            gx = f"max((iw-{cw})/2\\,iw*{game_x})" if game_x < 0.5 else f"min((iw-{cw})/2\\,iw*{game_x}-{cw})"
+        elif x > 0.5:      # facecam a la derecha -> el recorte termina donde empieza la cámara
             gx = f"min((iw-{cw})/2\\,iw*{x}-{cw})"
         elif x + w < 0.5:  # facecam a la izquierda
             gx = f"max((iw-{cw})/2\\,iw*{x + w})"
@@ -223,11 +225,11 @@ def filter_graph(layout, face, ass_path):
     )
 
 
-def render(src, pad, dur, layout, face, ass_path, out):
+def render(src, pad, dur, layout, face, ass_path, out, game_x=None):
     run([
         "ffmpeg", "-y", "-loglevel", "error",
         "-ss", f"{pad:.2f}", "-i", src, "-t", f"{dur:.2f}",
-        "-filter_complex", filter_graph(layout, face, ass_path),
+        "-filter_complex", filter_graph(layout, face, ass_path, game_x),
         "-map", "[v]", "-map", "0:a?",
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-pix_fmt", "yuv420p",
         "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
@@ -273,26 +275,36 @@ def detect_facecam(src, start, dur):
     if len(near) < 3:  # caras sueltas del juego, no una cámara fija
         return None
 
-    # bordes del recuadro: líneas rectas que se repiten en todos los fotogramas
+    # bordes del recuadro: la primera línea recta y LARGA (que cruza casi todo el recuadro)
+    # que aparece al alejarse de la cara. Los bordes del fondo de la cámara son más cortos.
     gx = np.median(np.stack([g[0] for g in grads]), axis=0)
     gy = np.median(np.stack([g[1] for g in grads]), axis=0)
-    r0, r1 = int(max(cy - 2.5 * fw, 0)), int(min(cy + 3.5 * fw, hh))
-    c0, c1 = int(max(cx - 3 * fw, 0)), int(min(cx + 3 * fw, ww))
+    thr = 40.0
 
-    def edge(profile, lo, hi, default):
-        lo, hi = max(int(lo), 0), min(int(hi), len(profile))
-        if hi - lo < 3:
-            return default
-        seg = profile[lo:hi]
-        k = int(np.argmax(seg))
-        return lo + k if seg[k] > 3 * (np.median(profile) + 1) else default
+    def first_line(profile_fn, start_i, stop_i, step, default):
+        i = int(start_i)
+        stop_i = int(stop_i)
+        while (i >= stop_i if step < 0 else i <= stop_i):
+            if profile_fn(i) >= 0.8:
+                return i
+            i += step
+        return default
 
-    rows = gy[:, int(cx - fw * 0.6):int(cx + fw * 0.6)].mean(axis=1)   # bordes horizontales
-    cols = gx[r0:r1, :].mean(axis=0)                                    # bordes verticales
-    top = edge(rows, cy - 2.5 * fw, cy - 0.5 * fw, 0)
-    bottom = edge(rows, cy + 0.5 * fw, cy + 3.5 * fw, hh)
-    left = edge(cols, cx - 3 * fw, cx - 0.55 * fw, max(cx - 1.2 * fw, 0))
-    right = edge(cols, cx + 0.55 * fw, cx + 3 * fw, min(cx + 1.2 * fw, ww))
+    xa, xb = int(max(cx - 1.3 * fw, 0)), int(min(cx + 1.3 * fw, ww))
+    ya, yb = int(max(cy - 0.9 * fw, 0)), int(min(cy + 0.9 * fw, hh))
+
+    def row_frac(r):  # fracción de la franja horizontal con borde fuerte
+        r = min(max(r, 0), hh - 1)
+        return float((gy[max(r - 1, 0):r + 2, xa:xb].max(axis=0) > thr).mean())
+
+    def col_frac(c):
+        c = min(max(c, 0), ww - 1)
+        return float((gx[ya:yb, max(c - 1, 0):c + 2].max(axis=1) > thr).mean())
+
+    top = first_line(row_frac, cy - 0.6 * fw, max(cy - 3 * fw, 0), -1, 0)
+    bottom = first_line(row_frac, cy + 0.6 * fw, min(cy + 3.5 * fw, hh - 1), 1, hh)
+    left = first_line(col_frac, cx - 0.6 * fw, max(cx - 3.5 * fw, 0), -1, 0)
+    right = first_line(col_frac, cx + 0.6 * fw, min(cx + 3.5 * fw, ww - 1), 1, ww)
     # pequeño margen hacia dentro para no coger el marco
     m = 3
     left, right, top, bottom = left + m, right - m, top + m, bottom - m
@@ -375,6 +387,7 @@ def main():
         radar = json.load(f)
 
     faces = {ch["login"].lower(): ch.get("facecam") for ch in cfg["channels"]}
+    game_xs = {ch["login"].lower(): ch.get("game_x") for ch in cfg["channels"]}
     day = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=1))).strftime("%Y-%m-%d")
     repo = os.environ.get("GITHUB_REPOSITORY", "USUARIO/clipping-radar")
     tag = f"clips-{day}"
@@ -420,7 +433,7 @@ def main():
                     f.write(build_ass(words, pad, dur, layout, k["hook"], v["display_name"]))
                 name = f"{day}_{channel}_{n:02d}_{k['type']}.mp4"
                 out = os.path.join(OUT, name)
-                render(raw, pad, dur, layout, face, ass, out)
+                render(raw, pad, dur, layout, face, ass, out, game_xs.get(channel) if faces.get(channel) else None)
             except Exception as e:  # noqa: BLE001
                 print(f"   ! clip {n} falló: {e}")
                 continue
