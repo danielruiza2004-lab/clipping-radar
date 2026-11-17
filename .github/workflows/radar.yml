@@ -41,7 +41,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
-          pip install -q yt-dlp faster-whisper
+          pip install -q yt-dlp faster-whisper "opencv-python-headless<5"
           # TwitchDownloaderCLI (para descargar el chat)
           mkdir -p tools && cd tools
           gh release download --repo lay295/TwitchDownloader --pattern '*CLI*Linux-x64*.zip'
