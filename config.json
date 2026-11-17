@@ -1,1 +1,43 @@
-{"channels":[{"login":"illojuan","lang":"es"},{"login":"rubius","lang":"es"},{"login":"auronplay","lang":"es"},{"login":"ibai","lang":"es"},{"login":"elxokas","lang":"es"},{"login":"thegrefg","lang":"es"},{"login":"elspreen","lang":"es"},{"login":"kaicenat","lang":"en"},{"login":"xqc","lang":"en"},{"login":"summit1g","lang":"en"},{"login":"caseoh_","lang":"en"},{"login":"jynxzi","lang":"en"}],"game_names":["Grand Theft Auto VI"],"title_keywords":["gta 6","gta vi","gta6","gtavi"],"lookback_hours":30,"max_vods_per_channel":3,"max_peaks_per_vod":8,"download_chat":true,"clips":{"clips_per_channel":3,"max_clips_per_channel":5,"min_score":2.5,"strong_score":6,"min_clip_views":20,"min_seconds":15,"max_seconds":90,"whisper_model":"small"}}
+{
+  "channels": [
+    {
+      "login": "illojuan",
+      "lang": "es"
+    },
+    {
+      "login": "elxokas",
+      "lang": "es"
+    },
+    {
+      "login": "xqc",
+      "lang": "en"
+    },
+    {
+      "login": "kaicenat",
+      "lang": "en"
+    }
+  ],
+  "game_names": [
+    "Grand Theft Auto VI"
+  ],
+  "title_keywords": [
+    "gta 6",
+    "gta vi",
+    "gta6",
+    "gtavi"
+  ],
+  "lookback_hours": 30,
+  "max_vods_per_channel": 3,
+  "max_peaks_per_vod": 8,
+  "download_chat": true,
+  "clips": {
+    "clips_per_channel": 3,
+    "max_clips_per_channel": 5,
+    "min_score": 2.5,
+    "strong_score": 6,
+    "min_clip_views": 20,
+    "min_seconds": 15,
+    "max_seconds": 90,
+    "whisper_model": "small"
+  }
+}
