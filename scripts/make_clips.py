@@ -237,12 +237,38 @@ def render(src, pad, dur, layout, face, ass_path, out):
 
 
 def download_section(vod_url, a, b, out):
-    run([
-        "yt-dlp", "-q", "--no-warnings",
-        "-f", "best[height<=1080]/best",
-        "--download-sections", f"*{a:.0f}-{b:.0f}",
-        "-o", out, vod_url,
-    ])
+    """Descarga SOLO los segmentos HLS del VOD que cubren [a, b] (segundos).
+    Devuelve el segundo del VOD en el que empieza el archivo descargado."""
+    import urllib.request
+    m3u8 = subprocess.check_output(
+        ["yt-dlp", "-g", "--no-warnings", "-f", "best[height<=1080]/best", vod_url],
+        timeout=180,
+    ).decode().strip().splitlines()[0]
+    playlist = urllib.request.urlopen(m3u8, timeout=60).read().decode()
+    base = m3u8.rsplit("/", 1)[0]
+    segs, t, dur = [], 0.0, None
+    for line in playlist.splitlines():
+        line = line.strip()
+        if line.startswith("#EXTINF:"):
+            dur = float(line[8:].split(",")[0])
+        elif line and not line.startswith("#") and dur is not None:
+            segs.append((t, dur, line if line.startswith("http") else f"{base}/{line}"))
+            t += dur
+            dur = None
+    sel = [s for s in segs if s[0] + s[1] > a and s[0] < b]
+    if not sel:
+        raise RuntimeError("tramo fuera del VOD")
+    print(f"   descargando {len(sel)} segmentos ({sel[0][0]:.0f}s-{sel[-1][0] + sel[-1][1]:.0f}s)")
+    with open(out, "wb") as f:
+        for _, _, url in sel:
+            for intento in range(3):
+                try:
+                    f.write(urllib.request.urlopen(url, timeout=60).read())
+                    break
+                except Exception:  # noqa: BLE001
+                    if intento == 2:
+                        raise
+    return sel[0][0]
 
 
 def grab_frame(src, out):
@@ -285,13 +311,18 @@ def main():
         layout = "face" if face else "blur"
         for n, k in enumerate(picks, 1):
             v = k["vod"]
-            pad = 3.0
-            a = max(0, k["start"] - pad)
-            pad = k["start"] - a
             dur = k["end"] - k["start"]
-            raw = os.path.join(WORK, f"{channel}_{n}.mp4")
+            raw = os.path.join(WORK, f"{channel}_{n}.ts")
+            words = []
             try:
-                download_section(v["vod_url"], a, k["end"] + 2, raw)
+                seg_start = download_section(v["vod_url"], k["start"], k["end"] + 1, raw)
+                pad = k["start"] - seg_start
+                got = float(subprocess.check_output(
+                    ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", raw]
+                ).decode().strip() or 0)
+                print(f"   clip {n}: {dur:.0f}s (descargado {got:.0f}s)")
+                if got > dur + 120:  # protección: nunca transcribir horas de directo
+                    raise RuntimeError(f"descarga demasiado larga ({got:.0f}s)")
                 if n == 1:
                     grab_frame(raw, os.path.join(ROOT, "data", "frames", f"{channel}.jpg"))
                 words = transcribe(raw, v["lang"], model)
