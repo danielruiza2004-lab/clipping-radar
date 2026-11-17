@@ -1,7 +1,333 @@
 {
-  "generated_at": "2026-11-17T07:28:57.097763+00:00",
-  "since": "2026-11-16T01:28:57.097763+00:00",
+  "generated_at": "2026-11-17T10:04:04.805411+00:00",
+  "since": "2026-11-16T04:04:04.805411+00:00",
   "vods": [
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "vod_id": "2930700035",
+      "vod_url": "https://www.twitch.tv/videos/2930700035",
+      "title": "2 DÍAS 📅 ADIÓS GTA 5 👋🏻 QUE ALGUIEN ME PELLIZQUE 🥺 BUENOS AIRES ENDING 🥰 - Grand Theft Auto V #7 [FINAL]",
+      "game": "Just Chatting",
+      "created_at": "2026-11-16T18:41:15Z",
+      "length_seconds": 30560,
+      "length_hms": "8:29:20",
+      "gta_ranges": [
+        {
+          "start_hms": "0:00:00",
+          "end_hms": "8:29:20"
+        }
+      ],
+      "chat_peaks": [
+        {
+          "start": 12840,
+          "end": 12975,
+          "start_hms": "3:34:00",
+          "end_hms": "3:36:15",
+          "score": 5.64,
+          "type": "hype",
+          "msgs_per_10s": 115,
+          "chat_sample": [
+            "W",
+            "EL GOAT",
+            "GENIO GENIO GENIO GENIO",
+            "That wasss Eeepic",
+            "EZ",
+            "illojuan300IQ",
+            "W W W W",
+            "W GENIO",
+            "Y A LA PRIMERAAA",
+            "Damn boy",
+            "AURA",
+            "WTF ES EL PILOTO WTF ES EL PILOTO ͏"
+          ]
+        },
+        {
+          "start": 17220,
+          "end": 17295,
+          "start_hms": "4:47:00",
+          "end_hms": "4:48:15",
+          "score": 8.12,
+          "type": "hype",
+          "msgs_per_10s": 109,
+          "chat_sample": [
+            "jajaj",
+            "TREMENDO imbecil",
+            "o7",
+            "o7",
+            "o7",
+            "o7",
+            "o7",
+            "o7",
+            "o7",
+            "o7",
+            "o7",
+            "o7"
+          ]
+        },
+        {
+          "start": 19410,
+          "end": 19465,
+          "start_hms": "5:23:30",
+          "end_hms": "5:24:25",
+          "score": 5.65,
+          "type": "risa",
+          "msgs_per_10s": 91,
+          "chat_sample": [
+            "RATATATATATA",
+            "granadaaaa",
+            "AIM",
+            "KEK",
+            "@cervezaroja es el personaje del online",
+            "RATATATATA",
+            "LOL",
+            "jajajjajaja",
+            "KEK ͏",
+            "se van a besar",
+            "IWASHERE",
+            "o7"
+          ]
+        },
+        {
+          "start": 25720,
+          "end": 25905,
+          "start_hms": "7:08:40",
+          "end_hms": "7:11:45",
+          "score": 5.43,
+          "type": "risa",
+          "msgs_per_10s": 109,
+          "chat_sample": [
+            "KEK",
+            "jajajajajaa",
+            "KEK",
+            "QueTeCalles",
+            "KEK",
+            "LOL",
+            "KEK",
+            "Jajjajajaj",
+            "LUL",
+            "????",
+            "jajajaja",
+            "LOL"
+          ]
+        },
+        {
+          "start": 26660,
+          "end": 26785,
+          "start_hms": "7:24:20",
+          "end_hms": "7:26:25",
+          "score": 10.1,
+          "type": "hype",
+          "msgs_per_10s": 84,
+          "chat_sample": [
+            "Yo quiero irme a la L de Lucia",
+            "W",
+            "W",
+            "W ajedrecistas",
+            "W",
+            "W",
+            "Drake",
+            "Basado",
+            "W",
+            "W W",
+            "W",
+            "W"
+          ]
+        },
+        {
+          "start": 27770,
+          "end": 27835,
+          "start_hms": "7:42:50",
+          "end_hms": "7:43:55",
+          "score": 6.22,
+          "type": "hype",
+          "msgs_per_10s": 82,
+          "chat_sample": [
+            "W",
+            "w0lf1zzz",
+            "W",
+            "W hugg",
+            "W",
+            "W",
+            "W Michael",
+            "1",
+            "W",
+            "SAJ W",
+            "despues de ver los otros finales el mensaje este pega eh",
+            "queda con Michael y Trevor, hay conversaciones"
+          ]
+        },
+        {
+          "start": 28770,
+          "end": 28915,
+          "start_hms": "7:59:30",
+          "end_hms": "8:01:55",
+          "score": 5.32,
+          "type": "risa",
+          "msgs_per_10s": 118,
+          "chat_sample": [
+            "huh",
+            "niñas?",
+            "niñas???",
+            "huh  ͏",
+            "huh",
+            "Vete. Dormir pero hoy no cobras",
+            "W",
+            "huh",
+            "???",
+            "jijiji",
+            "confirmo soy una de ellas",
+            "Niñas????"
+          ]
+        },
+        {
+          "start": 30000,
+          "end": 30065,
+          "start_hms": "8:20:00",
+          "end_hms": "8:21:05",
+          "score": 5.61,
+          "type": "risa",
+          "msgs_per_10s": 82,
+          "chat_sample": [
+            "XDDDDD",
+            "jajaj",
+            "lolo__ab",
+            "KEK",
+            "LOL",
+            "LOL",
+            "KEK",
+            "jasjas",
+            "KEKE",
+            "jajajjajajajjaja",
+            "huhh",
+            "jajajajaja"
+          ]
+        }
+      ],
+      "viewer_clips": [
+        {
+          "title": "ya basta no?",
+          "views": 801,
+          "vod_offset": 15746,
+          "vod_offset_hms": "4:22:26",
+          "duration": 26.9,
+          "url": "https://www.twitch.tv/illojuan/clip/SpikyAgitatedWaspVoteNay-MjI0y3U0kcYRZCGh"
+        },
+        {
+          "title": "Timing???",
+          "views": 473,
+          "vod_offset": 15076,
+          "vod_offset_hms": "4:11:16",
+          "duration": 9.9,
+          "url": "https://www.twitch.tv/illojuan/clip/AwkwardAgreeableReindeerOneHand-RFG62O6Q2SAx9ubE"
+        },
+        {
+          "title": "Y voló",
+          "views": 408,
+          "vod_offset": 21296,
+          "vod_offset_hms": "5:54:56",
+          "duration": 6.5,
+          "url": "https://www.twitch.tv/illojuan/clip/RichEvilWeaselOSfrog-diT4agwgA7zRoJYC"
+        },
+        {
+          "title": "Que te pasa en la cabeza tio?",
+          "views": 229,
+          "vod_offset": 10462,
+          "vod_offset_hms": "2:54:22",
+          "duration": 24,
+          "url": "https://www.twitch.tv/illojuan/clip/SuccessfulBraveMilkPraiseIt-AxDtCu62qZx_-SQ0"
+        },
+        {
+          "title": "voló",
+          "views": 172,
+          "vod_offset": 21292,
+          "vod_offset_hms": "5:54:52",
+          "duration": 5.5,
+          "url": "https://www.twitch.tv/illojuan/clip/LongTrustworthyAxeAllenHuhu-KcoSLkp0fj9XoifI"
+        },
+        {
+          "title": "MIGAS?",
+          "views": 150,
+          "vod_offset": 19018,
+          "vod_offset_hms": "5:16:58",
+          "duration": 30,
+          "url": "https://www.twitch.tv/illojuan/clip/PiliableLongTortoiseDerp-lHHK4LRZeF8iVZOi"
+        },
+        {
+          "title": "LA CARA",
+          "views": 117,
+          "vod_offset": 29517,
+          "vod_offset_hms": "8:11:57",
+          "duration": 15.2,
+          "url": "https://www.twitch.tv/illojuan/clip/ImpossibleMoldyDuckEleGiggle-w0EmLGiwurllvE7D"
+        },
+        {
+          "title": "Se ha pasado no?",
+          "views": 98,
+          "vod_offset": 10625,
+          "vod_offset_hms": "2:57:05",
+          "duration": 12.2,
+          "url": "https://www.twitch.tv/illojuan/clip/ExpensiveWanderingNikudonFeelsBadMan-AAkjzlispGGRf8ns"
+        },
+        {
+          "title": "PREDICT",
+          "views": 90,
+          "vod_offset": 18941,
+          "vod_offset_hms": "5:15:41",
+          "duration": 12,
+          "url": "https://www.twitch.tv/illojuan/clip/DaintyLightPlumageHassanChop-XT7tzPGb302HFvR5"
+        },
+        {
+          "title": "adio",
+          "views": 84,
+          "vod_offset": 6473,
+          "vod_offset_hms": "1:47:53",
+          "duration": 16,
+          "url": "https://www.twitch.tv/illojuan/clip/InnocentGleamingOkapiBlargNaut-WWXRe4oWVymmqMAs"
+        },
+        {
+          "title": "no es mi culpa juan",
+          "views": 68,
+          "vod_offset": 10419,
+          "vod_offset_hms": "2:53:39",
+          "duration": 17.8,
+          "url": "https://www.twitch.tv/illojuan/clip/EnjoyableAmazonianFriesAliens-Q4O42LZ3rHVK4Tvh"
+        },
+        {
+          "title": "Y voló, y yo volé de él",
+          "views": 66,
+          "vod_offset": 21306,
+          "vod_offset_hms": "5:55:06",
+          "duration": 20.2,
+          "url": "https://www.twitch.tv/illojuan/clip/AdventurousLivelyWormTTours-2ujY7qstGmupWRC6"
+        },
+        {
+          "title": "corrio y no saltó",
+          "views": 58,
+          "vod_offset": 8740,
+          "vod_offset_hms": "2:25:40",
+          "duration": 15,
+          "url": "https://www.twitch.tv/illojuan/clip/DullSplendidBarracudaGrammarKing-OedPHABLE1BSCChC"
+        },
+        {
+          "title": "buena",
+          "views": 52,
+          "vod_offset": 19442,
+          "vod_offset_hms": "5:24:02",
+          "duration": 5.7,
+          "url": "https://www.twitch.tv/illojuan/clip/AggressiveOnerousRhinocerosGingerPower-mSbFGbswRRlwTAjX"
+        },
+        {
+          "title": "voltereta con trevir",
+          "views": 50,
+          "vod_offset": 6030,
+          "vod_offset_hms": "1:40:30",
+          "duration": 10.3,
+          "url": "https://www.twitch.tv/illojuan/clip/PoorChillyMageChefFrank-Qw23FELlGZa6cYHb"
+        }
+      ]
+    },
     {
       "channel": "elxokas",
       "display_name": "elxokas",
@@ -208,7 +534,7 @@
       "viewer_clips": [
         {
           "title": "OMG XOKAS",
-          "views": 669,
+          "views": 729,
           "vod_offset": 20204,
           "vod_offset_hms": "5:36:44",
           "duration": 12.2,
@@ -216,7 +542,7 @@
         },
         {
           "title": "EL PALO",
-          "views": 103,
+          "views": 112,
           "vod_offset": 14537,
           "vod_offset_hms": "4:02:17",
           "duration": 21.3,
@@ -224,7 +550,7 @@
         },
         {
           "title": "Miau",
-          "views": 87,
+          "views": 90,
           "vod_offset": 23634,
           "vod_offset_hms": "6:33:54",
           "duration": 19.2,
@@ -232,7 +558,7 @@
         },
         {
           "title": "performando a maximo nivel",
-          "views": 66,
+          "views": 69,
           "vod_offset": 14551,
           "vod_offset_hms": "4:02:31",
           "duration": 36,
@@ -240,7 +566,7 @@
         },
         {
           "title": "OHHHH MI BEBE",
-          "views": 55,
+          "views": 62,
           "vod_offset": 9762,
           "vod_offset_hms": "2:42:42",
           "duration": 34.8,
@@ -248,7 +574,7 @@
         },
         {
           "title": "A xokas se le va la cabeza",
-          "views": 46,
+          "views": 49,
           "vod_offset": 20195,
           "vod_offset_hms": "5:36:35",
           "duration": 9.7,
@@ -256,7 +582,7 @@
         },
         {
           "title": "Recomendacion para Wow",
-          "views": 39,
+          "views": 41,
           "vod_offset": 13850,
           "vod_offset_hms": "3:50:50",
           "duration": 13.8,
@@ -272,7 +598,7 @@
         },
         {
           "title": "TF en Forever?",
-          "views": 31,
+          "views": 32,
           "vod_offset": 9735,
           "vod_offset_hms": "2:42:15",
           "duration": 11.4,
@@ -288,7 +614,7 @@
         },
         {
           "title": "haguas",
-          "views": 20,
+          "views": 24,
           "vod_offset": 5234,
           "vod_offset_hms": "1:27:14",
           "duration": 14.4,
@@ -325,336 +651,6 @@
           "vod_offset_hms": "0:50:52",
           "duration": 49.7,
           "url": "https://www.twitch.tv/elxokas/clip/BloodyComfortableKumquatKappaRoss-cV8Efnl0FBZpFCQ9"
-        }
-      ]
-    },
-    {
-      "channel": "summit1g",
-      "display_name": "summit1g",
-      "lang": "en",
-      "vod_id": "2930897320",
-      "vod_url": "https://www.twitch.tv/videos/2930897320",
-      "title": "wow forever. 54 rogue. terrible player. - !journey for %10 off - !starforge @StarforgeSystems",
-      "game": "World of Warcraft",
-      "created_at": "2026-11-16T22:45:36Z",
-      "length_seconds": 31417,
-      "length_hms": "8:43:37",
-      "gta_ranges": [
-        {
-          "start_hms": "0:00:00",
-          "end_hms": "3:32:32"
-        },
-        {
-          "start_hms": "7:41:12",
-          "end_hms": "7:41:12"
-        }
-      ],
-      "chat_peaks": [
-        {
-          "start": 3540,
-          "end": 3625,
-          "start_hms": "0:59:00",
-          "end_hms": "1:00:25",
-          "score": 3.75,
-          "type": "risa",
-          "msgs_per_10s": 22,
-          "chat_sample": [
-            "bubble gut",
-            "@summit1g the combo points are from the flyplate addon? can't see the option",
-            "LULW",
-            "KEKW",
-            "McNuggets",
-            "LUL",
-            "classic",
-            "broo same. I gotta pay attention to what time I eat now. Fuck getting old lol",
-            "McNuggets",
-            "KEKW",
-            "got the Hershey squirts",
-            "i did the same lol"
-          ]
-        },
-        {
-          "start": 3820,
-          "end": 3925,
-          "start_hms": "1:03:40",
-          "end_hms": "1:05:25",
-          "score": 4.25,
-          "type": "risa",
-          "msgs_per_10s": 25,
-          "chat_sample": [
-            "om",
-            "based",
-            "strange thing to say lol",
-            "lol",
-            "100",
-            "yeah victorious bagglsBlue bagglsRed bagglsOrange bagglsPurple",
-            "lmao",
-            "LMAOOO",
-            "SHEEEESH",
-            "big facts",
-            "NO FUCKS GIVEN",
-            "W"
-          ]
-        },
-        {
-          "start": 5290,
-          "end": 5365,
-          "start_hms": "1:28:10",
-          "end_hms": "1:29:25",
-          "score": 5.86,
-          "type": "risa",
-          "msgs_per_10s": 23,
-          "chat_sample": [
-            "naoooo!",
-            "LOL",
-            "LOL ͏",
-            "LOL",
-            "Looking",
-            "LUL",
-            "3x LOL combo EZ",
-            "LOL",
-            "lol",
-            "l d",
-            "xdd",
-            "looooool"
-          ]
-        },
-        {
-          "start": 6560,
-          "end": 6655,
-          "start_hms": "1:49:20",
-          "end_hms": "1:50:55",
-          "score": 4.15,
-          "type": "hype",
-          "msgs_per_10s": 49,
-          "chat_sample": [
-            "67",
-            "Okay but why can't you read minds?",
-            "Don't take the ragebait bro",
-            "RIPBOZO",
-            "ban him",
-            "Lol",
-            "you wont beat his ass though",
-            "o7",
-            "o7",
-            "BAND",
-            "lol",
-            "o7"
-          ]
-        },
-        {
-          "start": 6970,
-          "end": 7035,
-          "start_hms": "1:56:10",
-          "end_hms": "1:57:15",
-          "score": 8.96,
-          "type": "risa",
-          "msgs_per_10s": 49,
-          "chat_sample": [
-            "LO",
-            "hahahahahahaha",
-            "\"why are you talking to me like this\" lol",
-            "LUL",
-            "hahahaha",
-            "lul",
-            "KEKW",
-            "lmao",
-            "LO",
-            "JinxLUL",
-            "LOL",
-            "LUL"
-          ]
-        },
-        {
-          "start": 10500,
-          "end": 10615,
-          "start_hms": "2:55:00",
-          "end_hms": "2:56:55",
-          "score": 4.49,
-          "type": "risa",
-          "msgs_per_10s": 20,
-          "chat_sample": [
-            "lol",
-            "56 and a half",
-            "you can go there 55-56. the xp is insane @summit1g",
-            "LOL",
-            "KEKW",
-            "lmao",
-            "mount hyjal is ok at 55",
-            "57 is good",
-            "56",
-            "55-56 is good to start for sure",
-            "your mount reminds me of baba from DL",
-            "brd and hyjal and u are 60"
-          ]
-        },
-        {
-          "start": 11820,
-          "end": 11905,
-          "start_hms": "3:17:00",
-          "end_hms": "3:18:25",
-          "score": 5.5,
-          "type": "risa",
-          "msgs_per_10s": 64,
-          "chat_sample": [
-            "KEK",
-            "BLABBERING",
-            "LUL",
-            "WE DO IT FOR THE ONES THAT CANT",
-            "@summit1g ur a goat me boy fuck em",
-            "xdd",
-            "LOL",
-            "KEK",
-            "missile banned",
-            "deserved",
-            "bawkHands",
-            "LOL"
-          ]
-        },
-        {
-          "start": 12680,
-          "end": 12785,
-          "start_hms": "3:31:20",
-          "end_hms": "3:33:05",
-          "score": 4.67,
-          "type": "hype",
-          "msgs_per_10s": 65,
-          "chat_sample": [
-            "YESSS",
-            "-5 PepeLaugh",
-            "OOOOO",
-            "cyrC",
-            "o7",
-            "o7",
-            "msashRAID msashRAID msashRAID",
-            "o7 ARC",
-            "lol",
-            "EZ",
-            "have a nice night brother",
-            "HELL YEAH"
-          ]
-        }
-      ],
-      "viewer_clips": [
-        {
-          "title": "Preach",
-          "views": 3042,
-          "vod_offset": 12331,
-          "vod_offset_hms": "3:25:31",
-          "duration": 55.1,
-          "url": "https://www.twitch.tv/summit1g/clip/AntsyClearEchidnaVoHiYo-djKaNjZ3dn238s_5"
-        },
-        {
-          "title": "fasefsa",
-          "views": 2812,
-          "vod_offset": 16782,
-          "vod_offset_hms": "4:39:42",
-          "duration": 52.6,
-          "url": "https://www.twitch.tv/summit1g/clip/LivelyProtectiveWasabiKevinTurtle-n3Ho6MVOov3gaUEP"
-        },
-        {
-          "title": "Summit1g! telling a chatter off",
-          "views": 139,
-          "vod_offset": 13275,
-          "vod_offset_hms": "3:41:15",
-          "duration": 14.3,
-          "url": "https://www.twitch.tv/summit1g/clip/SuccessfulAbrasiveJalapenoOSfrog-aF_OclyEAX6DUgIT"
-        },
-        {
-          "title": "Summit addresses the BBL allegations",
-          "views": 90,
-          "vod_offset": 29660,
-          "vod_offset_hms": "8:14:20",
-          "duration": 48,
-          "url": "https://www.twitch.tv/summit1g/clip/ShortSpeedyKalePeanutButterJellyTime-LtRm-sTZ4xRZGjtZ"
-        },
-        {
-          "title": "Oopsi",
-          "views": 90,
-          "vod_offset": 7840,
-          "vod_offset_hms": "2:10:40",
-          "duration": 36.6,
-          "url": "https://www.twitch.tv/summit1g/clip/GleamingPuzzledHorseOhMyDog-4QaKxBWmJQDYf8M9"
-        },
-        {
-          "title": "Good for gaming",
-          "views": 43,
-          "vod_offset": 2677,
-          "vod_offset_hms": "0:44:37",
-          "duration": 16.1,
-          "url": "https://www.twitch.tv/summit1g/clip/StormyMotionlessBatteryCopyThis-HGl8ytpuk7KJqb5t"
-        },
-        {
-          "title": "Boom",
-          "views": 37,
-          "vod_offset": 14480,
-          "vod_offset_hms": "4:01:20",
-          "duration": 21.6,
-          "url": "https://www.twitch.tv/summit1g/clip/HyperCrypticCatBatChest-r3KaQt2y5gYntXTY"
-        },
-        {
-          "title": "wow forever. 54 rogue. terrible player. - !journey for %10 off - !starforge @StarforgeSystems",
-          "views": 32,
-          "vod_offset": 11335,
-          "vod_offset_hms": "3:08:55",
-          "duration": 30,
-          "url": "https://www.twitch.tv/summit1g/clip/RelievedBoxyKumquatCopyThis-YHZ2vs3fZQ5whFoc"
-        },
-        {
-          "title": "the guy",
-          "views": 31,
-          "vod_offset": 3128,
-          "vod_offset_hms": "0:52:08",
-          "duration": 60,
-          "url": "https://www.twitch.tv/summit1g/clip/PopularSnappyKeyboardPogChamp-Br0VSrR_-FymYom0"
-        },
-        {
-          "title": "priests are just stupid bro",
-          "views": 21,
-          "vod_offset": 5514,
-          "vod_offset_hms": "1:31:54",
-          "duration": 41.3,
-          "url": "https://www.twitch.tv/summit1g/clip/CuteFunSardineBudStar-mc1n3K4SlLA4LW15"
-        },
-        {
-          "title": "Now we have a lighter",
-          "views": 15,
-          "vod_offset": 21490,
-          "vod_offset_hms": "5:58:10",
-          "duration": 59.9,
-          "url": "https://www.twitch.tv/summit1g/clip/DistinctDiligentLlamaPartyTime-2SsNYWsVLkbBWJ6a"
-        },
-        {
-          "title": "Exploits are cool",
-          "views": 15,
-          "vod_offset": 15826,
-          "vod_offset_hms": "4:23:46",
-          "duration": 31.4,
-          "url": "https://www.twitch.tv/summit1g/clip/SingleBlitheYakLitFam-8htGiT63tGmv1RTc"
-        },
-        {
-          "title": "wow forever. 54 rogue. terrible player. - !journey for %10 off - !starforge @StarforgeSystems",
-          "views": 10,
-          "vod_offset": 5169,
-          "vod_offset_hms": "1:26:09",
-          "duration": 44.9,
-          "url": "https://www.twitch.tv/summit1g/clip/CalmExquisiteSnakeKappaRoss-30ZBDXUAmZIh0P9L"
-        },
-        {
-          "title": "ggz",
-          "views": 9,
-          "vod_offset": 11700,
-          "vod_offset_hms": "3:15:00",
-          "duration": 23.3,
-          "url": "https://www.twitch.tv/summit1g/clip/VainNiceDumplingsDoubleRainbow-sA4FBEKznwSgy6KB"
-        },
-        {
-          "title": "Summit responds to my comment",
-          "views": 8,
-          "vod_offset": 20162,
-          "vod_offset_hms": "5:36:02",
-          "duration": 30,
-          "url": "https://www.twitch.tv/summit1g/clip/BeautifulCleverShrimpKeyboardCat-bH8DjF2wlqG-8v_y"
         }
       ]
     }
