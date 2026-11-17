@@ -24,7 +24,7 @@ FONT_NAME = os.environ.get("CLIP_FONT", "Montserrat Black")
 HOOK_FONT = os.environ.get("HOOK_FONT", "Montserrat SemiBold")
 
 W, H = 1080, 1920
-FACE_H = 730          # alto del panel de facecam (38 %, como el ejemplo)
+FACE_H = 844          # alto del panel de facecam (44 %, como el ejemplo; par)
 BAND_H = 608          # alto del juego en el formato sin facecam (16:9 a 1080 de ancho)
 
 # Colores ASS (&HAABBGGRR)
@@ -57,10 +57,12 @@ def ass_escape(s):
     return s.replace("\\", "").replace("{", "(").replace("}", ")").replace("\n", " ")
 
 
-def clean_hook(title):
+def clean_hook(title, views=0):
+    """Frase gancho solo si es clara: título de un clip con visitas y con palabras de verdad."""
     t = re.sub(r"\s+", " ", title or "").strip()
     t = re.sub(r"(?i)\b(clip|clipped by \w+)\b", "", t).strip(" -|")
-    if len(t) < 4:
+    words = re.findall(r"[A-Za-zÁÉÍÓÚÑáéíóúñü']{2,}", t)
+    if views < 50 or len(words) < 2 or len(t) < 10 or "@" in t or "http" in t:
         return ""
     return t[:70]
 
@@ -85,14 +87,14 @@ def candidates_for_vod(v, cfg):
                 k["score"] += bonus
                 k["start"] = min(k["start"], a)
                 k["end"] = max(k["end"], b)
-                k["hook"] = k["hook"] or clean_hook(c["title"])
+                k["hook"] = k["hook"] or clean_hook(c["title"], c["views"])
                 k["source"] = "chat+clips"
                 merged = True
                 break
         if not merged:
             cands.append({
                 "start": a, "end": b, "score": 2 + bonus, "type": "hype",
-                "hook": clean_hook(c["title"]), "source": "clips",
+                "hook": clean_hook(c["title"], c["views"]), "source": "clips",
             })
     # duración entre min y max
     L = v["length_seconds"]
@@ -142,9 +144,8 @@ def transcribe(path, lang, model):
 
 def build_ass(words, offset, dur, layout, hook, name):
     """Subtítulos karaoke: grupos de hasta 3 palabras, la activa en amarillo."""
-    sub_y = 1440 if layout == "blur" else 1480
-    hook_y = 520 if layout == "blur" else FACE_H + 40
-    name_y = 1300 if layout == "blur" else FACE_H - 50
+    sub_y = 1440 if layout == "blur" else 1500
+    hook_y = 520 if layout == "blur" else FACE_H + 30
 
     head = f"""[Script Info]
 ScriptType: v4.00+
@@ -166,7 +167,6 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     if hook:
         # como el ejemplo: frase gancho fija todo el vídeo, debajo de la facecam
         ev.append(f"Dialogue: 2,{ass_time(0)},{ass_time(dur)},Hook,,0,0,0,,{{\\an8\\q0\\pos(540,{hook_y})}}{ass_escape(hook)}")
-    ev.append(f"Dialogue: 1,{ass_time(0)},{ass_time(dur)},Name,,0,0,0,,{{\\an4\\pos(40,{name_y})}}@{ass_escape(name)}")
 
     # pasar a tiempos del clip y quedarse con lo que cae dentro
     ws = [(s - offset, e - offset, t) for s, e, t in words if e - offset > 0 and s - offset < dur]
@@ -234,6 +234,82 @@ def render(src, pad, dur, layout, face, ass_path, out):
         "-c:a", "aac", "-b:a", "128k", "-ar", "48000",
         "-movflags", "+faststart", out,
     ])
+
+
+def detect_facecam(src, start, dur):
+    """Busca la cara del streamer en varios fotogramas, localiza los bordes rectos del
+    recuadro de su cámara y devuelve (x, y, w, h) en fracciones con el aspecto del panel
+    de arriba. None si no hay una cámara clara."""
+    try:
+        import cv2
+        import numpy as np
+    except ImportError:
+        return None
+    cas = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+    cap = cv2.VideoCapture(src)
+    found, grads, size = [], [], None
+    for i in range(8):
+        cap.set(cv2.CAP_PROP_POS_MSEC, (start + 1 + i * max(dur - 2, 1) / 7) * 1000)
+        ok, frame = cap.read()
+        if not ok:
+            continue
+        hh, ww = frame.shape[:2]
+        size = (ww, hh)
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        grads.append((np.abs(cv2.Sobel(gray, cv2.CV_32F, 1, 0, ksize=3)),
+                      np.abs(cv2.Sobel(gray, cv2.CV_32F, 0, 1, ksize=3))))
+        faces = cas.detectMultiScale(gray, 1.1, 6, minSize=(int(ww * 0.035), int(ww * 0.035)))
+        if len(faces):
+            x, y, w, h = max(faces, key=lambda f: f[2] * f[3])
+            found.append((x + w / 2, y + h / 2, w))
+    cap.release()
+    if len(found) < 3 or not size:
+        return None
+    ww, hh = size
+    cx = sorted(f[0] for f in found)[len(found) // 2]
+    cy = sorted(f[1] for f in found)[len(found) // 2]
+    fw = sorted(f[2] for f in found)[len(found) // 2]
+    near = [f for f in found if abs(f[0] - cx) < 0.06 * ww and abs(f[1] - cy) < 0.08 * hh]
+    if len(near) < 3:  # caras sueltas del juego, no una cámara fija
+        return None
+
+    # bordes del recuadro: líneas rectas que se repiten en todos los fotogramas
+    gx = np.median(np.stack([g[0] for g in grads]), axis=0)
+    gy = np.median(np.stack([g[1] for g in grads]), axis=0)
+    r0, r1 = int(max(cy - 2.5 * fw, 0)), int(min(cy + 3.5 * fw, hh))
+    c0, c1 = int(max(cx - 3 * fw, 0)), int(min(cx + 3 * fw, ww))
+
+    def edge(profile, lo, hi, default):
+        lo, hi = max(int(lo), 0), min(int(hi), len(profile))
+        if hi - lo < 3:
+            return default
+        seg = profile[lo:hi]
+        k = int(np.argmax(seg))
+        return lo + k if seg[k] > 3 * (np.median(profile) + 1) else default
+
+    rows = gy[:, int(cx - fw * 0.6):int(cx + fw * 0.6)].mean(axis=1)   # bordes horizontales
+    cols = gx[r0:r1, :].mean(axis=0)                                    # bordes verticales
+    top = edge(rows, cy - 2.5 * fw, cy - 0.5 * fw, 0)
+    bottom = edge(rows, cy + 0.5 * fw, cy + 3.5 * fw, hh)
+    left = edge(cols, cx - 3 * fw, cx - 0.55 * fw, max(cx - 1.2 * fw, 0))
+    right = edge(cols, cx + 0.55 * fw, cx + 3 * fw, min(cx + 1.2 * fw, ww))
+    # pequeño margen hacia dentro para no coger el marco
+    m = 3
+    left, right, top, bottom = left + m, right - m, top + m, bottom - m
+    cw, ch = right - left, bottom - top
+    if cw < fw * 1.2 or ch < fw * 1.2:
+        return None
+
+    aspect = W / FACE_H  # ancho/alto del panel en píxeles
+    if cw / ch > aspect:  # recuadro más ancho que el panel: recortar a lo ancho, centrado en la cara
+        bw, bh = ch * aspect, ch
+        x0 = min(max(cx - bw / 2, left), right - bw)
+        y0 = top
+    else:                 # más alto: recortar a lo alto, con la cara arriba
+        bw, bh = cw, cw / aspect
+        x0 = left
+        y0 = min(max(cy - bh * 0.42, top), bottom - bh)
+    return (round(x0 / ww, 4), round(y0 / hh, 4), round(bw / ww, 4), round(bh / hh, 4))
 
 
 def download_section(vod_url, a, b, out):
@@ -311,14 +387,13 @@ def main():
         by_channel.setdefault(v["channel"], []).append(v)
 
     from faster_whisper import WhisperModel  # import tardío: solo si hay trabajo
-    model = WhisperModel(c.get("whisper_model", "small"), device="cpu", compute_type="int8") if by_channel else None
+    need_subs = any(v["lang"] == "en" for v in radar["vods"])
+    model = WhisperModel(c.get("whisper_model", "small"), device="cpu", compute_type="int8") if need_subs else None
 
     manifest = {"date": day, "release_tag": tag, "clips": []}
     for channel, vods in by_channel.items():
         picks = pick_for_channel(vods, c)
         print(f"== {channel}: {len(picks)} clips")
-        face = faces.get(channel)
-        layout = "face" if face else "blur"
         for n, k in enumerate(picks, 1):
             v = k["vod"]
             dur = k["end"] - k["start"]
@@ -335,7 +410,11 @@ def main():
                     raise RuntimeError(f"descarga demasiado larga ({got:.0f}s)")
                 if n == 1:
                     grab_frame(raw, os.path.join(ROOT, "data", "frames", f"{channel}.jpg"))
-                words = transcribe(raw, v["lang"], model)
+                face = faces.get(channel) or detect_facecam(raw, pad, dur)
+                layout = "face" if face else "blur"
+                print(f"   facecam: {face or 'no detectada -> fondo desenfocado'}")
+                # subtítulos solo en los canales en inglés
+                words = transcribe(raw, v["lang"], model) if v["lang"] == "en" else []
                 ass = os.path.join(WORK, f"{channel}_{n}.ass")
                 with open(ass, "w", encoding="utf-8") as f:
                     f.write(build_ass(words, pad, dur, layout, k["hook"], v["display_name"]))
@@ -358,6 +437,8 @@ def main():
                 "score": round(k["score"], 2),
                 "source": k["source"],
                 "hook": k["hook"],
+                "layout": layout,
+                "facecam": face,
                 "duration": round(dur, 1),
                 "vod_url": v["vod_url"],
                 "vod_title": v["title"],
