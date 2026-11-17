@@ -123,6 +123,8 @@ def vod_game_info(vod_id):
 
 def is_target(title, game, chapters, cfg):
     names = {g.lower() for g in cfg["game_names"]}
+    if "*" in names:  # modo prueba: cualquier juego
+        return True
     if game and game.lower() in names:
         return True
     if any((c.get("game") or "").lower() in names for c in chapters):
@@ -134,6 +136,8 @@ def is_target(title, game, chapters, cfg):
 def target_ranges(chapters, cfg, length):
     """Tramos del VOD en los que se juega a GTA 6 (si hay capítulos)."""
     names = {g.lower() for g in cfg["game_names"]}
+    if "*" in names:
+        return [(0, length)]
     r = [(c["start"], c["end"] or length) for c in chapters if (c.get("game") or "").lower() in names]
     return r or [(0, length)]
 
