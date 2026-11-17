@@ -246,10 +246,13 @@ def download_section(vod_url, a, b, out):
     ).decode().strip().splitlines()[0]
     playlist = urllib.request.urlopen(m3u8, timeout=60).read().decode()
     base = m3u8.rsplit("/", 1)[0]
-    segs, t, dur = [], 0.0, None
+    segs, t, dur, init = [], 0.0, None, None
     for line in playlist.splitlines():
         line = line.strip()
-        if line.startswith("#EXTINF:"):
+        if line.startswith("#EXT-X-MAP:"):  # fMP4: cabecera de inicio obligatoria
+            uri = line.split('URI="', 1)[1].split('"', 1)[0]
+            init = uri if uri.startswith("http") else f"{base}/{uri}"
+        elif line.startswith("#EXTINF:"):
             dur = float(line[8:].split(",")[0])
         elif line and not line.startswith("#") and dur is not None:
             segs.append((t, dur, line if line.startswith("http") else f"{base}/{line}"))
@@ -259,7 +262,10 @@ def download_section(vod_url, a, b, out):
     if not sel:
         raise RuntimeError("tramo fuera del VOD")
     print(f"   descargando {len(sel)} segmentos ({sel[0][0]:.0f}s-{sel[-1][0] + sel[-1][1]:.0f}s)")
-    with open(out, "wb") as f:
+    part = out + ".part"
+    with open(part, "wb") as f:
+        if init:
+            f.write(urllib.request.urlopen(init, timeout=60).read())
         for _, _, url in sel:
             for intento in range(3):
                 try:
@@ -268,6 +274,10 @@ def download_section(vod_url, a, b, out):
                 except Exception:  # noqa: BLE001
                     if intento == 2:
                         raise
+    # remux: timestamps desde 0 (Twitch guarda la hora original del directo)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", part, "-map", "0", "-c", "copy",
+                    "-avoid_negative_ts", "make_zero", out], check=True, timeout=300)
+    os.remove(part)
     return sel[0][0]
 
 
@@ -312,7 +322,7 @@ def main():
         for n, k in enumerate(picks, 1):
             v = k["vod"]
             dur = k["end"] - k["start"]
-            raw = os.path.join(WORK, f"{channel}_{n}.ts")
+            raw = os.path.join(WORK, f"{channel}_{n}.mp4")
             words = []
             try:
                 seg_start = download_section(v["vod_url"], k["start"], k["end"] + 1, raw)
