@@ -1,56 +1,5 @@
 {
-  "date": "2026-11-17",
-  "release_tag": "clips-2026-11-17",
-  "clips": [
-    {
-      "channel": "elxokas",
-      "display_name": "elxokas",
-      "lang": "es",
-      "n": 1,
-      "type": "risa",
-      "score": 19.32,
-      "source": "chat+clips",
-      "hook": "",
-      "layout": "face",
-      "facecam": [
-        0.0377,
-        0.3417,
-        0.1766,
-        0.2454
-      ],
-      "duration": 90,
-      "vod_url": "https://www.twitch.tv/videos/2930589038",
-      "vod_title": "🌍DÍA 13🌍LVL 56+ PVP🌍MONTE HYJAL🌍La guía de wow !JOURNEY 10% descuento / !GUILD LLENA, !DISCORD PARA LOS DE LAS GUILD🌍",
-      "vod_time": "4:01:40",
-      "transcript": "",
-      "file": "2026-11-17_elxokas_01_risa.mp4",
-      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-17/2026-11-17_elxokas_01_risa.mp4",
-      "size_mb": 36.7
-    },
-    {
-      "channel": "elxokas",
-      "display_name": "elxokas",
-      "lang": "es",
-      "n": 2,
-      "type": "risa",
-      "score": 17.02,
-      "source": "chat",
-      "hook": "",
-      "layout": "face",
-      "facecam": [
-        0.0377,
-        0.3417,
-        0.1766,
-        0.2454
-      ],
-      "duration": 90,
-      "vod_url": "https://www.twitch.tv/videos/2930589038",
-      "vod_title": "🌍DÍA 13🌍LVL 56+ PVP🌍MONTE HYJAL🌍La guía de wow !JOURNEY 10% descuento / !GUILD LLENA, !DISCORD PARA LOS DE LAS GUILD🌍",
-      "vod_time": "3:10:50",
-      "transcript": "",
-      "file": "2026-11-17_elxokas_02_risa.mp4",
-      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-17/2026-11-17_elxokas_02_risa.mp4",
-      "size_mb": 23.5
-    }
-  ]
+  "date": "2026-11-18",
+  "release_tag": "clips-2026-11-18",
+  "clips": []
 }
