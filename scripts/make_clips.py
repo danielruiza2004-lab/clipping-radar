@@ -409,7 +409,7 @@ def download_section(vod_url, a, b, out, fmt="best[height<=1080]/best"):
     Devuelve el segundo del VOD en el que empieza el archivo descargado."""
     import urllib.request
     m3u8 = subprocess.check_output(
-        ["yt-dlp", "-g", "--no-warnings", "-f", "best[height<=1080]/best", vod_url],
+        ["yt-dlp", "-g", "--no-warnings", "-f", fmt, vod_url],
         timeout=180,
     ).decode().strip().splitlines()[0]
     playlist = urllib.request.urlopen(m3u8, timeout=60).read().decode()
@@ -531,6 +531,8 @@ def main():
                 "source": k["source"],
                 "hook": k["hook"],
                 "layout": layout,
+                "views": k.get("views", 0),
+                "reaction_db": k.get("reaction_db", 0),
                 "facecam": face,
                 "duration": round(dur, 1),
                 "vod_url": v["vod_url"],
