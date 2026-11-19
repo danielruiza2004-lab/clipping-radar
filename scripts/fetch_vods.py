@@ -218,13 +218,17 @@ def find_peaks(msgs, length, ranges, max_peaks):
         b = i
         while b < n - 1 and b - i < 18 and sig[b + 1] > base[b + 1] * 1.3:
             b += 1
-        # el chat reacciona ~10-20 s tarde: adelantamos el inicio para coger el contexto
-        start = max(0, a * BUCKET - 30)
-        end = min(length, (b + 1) * BUCKET + 5)
+        # el chat reacciona ~5-15 s tarde: el clip va de ~25 s antes del pico a ~10 s después
+        peak_t = i * BUCKET
+        start = max(0, peak_t - 25)
+        end = min(length, peak_t + BUCKET + 8)
         kind = "risa" if laugh[i] * 2 >= hype[i] * 1.5 else "hype"
         peaks.append({
             "start": start,
             "end": end,
+            "peak": peak_t,
+            "peak_hms": hms(peak_t),
+            "laugh_ratio": round(laugh[i] / max(total[i], 1), 2),
             "start_hms": hms(start),
             "end_hms": hms(end),
             "score": round(score[i], 2),
