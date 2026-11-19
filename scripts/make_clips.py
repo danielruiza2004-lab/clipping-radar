@@ -160,12 +160,14 @@ def audio_reaction(vod_url, k):
         if n < 6:
             return 0.0, None
         rms = np.sqrt((x[: n * win].reshape(n, win) ** 2).mean(axis=1) + 1e-9)
-        db = 20 * np.log10(rms + 1e-9)
-        base = float(np.median(db))
+        db = np.maximum(20 * np.log10(rms + 1e-9), 20.0)  # suelo: el silencio no cuenta como "base"
+        base = float(np.percentile(db, 30))
+        if base <= 21:  # tramo casi mudo (silenciado por copyright): no hay reacción medible
+            return 0.0, None
         # pico sostenido (1,5 s) para no reaccionar a un golpe suelto
         sm = np.convolve(db, np.ones(3) / 3, mode="same")
         j = int(np.argmax(sm))
-        return float(sm[j] - base), seg0 + j * 0.5
+        return float(min(sm[j] - base, 25.0)), seg0 + j * 0.5
     except Exception as e:  # noqa: BLE001
         print(f"   (audio no disponible: {e})")
         return 0.0, None
@@ -430,21 +432,44 @@ def download_section(vod_url, a, b, out, fmt="best[height<=1080]/best"):
     if not sel:
         raise RuntimeError("tramo fuera del VOD")
     print(f"   descargando {len(sel)} segmentos ({sel[0][0]:.0f}s-{sel[-1][0] + sel[-1][1]:.0f}s)")
+    import urllib.error
+
+    def fetch(url):
+        for intento in range(3):
+            try:
+                return urllib.request.urlopen(url, timeout=60).read()
+            except urllib.error.HTTPError as e:
+                # trozos silenciados por copyright: Twitch los sirve como "-muted"
+                if e.code in (403, 404) and "-unmuted" in url:
+                    url = url.replace("-unmuted", "-muted")
+                    continue
+                if intento == 2:
+                    raise
+            except Exception:  # noqa: BLE001
+                if intento == 2:
+                    raise
+        raise RuntimeError(f"no se pudo descargar {url.split('?')[0][-60:]}")
+
     part = out + ".part"
     with open(part, "wb") as f:
         if init:
-            f.write(urllib.request.urlopen(init, timeout=60).read())
+            f.write(fetch(init))
         for _, _, url in sel:
-            for intento in range(3):
-                try:
-                    f.write(urllib.request.urlopen(url, timeout=60).read())
-                    break
-                except Exception:  # noqa: BLE001
-                    if intento == 2:
-                        raise
+            f.write(fetch(url))
     # remux: timestamps desde 0 (Twitch guarda la hora original del directo)
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", part, "-map", "0", "-c", "copy",
-                    "-avoid_negative_ts", "make_zero", out], check=True, timeout=300)
+    r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", part, "-map", "0", "-c", "copy",
+                        "-avoid_negative_ts", "make_zero", out], capture_output=True, text=True, timeout=300)
+    ok = r.returncode == 0 and subprocess.run(
+        ["ffprobe", "-v", "error", out], capture_output=True).returncode == 0
+    if not ok:  # diagnóstico para poder arreglarlo
+        with open(part, "rb") as f:
+            head = f.read(48)
+        sample = [ln.split("?")[0][:90] for ln in playlist.splitlines()[:12]]
+        print(f"   DIAG playlist: {sample}")
+        print(f"   DIAG part={os.path.getsize(part)}B head={head[:48]!r} init={'sí' if init else 'no'}")
+        print(f"   DIAG ffmpeg: {r.stderr.strip()[:300]}")
+        os.remove(part)
+        raise RuntimeError("el tramo descargado no es un vídeo válido (ver DIAG)")
     os.remove(part)
     return sel[0][0]
 
