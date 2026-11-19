@@ -44,7 +44,7 @@
     "strong_score": 12,
     "min_clip_views": 20,
     "min_seconds": 20,
-    "max_seconds": 60,
+    "max_seconds": 75,
     "whisper_model": "small"
   }
 }
