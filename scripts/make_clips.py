@@ -93,6 +93,7 @@ def candidates_for_vod(v, cfg):
                 if c["views"] > k.get("own_views", 0):
                     k["own_views"] = c["views"]
                     k["peak"] = c["vod_offset"] + c["duration"] / 2
+                    k["clip_start"], k["clip_end"] = c["vod_offset"], c["vod_offset"] + c["duration"]
                 k["start"], k["end"] = min(k["start"], a), max(k["end"], b)
                 k["hook"] = k["hook"] or clean_hook(c["title"], c["views"])
                 k["source"] = "chat+clips" if k["source"] != "clips" else "clips"
@@ -103,6 +104,7 @@ def candidates_for_vod(v, cfg):
                 "start": a, "end": b, "peak": c["vod_offset"] + c["duration"] / 2,
                 "score": vscore, "type": "hype", "hook": clean_hook(c["title"], c["views"]),
                 "source": "clips", "views": c["views"], "own_views": c["views"],
+                "clip_start": c["vod_offset"], "clip_end": c["vod_offset"] + c["duration"],
             })
     # juntar candidatos que se solapan o están pegados (mismo momento contado dos veces)
     cands.sort(key=lambda k: k["start"])
@@ -114,6 +116,8 @@ def candidates_for_vod(v, cfg):
             best = max((last, k), key=lambda x: (x.get("own_views", 0), x["score"]))
             last["peak"] = best["peak"]
             last["own_views"] = best.get("own_views", 0)
+            if "clip_start" in best:
+                last["clip_start"], last["clip_end"] = best["clip_start"], best["clip_end"]
             last["end"] = max(last["end"], k["end"])
             last["score"] += k["score"]
             last["views"] += k["views"]
@@ -130,10 +134,15 @@ def candidates_for_vod(v, cfg):
 
 
 def fit_window(k, cfg, L):
-    """Duración entre min y max SIN perder el pico (el momento que hizo reír)."""
+    """Duración entre min y max SIN perder el pico ni lo que clipearon los espectadores."""
     if k["end"] - k["start"] > cfg["max_seconds"]:
-        k["start"] = max(k["start"], k["peak"] - cfg["max_seconds"] * 0.6)
-        k["end"] = k["start"] + cfg["max_seconds"]
+        keep_s = min(k.get("clip_start", k["peak"]), k["peak"] - 8)
+        keep_e = max(k.get("clip_end", k["peak"]), k["peak"] + 4)
+        # recortar primero por delante (contexto largo) y luego por detrás
+        k["start"] = max(k["start"], min(keep_s, k["end"] - cfg["max_seconds"]))
+        k["end"] = min(k["end"], max(keep_e, k["start"] + cfg["max_seconds"]))
+        if k["end"] - k["start"] > cfg["max_seconds"]:
+            k["end"] = k["start"] + cfg["max_seconds"]
     d = k["end"] - k["start"]
     if d < cfg["min_seconds"]:
         pad = (cfg["min_seconds"] - d) / 2
@@ -143,14 +152,12 @@ def fit_window(k, cfg, L):
     k["end"] = min(L, k["end"])
 
 
-def audio_reaction(vod_url, k):
-    """Reacción del streamer: descarga solo el AUDIO del tramo y mide subidas bruscas de
-    volumen (gritos, carcajadas). Devuelve (dB por encima de lo normal, segundo del VOD)."""
+def audio_profile(vod_url, a, b):
+    """Volumen (dB cada 0,5 s) del AUDIO del tramo [a, b] del VOD. Devuelve (t0, db) o None."""
     import numpy as np
     tmp = os.path.join(WORK, "audio_probe.m4a")
     try:
-        a, b = max(0, k["start"] - 10), k["end"] + 5
-        seg0 = download_section(vod_url, a, b, tmp, fmt="audio_only/bestaudio/worst")
+        seg0 = download_section(vod_url, max(0, a), b, tmp, fmt="audio_only/bestaudio/worst")
         pcm = subprocess.check_output(
             ["ffmpeg", "-loglevel", "error", "-i", tmp, "-ac", "1", "-ar", "8000", "-f", "s16le", "-"],
             timeout=120)
@@ -158,22 +165,66 @@ def audio_reaction(vod_url, k):
         win = 4000  # 0,5 s
         n = len(x) // win
         if n < 6:
-            return 0.0, None
+            return None
         rms = np.sqrt((x[: n * win].reshape(n, win) ** 2).mean(axis=1) + 1e-9)
-        db = np.maximum(20 * np.log10(rms + 1e-9), 20.0)  # suelo: el silencio no cuenta como "base"
-        base = float(np.percentile(db, 30))
-        if base <= 21:  # tramo casi mudo (silenciado por copyright): no hay reacción medible
-            return 0.0, None
-        # pico sostenido (1,5 s) para no reaccionar a un golpe suelto
-        sm = np.convolve(db, np.ones(3) / 3, mode="same")
-        j = int(np.argmax(sm))
-        return float(min(sm[j] - base, 25.0)), seg0 + j * 0.5
+        return seg0, np.maximum(20 * np.log10(rms + 1e-9), 20.0)  # suelo: el silencio absoluto no cuenta
     except Exception as e:  # noqa: BLE001
         print(f"   (audio no disponible: {e})")
-        return 0.0, None
+        return None
     finally:
         if os.path.exists(tmp):
             os.remove(tmp)
+
+
+def analyze_audio(vod_url, k, cfg):
+    """Reacción del streamer y cortes naturales.
+    - reacción: subida brusca de volumen (gritos, carcajadas) sobre lo normal del tramo
+    - inicio: la última pausa antes de que empiece la situación (no cortar a media frase)
+    - final: cuando la reacción se calma y hay una pausa (la acción termina entera)"""
+    import numpy as np
+    a, b = k["start"] - 20, k["end"] + 25
+    prof = audio_profile(vod_url, a, b)
+    if not prof:
+        return 0.0
+    t0, db = prof
+    base = float(np.percentile(db, 30))
+    if base <= 21:  # tramo mudo (silenciado por copyright): nada que medir
+        return 0.0
+    tt = lambda j: t0 + j * 0.5  # noqa: E731
+    jj = lambda t: int(round((t - t0) / 0.5))  # noqa: E731
+    sm = np.convolve(db, np.ones(3) / 3, mode="same")
+    # reacción: pico sostenido dentro de la ventana original
+    lo, hi = max(jj(k["start"]), 0), min(jj(k["end"]), len(sm) - 1)
+    j = lo + int(np.argmax(sm[lo:hi + 1])) if hi > lo else int(np.argmax(sm))
+    boost = float(min(sm[j] - base, 25.0))
+    if boost >= 8 and k["source"] == "chat":
+        k["peak"] = tt(j)  # el chat se retrasa; el grito marca el momento real
+    peak_j = jj(k["peak"])
+    quiet = db < base + 3  # "pausa": volumen cerca del fondo
+
+    def pause_at(i, need):  # hay "need" medios-segundos seguidos de pausa empezando en i
+        return i >= 0 and i + need <= len(quiet) and bool(quiet[i:i + need].all())
+
+    # inicio: retroceder desde ~12 s antes del pico hasta una pausa (máx. 25 s antes del pico)
+    s_j = None
+    for i in range(peak_j - 24, max(peak_j - 50, 0) - 1, -1):
+        if pause_at(i, 2):
+            s_j = i + 2
+            break
+    # final: avanzar desde ~6 s después del pico hasta que se calme (pausa de 1,5 s), máx. 30 s
+    e_j = None
+    for i in range(peak_j + 12, min(peak_j + 60, len(quiet) - 3)):
+        if pause_at(i, 3):
+            e_j = i + 1
+            break
+    new_s = tt(s_j) if s_j is not None else k["start"]
+    new_e = tt(e_j) if e_j is not None else k["end"]
+    # los clips de espectadores marcan un mínimo: nunca recortar lo que la gente clipeó
+    k["start"] = max(0, min(new_s, k.get("clip_start", new_s)))
+    k["end"] = max(new_e, k.get("clip_end", new_e), k["peak"] + 4)
+    fit_window(k, cfg, k["vod"]["length_seconds"])
+    return boost
+
 
 
 def pick_for_channel(vods, cfg):
@@ -189,14 +240,9 @@ def pick_for_channel(vods, cfg):
             break
     # reacción del streamer: escuchar el audio de cada candidato
     for c in pool:
-        boost, t = audio_reaction(c["vod"]["vod_url"], c)
+        boost = analyze_audio(c["vod"]["vod_url"], c, cfg)
         c["reaction_db"] = round(boost, 1)
         c["score"] += max(0.0, boost - 6) * 0.6   # +0,6 por cada dB por encima de 6 dB
-        if t is not None and boost >= 8 and c["source"] == "chat":
-            # centrar el clip en el grito/carcajada: ~20 s antes y ~10 s después
-            c["peak"] = t
-            c["start"], c["end"] = max(0, t - 20), t + 12
-            fit_window(c, cfg, c["vod"]["length_seconds"])
         print(f"   candidato {c['start']:.0f}s score={c['score']:.1f} reacción={boost:.1f}dB views={c['views']} [{c['source']}]")
     pool.sort(key=lambda c: c["score"], reverse=True)
     chosen = []
@@ -533,7 +579,11 @@ def main():
                 layout = "face" if face else "blur"
                 print(f"   facecam: {face or 'no detectada -> fondo desenfocado'}")
                 # subtítulos solo en los canales en inglés
-                words = transcribe(raw, v["lang"], model) if v["lang"] == "en" else []
+                try:
+                    words = transcribe(raw, v["lang"], model) if v["lang"] == "en" else []
+                except Exception as e:  # noqa: BLE001  — sin subtítulos antes que perder el clip
+                    print(f"   (subtítulos no disponibles: {e})")
+                    words = []
                 ass = os.path.join(WORK, f"{channel}_{n}.ass")
                 with open(ass, "w", encoding="utf-8") as f:
                     f.write(build_ass(words, pad, dur, layout, k["hook"], v["display_name"]))
