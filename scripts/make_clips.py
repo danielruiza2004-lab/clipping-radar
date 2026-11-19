@@ -226,7 +226,6 @@ def analyze_audio(vod_url, k, cfg):
     return boost
 
 
-
 def pick_for_channel(vods, cfg):
     cands = [c for v in vods for c in candidates_for_vod(v, cfg)]
     cands.sort(key=lambda c: c["score"], reverse=True)
