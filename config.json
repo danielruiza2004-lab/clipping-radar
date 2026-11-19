@@ -40,11 +40,11 @@
   "clips": {
     "clips_per_channel": 3,
     "max_clips_per_channel": 5,
-    "min_score": 2.5,
-    "strong_score": 6,
+    "min_score": 4,
+    "strong_score": 12,
     "min_clip_views": 20,
-    "min_seconds": 15,
-    "max_seconds": 90,
+    "min_seconds": 20,
+    "max_seconds": 60,
     "whisper_model": "small"
   }
 }
