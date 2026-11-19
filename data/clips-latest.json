@@ -1,5 +1,131 @@
 {
-  "date": "2026-11-18",
-  "release_tag": "clips-2026-11-18",
-  "clips": []
+  "date": "2026-11-19",
+  "release_tag": "clips-2026-11-19",
+  "clips": [
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "n": 1,
+      "type": "hype",
+      "score": 8.79,
+      "source": "clips",
+      "hook": "gta 6 borrado",
+      "layout": "face",
+      "facecam": [
+        0.0266,
+        0.3308,
+        0.1464,
+        0.2033
+      ],
+      "duration": 41.8,
+      "vod_url": "https://www.twitch.tv/videos/2932595314",
+      "vod_title": "Yo estuve aquí ❤️ - Grand Theft Auto VI #1",
+      "vod_time": "3:59:10",
+      "transcript": "",
+      "file": "2026-11-19_illojuan_01_hype.mp4",
+      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-19/2026-11-19_illojuan_01_hype.mp4",
+      "size_mb": 10.2
+    },
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "n": 2,
+      "type": "risa",
+      "score": 7.63,
+      "source": "chat+clips",
+      "hook": "",
+      "layout": "face",
+      "facecam": [
+        0.026,
+        0.4837,
+        0.1464,
+        0.2033
+      ],
+      "duration": 85,
+      "vod_url": "https://www.twitch.tv/videos/2932866051",
+      "vod_title": "Yo estuve aquí ❤️ - Grand Theft Auto VI #1",
+      "vod_time": "2:49:50",
+      "transcript": "",
+      "file": "2026-11-19_illojuan_02_risa.mp4",
+      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-19/2026-11-19_illojuan_02_risa.mp4",
+      "size_mb": 18.1
+    },
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "n": 3,
+      "type": "hype",
+      "score": 6.69,
+      "source": "clips",
+      "hook": "",
+      "layout": "face",
+      "facecam": [
+        0.0266,
+        0.3294,
+        0.1464,
+        0.2033
+      ],
+      "duration": 26.2,
+      "vod_url": "https://www.twitch.tv/videos/2932595314",
+      "vod_title": "Yo estuve aquí ❤️ - Grand Theft Auto VI #1",
+      "vod_time": "4:01:34",
+      "transcript": "",
+      "file": "2026-11-19_illojuan_03_hype.mp4",
+      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-19/2026-11-19_illojuan_03_hype.mp4",
+      "size_mb": 5.7
+    },
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "n": 4,
+      "type": "risa",
+      "score": 6.5,
+      "source": "chat",
+      "hook": "",
+      "layout": "face",
+      "facecam": [
+        0.026,
+        0.4808,
+        0.1464,
+        0.2033
+      ],
+      "duration": 75,
+      "vod_url": "https://www.twitch.tv/videos/2932866051",
+      "vod_title": "Yo estuve aquí ❤️ - Grand Theft Auto VI #1",
+      "vod_time": "3:58:20",
+      "transcript": "",
+      "file": "2026-11-19_illojuan_04_risa.mp4",
+      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-19/2026-11-19_illojuan_04_risa.mp4",
+      "size_mb": 51.2
+    },
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "n": 5,
+      "type": "hype",
+      "score": 6.39,
+      "source": "clips",
+      "hook": "mucha grasa",
+      "layout": "face",
+      "facecam": [
+        0.0971,
+        0.0028,
+        0.7158,
+        0.9944
+      ],
+      "duration": 43,
+      "vod_url": "https://www.twitch.tv/videos/2932595314",
+      "vod_title": "Yo estuve aquí ❤️ - Grand Theft Auto VI #1",
+      "vod_time": "0:48:17",
+      "transcript": "",
+      "file": "2026-11-19_illojuan_05_hype.mp4",
+      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-19/2026-11-19_illojuan_05_hype.mp4",
+      "size_mb": 11.0
+    }
+  ]
 }
