@@ -457,7 +457,8 @@ def download_section(vod_url, a, b, out, fmt="best[height<=1080]/best"):
         for _, _, url in sel:
             f.write(fetch(url))
     # remux: timestamps desde 0 (Twitch guarda la hora original del directo)
-    r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", part, "-map", "0", "-c", "copy",
+    # solo vídeo y audio: Twitch mete una pista de metadatos (ID3) que rompe el MP4
+    r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", part, "-map", "0:v?", "-map", "0:a?", "-dn", "-c", "copy",
                         "-avoid_negative_ts", "make_zero", out], capture_output=True, text=True, timeout=300)
     ok = r.returncode == 0 and subprocess.run(
         ["ffprobe", "-v", "error", out], capture_output=True).returncode == 0
