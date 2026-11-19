@@ -69,58 +69,138 @@ def clean_hook(title, views=0):
 
 # ---------------------------------------------------------- selección de momentos
 def candidates_for_vod(v, cfg):
+    """Momentos candidatos: picos de risa/hype del chat y clips hechos por los espectadores.
+    Puntuación: chat normalizado (0-6) + visitas de los clips (lo que más pesa)."""
     cands = []
     for p in v.get("chat_peaks", []):
+        peak = p.get("peak", (p["start"] + p["end"]) / 2)
+        chat = min(p["score"], 15) / 15 * 6 + p.get("laugh_ratio", 0) * 3
         cands.append({
-            "start": p["start"], "end": p["end"], "score": p["score"],
-            "type": p["type"], "hook": "", "source": "chat",
+            "start": max(0, peak - 25), "end": peak + 18, "peak": peak, "score": chat,
+            "type": p["type"], "hook": "", "source": "chat", "views": 0,
         })
     for c in v.get("viewer_clips", []):
         if c["views"] < cfg["min_clip_views"]:
             continue
-        a = max(0, c["vod_offset"] - 12)
-        b = c["vod_offset"] + c["duration"] + 6
-        bonus = math.log10(c["views"] + 1) * 1.5
+        a = max(0, c["vod_offset"] - 8)
+        b = c["vod_offset"] + c["duration"] + 3
+        vscore = 4 * math.log10(c["views"] + 1)
         merged = False
         for k in cands:
-            if k["source"] == "chat" and a < k["end"] and b > k["start"]:
-                k["score"] += bonus
-                k["start"] = min(k["start"], a)
-                k["end"] = max(k["end"], b)
+            if a < k["end"] and b > k["start"]:
+                k["score"] += vscore
+                k["views"] += c["views"]
+                if c["views"] > k.get("own_views", 0):
+                    k["own_views"] = c["views"]
+                    k["peak"] = c["vod_offset"] + c["duration"] / 2
+                k["start"], k["end"] = min(k["start"], a), max(k["end"], b)
                 k["hook"] = k["hook"] or clean_hook(c["title"], c["views"])
-                k["source"] = "chat+clips"
+                k["source"] = "chat+clips" if k["source"] != "clips" else "clips"
                 merged = True
                 break
         if not merged:
             cands.append({
-                "start": a, "end": b, "score": 2 + bonus, "type": "hype",
-                "hook": clean_hook(c["title"], c["views"]), "source": "clips",
+                "start": a, "end": b, "peak": c["vod_offset"] + c["duration"] / 2,
+                "score": vscore, "type": "hype", "hook": clean_hook(c["title"], c["views"]),
+                "source": "clips", "views": c["views"], "own_views": c["views"],
             })
-    # duración entre min y max
-    L = v["length_seconds"]
+    # juntar candidatos que se solapan o están pegados (mismo momento contado dos veces)
+    cands.sort(key=lambda k: k["start"])
+    merged_list = []
     for k in cands:
-        d = k["end"] - k["start"]
-        if d < cfg["min_seconds"]:
-            pad = (cfg["min_seconds"] - d) / 2
-            k["start"] -= pad
-            k["end"] += pad
-        if k["end"] - k["start"] > cfg["max_seconds"]:
-            k["end"] = k["start"] + cfg["max_seconds"]
-        k["start"] = max(0, k["start"])
-        k["end"] = min(L, k["end"])
+        last = merged_list[-1] if merged_list else None
+        if last and k["start"] <= last["end"] + 5:
+            # centrar en lo que más gente clipeó; si nadie lo clipeó, en el pico del chat
+            best = max((last, k), key=lambda x: (x.get("own_views", 0), x["score"]))
+            last["peak"] = best["peak"]
+            last["own_views"] = best.get("own_views", 0)
+            last["end"] = max(last["end"], k["end"])
+            last["score"] += k["score"]
+            last["views"] += k["views"]
+            last["hook"] = last["hook"] or k["hook"]
+            if k["source"] != last["source"]:
+                last["source"] = "chat+clips"
+        else:
+            merged_list.append(dict(k))
+    L = v["length_seconds"]
+    for k in merged_list:
+        fit_window(k, cfg, L)
         k["vod"] = v
-    return cands
+    return merged_list
+
+
+def fit_window(k, cfg, L):
+    """Duración entre min y max SIN perder el pico (el momento que hizo reír)."""
+    if k["end"] - k["start"] > cfg["max_seconds"]:
+        k["start"] = max(k["start"], k["peak"] - cfg["max_seconds"] * 0.6)
+        k["end"] = k["start"] + cfg["max_seconds"]
+    d = k["end"] - k["start"]
+    if d < cfg["min_seconds"]:
+        pad = (cfg["min_seconds"] - d) / 2
+        k["start"] -= pad
+        k["end"] += pad
+    k["start"] = max(0, k["start"])
+    k["end"] = min(L, k["end"])
+
+
+def audio_reaction(vod_url, k):
+    """Reacción del streamer: descarga solo el AUDIO del tramo y mide subidas bruscas de
+    volumen (gritos, carcajadas). Devuelve (dB por encima de lo normal, segundo del VOD)."""
+    import numpy as np
+    tmp = os.path.join(WORK, "audio_probe.m4a")
+    try:
+        a, b = max(0, k["start"] - 10), k["end"] + 5
+        seg0 = download_section(vod_url, a, b, tmp, fmt="audio_only/bestaudio/worst")
+        pcm = subprocess.check_output(
+            ["ffmpeg", "-loglevel", "error", "-i", tmp, "-ac", "1", "-ar", "8000", "-f", "s16le", "-"],
+            timeout=120)
+        x = np.frombuffer(pcm, dtype=np.int16).astype(np.float32)
+        win = 4000  # 0,5 s
+        n = len(x) // win
+        if n < 6:
+            return 0.0, None
+        rms = np.sqrt((x[: n * win].reshape(n, win) ** 2).mean(axis=1) + 1e-9)
+        db = 20 * np.log10(rms + 1e-9)
+        base = float(np.median(db))
+        # pico sostenido (1,5 s) para no reaccionar a un golpe suelto
+        sm = np.convolve(db, np.ones(3) / 3, mode="same")
+        j = int(np.argmax(sm))
+        return float(sm[j] - base), seg0 + j * 0.5
+    except Exception as e:  # noqa: BLE001
+        print(f"   (audio no disponible: {e})")
+        return 0.0, None
+    finally:
+        if os.path.exists(tmp):
+            os.remove(tmp)
 
 
 def pick_for_channel(vods, cfg):
     cands = [c for v in vods for c in candidates_for_vod(v, cfg)]
     cands.sort(key=lambda c: c["score"], reverse=True)
-    chosen = []
+    # quitar solapes, quedarse con los mejores candidatos
+    pool = []
     for c in cands:
+        if any(c["vod"]["vod_id"] == o["vod"]["vod_id"] and c["start"] < o["end"] and c["end"] > o["start"] for o in pool):
+            continue
+        pool.append(c)
+        if len(pool) >= cfg["max_clips_per_channel"] * 3:
+            break
+    # reacción del streamer: escuchar el audio de cada candidato
+    for c in pool:
+        boost, t = audio_reaction(c["vod"]["vod_url"], c)
+        c["reaction_db"] = round(boost, 1)
+        c["score"] += max(0.0, boost - 6) * 0.6   # +0,6 por cada dB por encima de 6 dB
+        if t is not None and boost >= 8 and c["source"] == "chat":
+            # centrar el clip en el grito/carcajada: ~20 s antes y ~10 s después
+            c["peak"] = t
+            c["start"], c["end"] = max(0, t - 20), t + 12
+            fit_window(c, cfg, c["vod"]["length_seconds"])
+        print(f"   candidato {c['start']:.0f}s score={c['score']:.1f} reacción={boost:.1f}dB views={c['views']} [{c['source']}]")
+    pool.sort(key=lambda c: c["score"], reverse=True)
+    chosen = []
+    for c in pool:
         if c["score"] < cfg["min_score"]:
             break
-        if any(c["vod"]["vod_id"] == o["vod"]["vod_id"] and c["start"] < o["end"] and c["end"] > o["start"] for o in chosen):
-            continue
         n = len(chosen)
         if n >= cfg["max_clips_per_channel"]:
             break
@@ -324,7 +404,7 @@ def detect_facecam(src, start, dur):
     return (round(x0 / ww, 4), round(y0 / hh, 4), round(bw / ww, 4), round(bh / hh, 4))
 
 
-def download_section(vod_url, a, b, out):
+def download_section(vod_url, a, b, out, fmt="best[height<=1080]/best"):
     """Descarga SOLO los segmentos HLS del VOD que cubren [a, b] (segundos).
     Devuelve el segundo del VOD en el que empieza el archivo descargado."""
     import urllib.request
