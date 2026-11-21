@@ -1,0 +1,1201 @@
+{
+  "generated_at": "2026-11-21T04:29:18.705399+00:00",
+  "since": "2026-11-19T22:29:18.705399+00:00",
+  "vods": [
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "vod_id": "2935071086",
+      "vod_url": "https://www.twitch.tv/videos/2935071086",
+      "title": "EL ÚLTIMO ROMÁNTICO 🌹 LUCÍA SIMP GAMEPLAY 🙇 - Grand Theft Auto VI #3",
+      "game": "Grand Theft Auto VI",
+      "created_at": "2026-11-20T16:45:20Z",
+      "length_seconds": 35170,
+      "length_hms": "9:46:10",
+      "gta_ranges": [
+        {
+          "start_hms": "0:00:00",
+          "end_hms": "9:46:10"
+        }
+      ],
+      "chat_peaks": [
+        {
+          "start": 4975,
+          "end": 5018,
+          "peak": 5000,
+          "peak_hms": "1:23:20",
+          "laugh_ratio": 0.02,
+          "start_hms": "1:22:55",
+          "end_hms": "1:23:38",
+          "score": 6.63,
+          "type": "hype",
+          "msgs_per_10s": 109,
+          "chat_sample": [
+            "o7",
+            "o7 ͏",
+            "diush",
+            "o7",
+            "o7",
+            "o7 ͏",
+            "F",
+            "o7",
+            "que saquen la play 6 para Roberto Sisi",
+            "o7",
+            "Wasted",
+            "WASTED"
+          ]
+        },
+        {
+          "start": 7645,
+          "end": 7688,
+          "peak": 7670,
+          "peak_hms": "2:07:50",
+          "laugh_ratio": 0.48,
+          "start_hms": "2:07:25",
+          "end_hms": "2:08:08",
+          "score": 11.89,
+          "type": "risa",
+          "msgs_per_10s": 100,
+          "chat_sample": [
+            "Guarda con las armas para el intento del otro tenga lo mismo",
+            "HAHAH",
+            "Buenisomaaaa",
+            "OOOO",
+            "LUL LUL LUL",
+            "está al nivel de Dolores  del ano",
+            "KEK",
+            "LOL",
+            "Jajajjajajaja",
+            "AJKSHAKSJHAKJ",
+            "jijiji jijiji",
+            "LOL"
+          ]
+        },
+        {
+          "start": 10695,
+          "end": 10738,
+          "peak": 10720,
+          "peak_hms": "2:58:40",
+          "laugh_ratio": 0.05,
+          "start_hms": "2:58:15",
+          "end_hms": "2:58:58",
+          "score": 6.81,
+          "type": "hype",
+          "msgs_per_10s": 60,
+          "chat_sample": [
+            "o7",
+            "nt",
+            "😂😂😂😂😂",
+            "o7",
+            "Casiii",
+            "o7",
+            "Ufff",
+            "o7",
+            "me encanta la iluminacion de noche",
+            "o7 o7",
+            "o7 ͏",
+            "o 7"
+          ]
+        },
+        {
+          "start": 11755,
+          "end": 11798,
+          "peak": 11780,
+          "peak_hms": "3:16:20",
+          "laugh_ratio": 0.4,
+          "start_hms": "3:15:55",
+          "end_hms": "3:16:38",
+          "score": 8.38,
+          "type": "risa",
+          "msgs_per_10s": 104,
+          "chat_sample": [
+            "KIASJJAjASJAsjsaJAJS",
+            "BAN",
+            "L",
+            "jajajajajaja",
+            "JAJASJJASJAJ",
+            "dioooo",
+            "L",
+            "F culo",
+            "ee",
+            "JKASDJKHASDJKHADSJksda",
+            "JAJAJAAJ",
+            "JAJAJAJ"
+          ]
+        },
+        {
+          "start": 15335,
+          "end": 15378,
+          "peak": 15360,
+          "peak_hms": "4:16:00",
+          "laugh_ratio": 0.27,
+          "start_hms": "4:15:35",
+          "end_hms": "4:16:18",
+          "score": 6.52,
+          "type": "risa",
+          "msgs_per_10s": 108,
+          "chat_sample": [
+            "Dep miguel",
+            "BANGER",
+            "BANGER",
+            "jajajaja",
+            "temazo",
+            "BANGER",
+            "BANGER OOOO",
+            "JAJAJAJAJAJAJAJAJJAJAJA",
+            "OOOO",
+            "KJSADKJSADKJSASAKDJ",
+            "Radio Danirep",
+            "illojuanBOFF"
+          ]
+        },
+        {
+          "start": 27795,
+          "end": 27838,
+          "peak": 27820,
+          "peak_hms": "7:43:40",
+          "laugh_ratio": 0.25,
+          "start_hms": "7:43:15",
+          "end_hms": "7:43:58",
+          "score": 10.16,
+          "type": "hype",
+          "msgs_per_10s": 116,
+          "chat_sample": [
+            "KEK",
+            "paid actor",
+            "W",
+            "Cuánto llevas de historia Juan?",
+            "gracias maricondeconfianza",
+            "jajajajja",
+            "KEK",
+            "W",
+            "W",
+            "W",
+            "maricondeconfianzxa",
+            "JKSAKJSAKJSAJK"
+          ]
+        },
+        {
+          "start": 30705,
+          "end": 30748,
+          "peak": 30730,
+          "peak_hms": "8:32:10",
+          "laugh_ratio": 0.03,
+          "start_hms": "8:31:45",
+          "end_hms": "8:32:28",
+          "score": 7.6,
+          "type": "hype",
+          "msgs_per_10s": 107,
+          "chat_sample": [
+            "boff de aquí se sacan unas buenas patas de jamón",
+            "OOOO",
+            "o7",
+            "OOOO",
+            "o7 donnie 07",
+            "NOOOO ͏",
+            "D:",
+            "BOOOOOOOOOOF",
+            "o7",
+            "D:",
+            "OOOO",
+            "QUEEEEEE"
+          ]
+        },
+        {
+          "start": 31565,
+          "end": 31608,
+          "peak": 31590,
+          "peak_hms": "8:46:30",
+          "laugh_ratio": 0.0,
+          "start_hms": "8:46:05",
+          "end_hms": "8:46:48",
+          "score": 8.6,
+          "type": "hype",
+          "msgs_per_10s": 79,
+          "chat_sample": [
+            "w ajedrecista",
+            "W",
+            "OOOO",
+            "Ojitoo",
+            "W",
+            "OOOO",
+            "Es que se quedo jugando Gta VI",
+            "W grandeeeee",
+            "W",
+            "W",
+            "W",
+            "W"
+          ]
+        }
+      ],
+      "viewer_clips": [
+        {
+          "title": "toma gato",
+          "views": 2221,
+          "vod_offset": 6729,
+          "vod_offset_hms": "1:52:09",
+          "duration": 13.3,
+          "url": "https://www.twitch.tv/illojuan/clip/DignifiedAggressiveZebraCoolStoryBro-Jx6dSpRu2uUcadeI"
+        },
+        {
+          "title": "La serpiente",
+          "views": 1554,
+          "vod_offset": 11825,
+          "vod_offset_hms": "3:17:05",
+          "duration": 19.9,
+          "url": "https://www.twitch.tv/illojuan/clip/ObeseBenevolentKalePanicBasket-GgzSln1vRdDwXq-D"
+        },
+        {
+          "title": "W escribido! de los creadores de Haiga",
+          "views": 520,
+          "vod_offset": 1624,
+          "vod_offset_hms": "0:27:04",
+          "duration": 12.9,
+          "url": "https://www.twitch.tv/illojuan/clip/HeadstrongTrustworthyPeppermintArgieB8-2_kgGGsEXm-lPR5p"
+        },
+        {
+          "title": "GOLPEA A UN GATO EN DIRECTO",
+          "views": 360,
+          "vod_offset": 6751,
+          "vod_offset_hms": "1:52:31",
+          "duration": 35,
+          "url": "https://www.twitch.tv/illojuan/clip/SavageKathishHamburgerImGlitch-sBAqy6Ohk4rxrlLV"
+        },
+        {
+          "title": "vaya trickshot",
+          "views": 342,
+          "vod_offset": 8554,
+          "vod_offset_hms": "2:22:34",
+          "duration": 30,
+          "url": "https://www.twitch.tv/illojuan/clip/RacySourDolphinWholeWheat-8ga5Dh6_SPm4e6sm"
+        },
+        {
+          "title": "HAHAHAHAHAHHAHA",
+          "views": 331,
+          "vod_offset": 25906,
+          "vod_offset_hms": "7:11:46",
+          "duration": 16.2,
+          "url": "https://www.twitch.tv/illojuan/clip/GrotesqueCrazyMouseYouDontSay-BEO5OVeO9w7l9oOH"
+        },
+        {
+          "title": "que miras?",
+          "views": 321,
+          "vod_offset": 19096,
+          "vod_offset_hms": "5:18:16",
+          "duration": 30,
+          "url": "https://www.twitch.tv/illojuan/clip/ProudJoyousScallionNerfBlueBlaster-Y7ABvPksO8HFwbAM"
+        },
+        {
+          "title": "multita fresh",
+          "views": 253,
+          "vod_offset": 2092,
+          "vod_offset_hms": "0:34:52",
+          "duration": 30,
+          "url": "https://www.twitch.tv/illojuan/clip/PreciousCleanRutabagaItsBoshyTime-4Waf1dn0M02_oot7"
+        },
+        {
+          "title": "PSICOPATA AJAJAJA",
+          "views": 200,
+          "vod_offset": 5119,
+          "vod_offset_hms": "1:25:19",
+          "duration": 42.9,
+          "url": "https://www.twitch.tv/illojuan/clip/VivaciousRoughSalsifyDuDudu-J3bHw3zDqQUZLhlm"
+        },
+        {
+          "title": "W MICHAEL JACKSON",
+          "views": 176,
+          "vod_offset": 15388,
+          "vod_offset_hms": "4:16:28",
+          "duration": 30,
+          "url": "https://www.twitch.tv/illojuan/clip/ShinyPoisedRhinocerosMau5-dfq7H-qPZ1NWWSHI"
+        },
+        {
+          "title": "caca",
+          "views": 176,
+          "vod_offset": 18287,
+          "vod_offset_hms": "5:04:47",
+          "duration": 15.9,
+          "url": "https://www.twitch.tv/illojuan/clip/SmellySweetGrassTTours-92lG06mSToVzO4Bj"
+        },
+        {
+          "title": "Boing",
+          "views": 151,
+          "vod_offset": 18998,
+          "vod_offset_hms": "5:16:38",
+          "duration": 25.2,
+          "url": "https://www.twitch.tv/illojuan/clip/AwkwardUninterestedCocoaMrDestructoid-MguSGiWC7tHiDzm7"
+        },
+        {
+          "title": "Hola :D",
+          "views": 114,
+          "vod_offset": 19077,
+          "vod_offset_hms": "5:17:57",
+          "duration": 9.9,
+          "url": "https://www.twitch.tv/illojuan/clip/JoyousBoxyDragonflyDatSheffy-qul6IEfm7O_5dm0m"
+        },
+        {
+          "title": "5 estrella e",
+          "views": 112,
+          "vod_offset": 7065,
+          "vod_offset_hms": "1:57:45",
+          "duration": 5,
+          "url": "https://www.twitch.tv/illojuan/clip/TameHonestDragonHumbleLife-HJEJ3g4cLrIuvJkt"
+        },
+        {
+          "title": "Coño venezolano",
+          "views": 108,
+          "vod_offset": 8476,
+          "vod_offset_hms": "2:21:16",
+          "duration": 6.9,
+          "url": "https://www.twitch.tv/illojuan/clip/FrozenAltruisticFinchAMPEnergy-wpu-tE6BIfpXrpcw"
+        }
+      ]
+    },
+    {
+      "channel": "xqc",
+      "display_name": "xQc",
+      "lang": "en",
+      "vod_id": "2935383720",
+      "vod_url": "https://www.twitch.tv/videos/2935383720",
+      "title": "🥊60 FPS🥊GTA 6 PLAYTHROUGH🥊LIVE🥊FINISHING THE GAME PERHAPS🥊LOCK IT IN🥊BEST GTA 6 AIMER🥊BEST GTA 6 DRIVER🥊BEST GTA 6 PLAYER🥊",
+      "game": "Just Chatting",
+      "created_at": "2026-11-20T21:35:21Z",
+      "length_seconds": 24919,
+      "length_hms": "6:55:19",
+      "gta_ranges": [
+        {
+          "start_hms": "0:28:49",
+          "end_hms": "0:28:49"
+        }
+      ],
+      "chat_peaks": [],
+      "viewer_clips": [
+        {
+          "title": "im acc cryinhg",
+          "views": 28,
+          "vod_offset": 11681,
+          "vod_offset_hms": "3:14:41",
+          "duration": 42.4,
+          "url": "https://www.twitch.tv/xqc/clip/DifferentProudCheeseFutureMan-J6NKch0NAmpPCK75"
+        },
+        {
+          "title": "13 YEARS BTW",
+          "views": 22,
+          "vod_offset": 2724,
+          "vod_offset_hms": "0:45:24",
+          "duration": 15.9,
+          "url": "https://www.twitch.tv/xqc/clip/EncouragingFlaccidBobaWutFace-wXF5gAfA2PxaTMVU"
+        },
+        {
+          "title": "piercings",
+          "views": 19,
+          "vod_offset": 14433,
+          "vod_offset_hms": "4:00:33",
+          "duration": 5,
+          "url": "https://www.twitch.tv/xqc/clip/CorrectCogentDragonflyKeyboardCat-ECzQvPMu0OcsFjpB"
+        },
+        {
+          "title": "Mountains brother! XQC doing his job!",
+          "views": 18,
+          "vod_offset": 19488,
+          "vod_offset_hms": "5:24:48",
+          "duration": 27.2,
+          "url": "https://www.twitch.tv/xqc/clip/RudeCogentAxeSMOrc-7OhxDfDLkQ0zrmEL"
+        },
+        {
+          "title": "Cancelled",
+          "views": 15,
+          "vod_offset": 1241,
+          "vod_offset_hms": "0:20:41",
+          "duration": 13.1,
+          "url": "https://www.twitch.tv/xqc/clip/BillowingSmallClamPJSugar-RLGA9PIp5fh1YfH3"
+        },
+        {
+          "title": "that melody",
+          "views": 11,
+          "vod_offset": 8234,
+          "vod_offset_hms": "2:17:14",
+          "duration": 10.5,
+          "url": "https://www.twitch.tv/xqc/clip/CleverHonestPassionfruitDxCat-0vRcC-gBXR2m_yAW"
+        },
+        {
+          "title": "GOTY",
+          "views": 10,
+          "vod_offset": 6173,
+          "vod_offset_hms": "1:42:53",
+          "duration": 57.5,
+          "url": "https://www.twitch.tv/xqc/clip/RealRudeChoughPRChase-YlSnU4r8Xoh7jlgi"
+        },
+        {
+          "title": "goon bank",
+          "views": 9,
+          "vod_offset": 19749,
+          "vod_offset_hms": "5:29:09",
+          "duration": 20.3,
+          "url": "https://www.twitch.tv/xqc/clip/OilyAcceptableWombatBCWarrior-_mB8cU-RkIflZ-3c"
+        },
+        {
+          "title": "larp larp sahur",
+          "views": 9,
+          "vod_offset": 2611,
+          "vod_offset_hms": "0:43:31",
+          "duration": 42.9,
+          "url": "https://www.twitch.tv/xqc/clip/RudeTemperedWrenchResidentSleeper-GZJLz-06NVHLCj8S"
+        },
+        {
+          "title": "surtado",
+          "views": 8,
+          "vod_offset": 19630,
+          "vod_offset_hms": "5:27:10",
+          "duration": 30.3,
+          "url": "https://www.twitch.tv/xqc/clip/MushyDependableTurtleHeyGirl-adpZT5jtN9A4cOD3"
+        },
+        {
+          "title": "L..",
+          "views": 8,
+          "vod_offset": 19981,
+          "vod_offset_hms": "5:33:01",
+          "duration": 14.9,
+          "url": "https://www.twitch.tv/xqc/clip/FriendlyTransparentYakLitty-sjZTMmD_DaKz72at"
+        },
+        {
+          "title": "xqc",
+          "views": 7,
+          "vod_offset": 11138,
+          "vod_offset_hms": "3:05:38",
+          "duration": 22.3,
+          "url": "https://www.twitch.tv/xqc/clip/GoodDarkKiwiBIRB-IpklCdSe11Qpb8Ab"
+        },
+        {
+          "title": "schi izo jason",
+          "views": 7,
+          "vod_offset": 12743,
+          "vod_offset_hms": "3:32:23",
+          "duration": 60,
+          "url": "https://www.twitch.tv/xqc/clip/ToughDignifiedPuffinDoritosChip-r9qpOq_0WtIzeI4r"
+        },
+        {
+          "title": "xQc wrecked the car he had to deliver",
+          "views": 6,
+          "vod_offset": 3697,
+          "vod_offset_hms": "1:01:37",
+          "duration": 30,
+          "url": "https://www.twitch.tv/xqc/clip/TriangularCaringCheeseHotPokket-Q5MH4BN7_fB3fvbI"
+        },
+        {
+          "title": "GTA dialogue LMFAO",
+          "views": 6,
+          "vod_offset": 5380,
+          "vod_offset_hms": "1:29:40",
+          "duration": 30,
+          "url": "https://www.twitch.tv/xqc/clip/SwissTemperedSnakePeanutButterJellyTime-VFpKSACkcVI4SZvE"
+        }
+      ]
+    },
+    {
+      "channel": "kaicenat",
+      "display_name": "KaiCenat",
+      "lang": "en",
+      "vod_id": "2935613960",
+      "vod_url": "https://www.twitch.tv/videos/2935613960",
+      "title": "BEATING GTA 6 RIGHT NOW *FINALE*",
+      "game": "Grand Theft Auto VI",
+      "created_at": "2026-11-21T01:17:10Z",
+      "length_seconds": 11689,
+      "length_hms": "3:14:49",
+      "gta_ranges": [
+        {
+          "start_hms": "0:00:00",
+          "end_hms": "3:14:49"
+        }
+      ],
+      "chat_peaks": [
+        {
+          "start": 4205,
+          "end": 4248,
+          "peak": 4230,
+          "peak_hms": "1:10:30",
+          "laugh_ratio": 0.0,
+          "start_hms": "1:10:05",
+          "end_hms": "1:10:48",
+          "score": 7.29,
+          "type": "hype",
+          "msgs_per_10s": 71,
+          "chat_sample": [
+            "W 50",
+            "WW 50",
+            "W gifted",
+            "WWWWWWW 50",
+            "WW 50",
+            "Wwww",
+            "gas station for the meds",
+            "W",
+            "W Sub",
+            "WWW",
+            "WW 50",
+            "W"
+          ]
+        },
+        {
+          "start": 5185,
+          "end": 5228,
+          "peak": 5210,
+          "peak_hms": "1:26:50",
+          "laugh_ratio": 0.49,
+          "start_hms": "1:26:25",
+          "end_hms": "1:27:08",
+          "score": 8.52,
+          "type": "risa",
+          "msgs_per_10s": 81,
+          "chat_sample": [
+            "hahahahaha",
+            "LMAO",
+            "Hahahahahahahahah",
+            "Ngga",
+            "LOLLL",
+            "LOL",
+            "LMAOAMOAOAOOO.",
+            "?????????????",
+            "lmaoo",
+            "Loooool",
+            "LOL",
+            "LOL"
+          ]
+        },
+        {
+          "start": 6285,
+          "end": 6328,
+          "peak": 6310,
+          "peak_hms": "1:45:10",
+          "laugh_ratio": 0.0,
+          "start_hms": "1:44:45",
+          "end_hms": "1:45:28",
+          "score": 4.73,
+          "type": "hype",
+          "msgs_per_10s": 56,
+          "chat_sample": [
+            "GAYYYYY",
+            "wwwwwwwwwwwwww",
+            "noob",
+            "W",
+            "OKC Finally",
+            "WWWW",
+            "W",
+            "W",
+            "W",
+            "WWWWW",
+            "W",
+            "W"
+          ]
+        },
+        {
+          "start": 6485,
+          "end": 6528,
+          "peak": 6510,
+          "peak_hms": "1:48:30",
+          "laugh_ratio": 0.02,
+          "start_hms": "1:48:05",
+          "end_hms": "1:48:48",
+          "score": 3.55,
+          "type": "hype",
+          "msgs_per_10s": 42,
+          "chat_sample": [
+            "Bro The story",
+            "b caldwell classic",
+            "Wwww",
+            "Lucia gaining weigh",
+            "WWWWWW",
+            "Appearance is hair too",
+            "YOU TRIED EVERYTHANG!!!!",
+            "WWW",
+            "masivo WWWWWWWWWWWW",
+            "WWW",
+            "CHANGE HAIR",
+            "w you taking your time n enjoying"
+          ]
+        },
+        {
+          "start": 7395,
+          "end": 7438,
+          "peak": 7420,
+          "peak_hms": "2:03:40",
+          "laugh_ratio": 0.1,
+          "start_hms": "2:03:15",
+          "end_hms": "2:03:58",
+          "score": 3.4,
+          "type": "hype",
+          "msgs_per_10s": 51,
+          "chat_sample": [
+            "WW VAPE",
+            "itssti17Chick itssti17Chick itssti17Chick itssti17Chick itssti17Chick itssti17Chick",
+            "DinoDance",
+            "number 2",
+            "WWW SIBG",
+            "TwitchConHYPE TwitchConHYPE TwitchConHYPE TwitchConHYPE TwitchConHYPE TwitchConHYPE TwitchConHYPE TwitchConHYPE TwitchConHYPE TwitchConHYPE TwitchConHYPE TwitchConHYPE",
+            "Ayeeeeeee 😂😂😂😂❤️‍🔥",
+            "W chat I love y’all !!!",
+            "x24Beedance KittyHype",
+            "7",
+            "BUBBLE GUTS!!!!",
+            "You have to have a strong relationship with Lucia bro"
+          ]
+        },
+        {
+          "start": 9005,
+          "end": 9048,
+          "peak": 9030,
+          "peak_hms": "2:30:30",
+          "laugh_ratio": 0.37,
+          "start_hms": "2:30:05",
+          "end_hms": "2:30:48",
+          "score": 5.05,
+          "type": "risa",
+          "msgs_per_10s": 59,
+          "chat_sample": [
+            "😂😂😂",
+            "AIRED :(",
+            "loollol",
+            "She sleep tn lol",
+            "kaicCryy kaicCryy",
+            "🤣🤣🤣🤣",
+            "Loll",
+            "Yoooo",
+            "Fahhhh",
+            "HOLD",
+            "LUL",
+            "Lmfao"
+          ]
+        },
+        {
+          "start": 10775,
+          "end": 10818,
+          "peak": 10800,
+          "peak_hms": "3:00:00",
+          "laugh_ratio": 0.0,
+          "start_hms": "2:59:35",
+          "end_hms": "3:00:18",
+          "score": 4.42,
+          "type": "hype",
+          "msgs_per_10s": 57,
+          "chat_sample": [
+            "ew?",
+            "Daaaaaamn",
+            "ewwwwwww",
+            "Ouuuu",
+            "kaicQM kaicQM kaicQM kaicQM kaicQM",
+            "W IQ",
+            "Save save save save",
+            "WWWWWWWWWW",
+            "WWWWWW",
+            "WW IQ",
+            "WW IQ",
+            "Wwwwwwwwwwww"
+          ]
+        },
+        {
+          "start": 11405,
+          "end": 11448,
+          "peak": 11430,
+          "peak_hms": "3:10:30",
+          "laugh_ratio": 0.03,
+          "start_hms": "3:10:05",
+          "end_hms": "3:10:48",
+          "score": 2.92,
+          "type": "hype",
+          "msgs_per_10s": 68,
+          "chat_sample": [
+            "well, accurate",
+            "GG",
+            "kaicMug kaicMug kaicMug",
+            "Oop",
+            "GOOOOOOOOOOOOOOOO",
+            "Great body",
+            "Lmao what typa description",
+            "OH SHIT",
+            "OMG GG",
+            "GGGZZZZZ",
+            "GG",
+            "BRROOOOOOOO I SAID BOAT"
+          ]
+        }
+      ],
+      "viewer_clips": [
+        {
+          "title": "Ayo 😭😭😭😭😭",
+          "views": 8,
+          "vod_offset": 5219,
+          "vod_offset_hms": "1:26:59",
+          "duration": 15,
+          "url": "https://www.twitch.tv/kaicenat/clip/UnsightlyIgnorantEmuM4xHeh-78J-4at7nCh5_FRt"
+        },
+        {
+          "title": "on plane",
+          "views": 7,
+          "vod_offset": 250,
+          "vod_offset_hms": "0:04:10",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/ComfortableDullMonkeyNotATK-cLfP6RssBRqoR-WA"
+        },
+        {
+          "title": "GTA6",
+          "views": 7,
+          "vod_offset": 2642,
+          "vod_offset_hms": "0:44:02",
+          "duration": 59,
+          "url": "https://www.twitch.tv/kaicenat/clip/EsteemedAbrasiveMangetoutDatBoi-MjT8g_pff7PgiSPX"
+        },
+        {
+          "title": ".",
+          "views": 6,
+          "vod_offset": 470,
+          "vod_offset_hms": "0:07:50",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/DreamyDarkDragonfruitSaltBae-dTXT6gYJw_weVN27"
+        },
+        {
+          "title": "Kai Cenat",
+          "views": 6,
+          "vod_offset": 10390,
+          "vod_offset_hms": "2:53:10",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/SavoryRealWormWutFace-qmazjnlxfBMgKO4L"
+        },
+        {
+          "title": "getting away from the cops",
+          "views": 5,
+          "vod_offset": 10744,
+          "vod_offset_hms": "2:59:04",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/EnthusiasticMushyJaguarTBTacoLeft-QQ249i8laDL5XrMS"
+        },
+        {
+          "title": "KAI NOT VAULT VOTE",
+          "views": 5,
+          "vod_offset": 6364,
+          "vod_offset_hms": "1:46:04",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/AltruisticSlickCookieMVGame-Z0b7TeDm0VLxDkj5"
+        },
+        {
+          "title": "kai plays GTA 6",
+          "views": 5,
+          "vod_offset": 9671,
+          "vod_offset_hms": "2:41:11",
+          "duration": 58,
+          "url": "https://www.twitch.tv/kaicenat/clip/SinglePreciousGrouseWow-JM2YWCKZ-CdUcDTB"
+        },
+        {
+          "title": "cops everywhere",
+          "views": 5,
+          "vod_offset": 8558,
+          "vod_offset_hms": "2:22:38",
+          "duration": 43,
+          "url": "https://www.twitch.tv/kaicenat/clip/HelpfulTentativeHummingbirdVoteNay-z65lfwPBSRVvZQDt"
+        },
+        {
+          "title": "gta finale",
+          "views": 5,
+          "vod_offset": 726,
+          "vod_offset_hms": "0:12:06",
+          "duration": 59,
+          "url": "https://www.twitch.tv/kaicenat/clip/BlindingSpoopyOilDoritosChip-kP68W4U_QRbS5idn"
+        },
+        {
+          "title": "kai in his finale",
+          "views": 4,
+          "vod_offset": 4120,
+          "vod_offset_hms": "1:08:40",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/YawningTiredOxPunchTrees-YU-gOWxzZS12dHD5"
+        },
+        {
+          "title": "Kai Cenat",
+          "views": 4,
+          "vod_offset": 1412,
+          "vod_offset_hms": "0:23:32",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/PerfectSpikyTriangleWTRuck-nTF6u7SkpE_t7Wl0"
+        },
+        {
+          "title": "OMGGG",
+          "views": 4,
+          "vod_offset": 324,
+          "vod_offset_hms": "0:05:24",
+          "duration": 13.1,
+          "url": "https://www.twitch.tv/kaicenat/clip/FancyBlightedAardvarkNononoCat-qtsk-8sa41Th458P"
+        },
+        {
+          "title": "deposit box",
+          "views": 4,
+          "vod_offset": 1562,
+          "vod_offset_hms": "0:26:02",
+          "duration": 57.2,
+          "url": "https://www.twitch.tv/kaicenat/clip/FragileElegantAlligatorTooSpicy-qtg-59sLHscZm-aD"
+        },
+        {
+          "title": "GTA6",
+          "views": 4,
+          "vod_offset": 5341,
+          "vod_offset_hms": "1:29:01",
+          "duration": 60,
+          "url": "https://www.twitch.tv/kaicenat/clip/RamshackleHelpfulAsparagusPJSugar-LyI9AL1lY1RzOwDZ"
+        }
+      ]
+    },
+    {
+      "channel": "kaicenat",
+      "display_name": "KaiCenat",
+      "lang": "en",
+      "vod_id": "2934866208",
+      "vod_url": "https://www.twitch.tv/videos/2934866208",
+      "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
+      "game": "Grand Theft Auto VI",
+      "created_at": "2026-11-20T12:39:15Z",
+      "length_seconds": 45461,
+      "length_hms": "12:37:41",
+      "gta_ranges": [
+        {
+          "start_hms": "0:00:00",
+          "end_hms": "0:20:19"
+        },
+        {
+          "start_hms": "0:24:44",
+          "end_hms": "12:37:41"
+        }
+      ],
+      "chat_peaks": [
+        {
+          "start": 17585,
+          "end": 17628,
+          "peak": 17610,
+          "peak_hms": "4:53:30",
+          "laugh_ratio": 0.17,
+          "start_hms": "4:53:05",
+          "end_hms": "4:53:48",
+          "score": 5.18,
+          "type": "risa",
+          "msgs_per_10s": 59,
+          "chat_sample": [
+            "bro lol",
+            "WTF BRUH",
+            "U miseddddd",
+            "??",
+            "JASONNNNNNNNOOOOO",
+            "Noooo",
+            "Ass",
+            "YOOOOOOO YU FUCKN SUCK",
+            "LLLLLLLLLLLLL",
+            "LOL",
+            "LUL LUL LUL",
+            "Your trash"
+          ]
+        },
+        {
+          "start": 18605,
+          "end": 18648,
+          "peak": 18630,
+          "peak_hms": "5:10:30",
+          "laugh_ratio": 0.01,
+          "start_hms": "5:10:05",
+          "end_hms": "5:10:48",
+          "score": 8.35,
+          "type": "hype",
+          "msgs_per_10s": 80,
+          "chat_sample": [
+            "wwwwwww",
+            "WWWWWWW",
+            "LETSGO",
+            "WWWWW",
+            "wwww",
+            "www",
+            "WW",
+            "HOLYYYY",
+            "YOOO",
+            "WW",
+            "Beautifullll",
+            "🪂"
+          ]
+        },
+        {
+          "start": 24905,
+          "end": 24948,
+          "peak": 24930,
+          "peak_hms": "6:55:30",
+          "laugh_ratio": 0.21,
+          "start_hms": "6:55:05",
+          "end_hms": "6:55:48",
+          "score": 6.26,
+          "type": "risa",
+          "msgs_per_10s": 78,
+          "chat_sample": [
+            "LOL",
+            "BRUH",
+            "L DRIVER'",
+            "LMAO",
+            "restart now lol",
+            "Geeg",
+            "lmao come on mud",
+            "LO ͏",
+            "L driver Kai",
+            "GGS",
+            "hahhahahahahahhaahahahahahhahahahahahahah",
+            "FAHHHHHH"
+          ]
+        },
+        {
+          "start": 30945,
+          "end": 30988,
+          "peak": 30970,
+          "peak_hms": "8:36:10",
+          "laugh_ratio": 0.13,
+          "start_hms": "8:35:45",
+          "end_hms": "8:36:28",
+          "score": 4.97,
+          "type": "risa",
+          "msgs_per_10s": 95,
+          "chat_sample": [
+            "Yoooooooooooo",
+            "Wtffff lmaooooo",
+            "tff",
+            "NOOOOOOOOOOO",
+            "AYOOOOOO",
+            "ypppppp",
+            "Ayoooo",
+            "Ayoooooooooo",
+            "????",
+            "Lmaooo",
+            "OH HELL NAH",
+            "YOOOO"
+          ]
+        },
+        {
+          "start": 31425,
+          "end": 31468,
+          "peak": 31450,
+          "peak_hms": "8:44:10",
+          "laugh_ratio": 0.11,
+          "start_hms": "8:43:45",
+          "end_hms": "8:44:28",
+          "score": 7.15,
+          "type": "hype",
+          "msgs_per_10s": 105,
+          "chat_sample": [
+            "??",
+            "????",
+            "wideOmeDwerk",
+            "???",
+            "AHAHHAHAAHAH",
+            "Bro",
+            "??",
+            "??????",
+            "Man wdh",
+            "Lmaoooo",
+            "??????,,",
+            "yooo"
+          ]
+        },
+        {
+          "start": 32595,
+          "end": 32638,
+          "peak": 32620,
+          "peak_hms": "9:03:40",
+          "laugh_ratio": 0.3,
+          "start_hms": "9:03:15",
+          "end_hms": "9:03:58",
+          "score": 5.27,
+          "type": "risa",
+          "msgs_per_10s": 57,
+          "chat_sample": [
+            "THIS GOOF ASS SHI",
+            "AURA",
+            "LUL LUL LUL",
+            "Pffttt",
+            "YO",
+            "Buff Franklin",
+            "LMFAOOOOO",
+            "LNFAIIIIIII",
+            "bro is playing gta 5",
+            "lmfaoo",
+            "Lucia run like a fornite Character",
+            "On some YMCA shi"
+          ]
+        },
+        {
+          "start": 36735,
+          "end": 36778,
+          "peak": 36760,
+          "peak_hms": "10:12:40",
+          "laugh_ratio": 0.14,
+          "start_hms": "10:12:15",
+          "end_hms": "10:12:58",
+          "score": 6.67,
+          "type": "hype",
+          "msgs_per_10s": 110,
+          "chat_sample": [
+            "lamaoooo",
+            "ayoooo",
+            "kai asssssssssssssssss",
+            "dumb",
+            "Stupid",
+            "okay",
+            "L",
+            "jro",
+            "EWWW",
+            "????????????/",
+            "Duuuuude",
+            "WTF IS WRONG WITH U"
+          ]
+        },
+        {
+          "start": 37465,
+          "end": 37508,
+          "peak": 37490,
+          "peak_hms": "10:24:50",
+          "laugh_ratio": 0.0,
+          "start_hms": "10:24:25",
+          "end_hms": "10:25:08",
+          "score": 6.26,
+          "type": "hype",
+          "msgs_per_10s": 89,
+          "chat_sample": [
+            "Wwwwwwwwwwww",
+            "Wwwwwwwwwwww",
+            "WWWWWWWWWWWWWW",
+            "Wwwwww",
+            "KAI CAN YOU SEND ME $1000 PLEASE",
+            "w",
+            "WWWWWWWWWW",
+            "!Watchtime",
+            "WWWWW",
+            "w",
+            "WWWW",
+            "WW"
+          ]
+        }
+      ],
+      "viewer_clips": [
+        {
+          "title": "KaiCenat GTA 6 #ivyj",
+          "views": 147,
+          "vod_offset": 481,
+          "vod_offset_hms": "0:08:01",
+          "duration": 60,
+          "url": "https://www.twitch.tv/kaicenat/clip/BlightedFairClipsmomArgieB8-XGFR8aQH_Xx3zNEI"
+        },
+        {
+          "title": "kai found a kid in gtaVI watchin' a stream",
+          "views": 97,
+          "vod_offset": 15946,
+          "vod_offset_hms": "4:25:46",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/GlutenFreeRichGarlicWoofer-NRr9gRWqOxl09BD5"
+        },
+        {
+          "title": "WWWW eiii",
+          "views": 96,
+          "vod_offset": 41100,
+          "vod_offset_hms": "11:25:00",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/SoftWiseWalrusUnSane-axfl7lDmcLtkn2Ke"
+        },
+        {
+          "title": "DIDDY???",
+          "views": 81,
+          "vod_offset": 19897,
+          "vod_offset_hms": "5:31:37",
+          "duration": 36.9,
+          "url": "https://www.twitch.tv/kaicenat/clip/WealthyDeafCasetteFunRun-sYq8-vhTfY2ETFjK"
+        },
+        {
+          "title": "Tiger almost jump kai",
+          "views": 62,
+          "vod_offset": 19575,
+          "vod_offset_hms": "5:26:15",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/BitterFurtiveGerbilSmoocherZ-kOZkQNlKMJqfW_8s"
+        },
+        {
+          "title": "birthdays",
+          "views": 52,
+          "vod_offset": 25873,
+          "vod_offset_hms": "7:11:13",
+          "duration": 30.2,
+          "url": "https://www.twitch.tv/kaicenat/clip/PleasantDignifiedChamoisVoHiYo-iA9PR0alPE4neeW0"
+        },
+        {
+          "title": "Employee of the Year",
+          "views": 47,
+          "vod_offset": 13854,
+          "vod_offset_hms": "3:50:54",
+          "duration": 22.7,
+          "url": "https://www.twitch.tv/kaicenat/clip/WildReliableBobaFUNgineer-F5QOsqqaLvHG8VAi"
+        },
+        {
+          "title": "sexyyy red in gta iv",
+          "views": 40,
+          "vod_offset": 40970,
+          "vod_offset_hms": "11:22:50",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/BumblingDreamyKuduRaccAttack-E_ZWC990S3YPlT9R"
+        },
+        {
+          "title": "What??",
+          "views": 39,
+          "vod_offset": 19759,
+          "vod_offset_hms": "5:29:19",
+          "duration": 55.1,
+          "url": "https://www.twitch.tv/kaicenat/clip/HeadstrongStormyMoonNotATK-Q7FT-IuZSmCAsBqa"
+        },
+        {
+          "title": "Kai was NOT ready for this GTA 6 scene",
+          "views": 35,
+          "vod_offset": 35778,
+          "vod_offset_hms": "9:56:18",
+          "duration": 40,
+          "url": "https://www.twitch.tv/kaicenat/clip/PoorOddSoybeanSoonerLater-r11i8-nRU3oOEnW8"
+        },
+        {
+          "title": "KAI: “PEOPLE BE DOING THAT FR IN REAL LIFE?” 😂😂😂",
+          "views": 35,
+          "vod_offset": 31148,
+          "vod_offset_hms": "8:39:08",
+          "duration": 60,
+          "url": "https://www.twitch.tv/kaicenat/clip/AmazingBloodyNuggetsDoritosChip-MzgI2Rb6q5WKnh53"
+        },
+        {
+          "title": "kai",
+          "views": 26,
+          "vod_offset": 20462,
+          "vod_offset_hms": "5:41:02",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/BashfulPhilanthropicDurianGingerPower-9ibjmaO3WSv_XcP5"
+        },
+        {
+          "title": "unfall",
+          "views": 24,
+          "vod_offset": 29646,
+          "vod_offset_hms": "8:14:06",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/TolerantBovineLorisCurseLit--N44-HsJ-IP8Fyft"
+        },
+        {
+          "title": "waaat",
+          "views": 24,
+          "vod_offset": 444,
+          "vod_offset_hms": "0:07:24",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/FunStormyCheeseBIRB-CdsC-d0BqZ7AtURK"
+        },
+        {
+          "title": "kai lies to chat🥱💤",
+          "views": 23,
+          "vod_offset": 230,
+          "vod_offset_hms": "0:03:50",
+          "duration": 40.5,
+          "url": "https://www.twitch.tv/kaicenat/clip/TentativeYummyPoxDerp-tdFfqK8XJ3j31Vu_"
+        }
+      ]
+    }
+  ]
+}
