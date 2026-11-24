@@ -1,0 +1,330 @@
+{
+  "generated_at": "2026-11-24T04:37:20.915799+00:00",
+  "since": "2026-11-22T22:37:20.915799+00:00",
+  "vods": [
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "vod_id": "2938510132",
+      "vod_url": "https://www.twitch.tv/videos/2938510132",
+      "title": "LUCÍA CAMINOS 🙇🏻‍♂️ MI MAMI 🥺 LELE PANXA 👶🏻 joder qué vergüenza de título lo siento - Grand Theft Auto VI #5",
+      "game": "Grand Theft Auto VI",
+      "created_at": "2026-11-23T17:28:57Z",
+      "length_seconds": 29640,
+      "length_hms": "8:14:00",
+      "gta_ranges": [
+        {
+          "start_hms": "0:00:00",
+          "end_hms": "8:14:00"
+        }
+      ],
+      "chat_peaks": [
+        {
+          "start": 285,
+          "end": 328,
+          "peak": 310,
+          "peak_hms": "0:05:10",
+          "laugh_ratio": 0.16,
+          "start_hms": "0:04:45",
+          "end_hms": "0:05:28",
+          "score": 11.8,
+          "type": "risa",
+          "msgs_per_10s": 58,
+          "chat_sample": [
+            "KEK",
+            "JAJAJJAJAJJJAAJ",
+            "KEK",
+            "JAJAJAJAJAAJAJAJAJA",
+            "67",
+            "67 67 67 67",
+            "JAJAJAJAJAJA",
+            "67",
+            "BANGER",
+            "BANGER",
+            "L IA",
+            "Yo le he visto a ese hombre!!"
+          ]
+        },
+        {
+          "start": 7485,
+          "end": 7528,
+          "peak": 7510,
+          "peak_hms": "2:05:10",
+          "laugh_ratio": 0.16,
+          "start_hms": "2:04:45",
+          "end_hms": "2:05:28",
+          "score": 5.23,
+          "type": "risa",
+          "msgs_per_10s": 68,
+          "chat_sample": [
+            "se parece a L ester",
+            "kill it",
+            "Matalo",
+            "Que carajos huh",
+            "D:",
+            "huh",
+            "James Dahmer",
+            "que mal rollo",
+            "Puedes probar a montarte en el coche y darle 2 veces seguidas al triángulo?",
+            "MATALOOO",
+            "referencia jeffry duhmer??",
+            "Ojalá"
+          ]
+        },
+        {
+          "start": 7685,
+          "end": 7728,
+          "peak": 7710,
+          "peak_hms": "2:08:30",
+          "laugh_ratio": 0.12,
+          "start_hms": "2:08:05",
+          "end_hms": "2:08:48",
+          "score": 5.5,
+          "type": "risa",
+          "msgs_per_10s": 96,
+          "chat_sample": [
+            "?",
+            "YO",
+            "Jason en la muerte y tu haciendo secundarias KEK",
+            "puede",
+            "?",
+            "huh",
+            "??",
+            "Jajajja",
+            "LOL",
+            "proyectada LOL",
+            "Kskaka",
+            "huh"
+          ]
+        },
+        {
+          "start": 15055,
+          "end": 15098,
+          "peak": 15080,
+          "peak_hms": "4:11:20",
+          "laugh_ratio": 0.02,
+          "start_hms": "4:10:55",
+          "end_hms": "4:11:38",
+          "score": 2.98,
+          "type": "risa",
+          "msgs_per_10s": 105,
+          "chat_sample": [
+            "GOTY",
+            "67",
+            "67",
+            "67",
+            "67",
+            "678",
+            "Juan, q locura",
+            "67",
+            "al menos no hay gorrillas enfoca",
+            "67",
+            "6767",
+            "67"
+          ]
+        },
+        {
+          "start": 15245,
+          "end": 15288,
+          "peak": 15270,
+          "peak_hms": "4:14:30",
+          "laugh_ratio": 0.16,
+          "start_hms": "4:14:05",
+          "end_hms": "4:14:48",
+          "score": 7.42,
+          "type": "risa",
+          "msgs_per_10s": 93,
+          "chat_sample": [
+            "pero es obvio donde van a estar xD",
+            "Re",
+            "Re  SoyR",
+            "Re",
+            "Re Re Re",
+            "illojuanJoy illojuanJoy illojuanJoy",
+            "Re WIDEALERTZero SoyR LO IMITO IGUAAAAL ͏",
+            "Re",
+            "Re",
+            "Re",
+            "Re",
+            "Re"
+          ]
+        },
+        {
+          "start": 22245,
+          "end": 22288,
+          "peak": 22270,
+          "peak_hms": "6:11:10",
+          "laugh_ratio": 0.03,
+          "start_hms": "6:10:45",
+          "end_hms": "6:11:28",
+          "score": 6.19,
+          "type": "risa",
+          "msgs_per_10s": 95,
+          "chat_sample": [
+            "ufffff",
+            "duchita",
+            "BOOOF",
+            "Cheer1000  juan me pase el gta ayer y es la mejor historia de la historia posdata lucia esta tremenda y puta murcia y viva cartagena",
+            "la despertaste",
+            "booofffff",
+            "Ducha ducha",
+            "BOOOF",
+            "booffffff",
+            "KEK",
+            "DIOSSSSSSS",
+            "Que basto"
+          ]
+        },
+        {
+          "start": 22435,
+          "end": 22478,
+          "peak": 22460,
+          "peak_hms": "6:14:20",
+          "laugh_ratio": 0.34,
+          "start_hms": "6:13:55",
+          "end_hms": "6:14:38",
+          "score": 14.92,
+          "type": "risa",
+          "msgs_per_10s": 95,
+          "chat_sample": [
+            "alv wey",
+            "KEK",
+            "KEK",
+            "JAKSKJAKJSAKJSKJA",
+            "JAJKSAJSAK",
+            "KEK",
+            "ajajaajja",
+            "LUL",
+            "rusheada proyectada L de manualll",
+            "injugable",
+            "jajajajajajaja lool",
+            "KEK ͏"
+          ]
+        }
+      ],
+      "viewer_clips": [
+        {
+          "title": "Canción de mi país",
+          "views": 1680,
+          "vod_offset": 19489,
+          "vod_offset_hms": "5:24:49",
+          "duration": 17.7,
+          "url": "https://www.twitch.tv/illojuan/clip/SquareObservantSpaghettiAMPEnergy-zJFw-ops85IG8t-b"
+        },
+        {
+          "title": "illojuan se enfada y borra gta6",
+          "views": 667,
+          "vod_offset": 3936,
+          "vod_offset_hms": "1:05:36",
+          "duration": 24.2,
+          "url": "https://www.twitch.tv/illojuan/clip/BitterOddBaconDoritosChip-3R4Xq2FU7ksHYsHu"
+        },
+        {
+          "title": "GTA VI BUGAZO DE JUAN",
+          "views": 495,
+          "vod_offset": 16559,
+          "vod_offset_hms": "4:35:59",
+          "duration": 5,
+          "url": "https://www.twitch.tv/illojuan/clip/KitschyYummyDillMau5-Hwa6D-yXUNpFTs0w"
+        },
+        {
+          "title": "adió",
+          "views": 389,
+          "vod_offset": 11477,
+          "vod_offset_hms": "3:11:17",
+          "duration": 8.8,
+          "url": "https://www.twitch.tv/illojuan/clip/OutstandingAntediluvianNoodleTheTarFu-9pgu6MmEM5qsGlvf"
+        },
+        {
+          "title": "ovni",
+          "views": 343,
+          "vod_offset": 6867,
+          "vod_offset_hms": "1:54:27",
+          "duration": 14.4,
+          "url": "https://www.twitch.tv/illojuan/clip/AbnegateResolutePistachioTBTacoLeft-uEAEafAt33qt6nYN"
+        },
+        {
+          "title": "anus",
+          "views": 233,
+          "vod_offset": 14830,
+          "vod_offset_hms": "4:07:10",
+          "duration": 30,
+          "url": "https://www.twitch.tv/illojuan/clip/LaconicFantasticCucumberAsianGlow-yfKi6-naAHjjfqy-"
+        },
+        {
+          "title": "gafada del año",
+          "views": 188,
+          "vod_offset": 5566,
+          "vod_offset_hms": "1:32:46",
+          "duration": 16.2,
+          "url": "https://www.twitch.tv/illojuan/clip/HeartlessCaringTrayBCWarrior-xINJY4hGovwg-nNK"
+        },
+        {
+          "title": "buena",
+          "views": 186,
+          "vod_offset": 10242,
+          "vod_offset_hms": "2:50:42",
+          "duration": 5,
+          "url": "https://www.twitch.tv/illojuan/clip/RamshacklePunchyLapwingTBCheesePull-ZUTIElGlaLPvZH4a"
+        },
+        {
+          "title": "salud",
+          "views": 139,
+          "vod_offset": 8693,
+          "vod_offset_hms": "2:24:53",
+          "duration": 7.9,
+          "url": "https://www.twitch.tv/illojuan/clip/BetterSpikyCocoaWTRuck-4pVFp9qVF5U4-ZIW"
+        },
+        {
+          "title": "CEO",
+          "views": 121,
+          "vod_offset": 21842,
+          "vod_offset_hms": "6:04:02",
+          "duration": 28.2,
+          "url": "https://www.twitch.tv/illojuan/clip/TangibleGentleManateeTwitchRPG-tciiQt5HHl9-zOHJ"
+        },
+        {
+          "title": "huh",
+          "views": 114,
+          "vod_offset": 15263,
+          "vod_offset_hms": "4:14:23",
+          "duration": 9.6,
+          "url": "https://www.twitch.tv/illojuan/clip/TallThankfulPonyTebowing-c4NDl4YGlIuKFN-s"
+        },
+        {
+          "title": "XD",
+          "views": 103,
+          "vod_offset": 3948,
+          "vod_offset_hms": "1:05:48",
+          "duration": 27.6,
+          "url": "https://www.twitch.tv/illojuan/clip/ScrumptiousMoistEggplantPupper-8SfPMep2tTT0wXl4"
+        },
+        {
+          "title": "cuidado q te ven",
+          "views": 99,
+          "vod_offset": 27374,
+          "vod_offset_hms": "7:36:14",
+          "duration": 22.8,
+          "url": "https://www.twitch.tv/illojuan/clip/WildProductiveKleeLitty-kTgGvlXfNn4sjZsw"
+        },
+        {
+          "title": "dios",
+          "views": 60,
+          "vod_offset": 25811,
+          "vod_offset_hms": "7:10:11",
+          "duration": 5,
+          "url": "https://www.twitch.tv/illojuan/clip/YawningUgliestCougarWholeWheat-fp9a4NUaHewQaFiD"
+        },
+        {
+          "title": "IDOLATRANDO SEGUIDORES",
+          "views": 58,
+          "vod_offset": 21658,
+          "vod_offset_hms": "6:00:58",
+          "duration": 26,
+          "url": "https://www.twitch.tv/illojuan/clip/LivelySaltyTermiteNerfBlueBlaster-uwf3v1SwF8I5n5m3"
+        }
+      ]
+    }
+  ]
+}

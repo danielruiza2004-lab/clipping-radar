@@ -1,1203 +1,328 @@
 {
-  "generated_at": "2026-11-23T04:44:02.983311+00:00",
-  "since": "2026-11-21T22:44:02.983311+00:00",
+  "generated_at": "2026-11-24T04:37:20.915799+00:00",
+  "since": "2026-11-22T22:37:20.915799+00:00",
   "vods": [
     {
       "channel": "illojuan",
       "display_name": "IlloJuan",
       "lang": "es",
-      "vod_id": "2937449247",
-      "vod_url": "https://www.twitch.tv/videos/2937449247",
-      "title": "DOMINGOS DOMÍNGUEZ 🔥 DÍA 4/450 DE JUEGO 🚔 RUSHEADÓN 🚨 - Grand Theft Auto VI #4",
+      "vod_id": "2938510132",
+      "vod_url": "https://www.twitch.tv/videos/2938510132",
+      "title": "LUCÍA CAMINOS 🙇🏻‍♂️ MI MAMI 🥺 LELE PANXA 👶🏻 joder qué vergüenza de título lo siento - Grand Theft Auto VI #5",
       "game": "Grand Theft Auto VI",
-      "created_at": "2026-11-22T16:38:51Z",
-      "length_seconds": 33730,
-      "length_hms": "9:22:10",
+      "created_at": "2026-11-23T17:28:57Z",
+      "length_seconds": 29640,
+      "length_hms": "8:14:00",
       "gta_ranges": [
         {
           "start_hms": "0:00:00",
-          "end_hms": "9:22:10"
+          "end_hms": "8:14:00"
         }
       ],
       "chat_peaks": [
         {
-          "start": 8385,
-          "end": 8428,
-          "peak": 8410,
-          "peak_hms": "2:20:10",
-          "laugh_ratio": 0.32,
-          "start_hms": "2:19:45",
-          "end_hms": "2:20:28",
-          "score": 7.25,
+          "start": 285,
+          "end": 328,
+          "peak": 310,
+          "peak_hms": "0:05:10",
+          "laugh_ratio": 0.16,
+          "start_hms": "0:04:45",
+          "end_hms": "0:05:28",
+          "score": 11.8,
           "type": "risa",
-          "msgs_per_10s": 100,
+          "msgs_per_10s": 58,
           "chat_sample": [
             "KEK",
-            "UN OSO WACHO",
-            "Alv jajaja",
-            "LOL",
-            "LOL",
-            "UN OSO WACHOOOO",
-            "OOOOO",
-            "o7",
-            "jajajajaja",
-            "xdddd",
-            "COMO",
-            "LOL"
+            "JAJAJJAJAJJJAAJ",
+            "KEK",
+            "JAJAJAJAJAAJAJAJAJA",
+            "67",
+            "67 67 67 67",
+            "JAJAJAJAJAJA",
+            "67",
+            "BANGER",
+            "BANGER",
+            "L IA",
+            "Yo le he visto a ese hombre!!"
           ]
         },
         {
-          "start": 8755,
-          "end": 8798,
-          "peak": 8780,
-          "peak_hms": "2:26:20",
-          "laugh_ratio": 0.41,
-          "start_hms": "2:25:55",
-          "end_hms": "2:26:38",
-          "score": 7.52,
+          "start": 7485,
+          "end": 7528,
+          "peak": 7510,
+          "peak_hms": "2:05:10",
+          "laugh_ratio": 0.16,
+          "start_hms": "2:04:45",
+          "end_hms": "2:05:28",
+          "score": 5.23,
           "type": "risa",
-          "msgs_per_10s": 100,
+          "msgs_per_10s": 68,
           "chat_sample": [
-            "LOL",
-            "KEk",
-            "me cage njajajaja",
-            "TecMau287 subscribed with Prime. They've subscribed for 22 months! ",
-            "GoodOne",
-            "abaa SAJ",
-            "LOL",
-            "Jajajajajajjajajajajajja",
-            "juan saluda a mi hermana paula es muy fan tuyo",
-            "si que habia algo",
-            "XD",
-            "OOOO"
+            "se parece a L ester",
+            "kill it",
+            "Matalo",
+            "Que carajos huh",
+            "D:",
+            "huh",
+            "James Dahmer",
+            "que mal rollo",
+            "Puedes probar a montarte en el coche y darle 2 veces seguidas al triángulo?",
+            "MATALOOO",
+            "referencia jeffry duhmer??",
+            "Ojalá"
           ]
         },
         {
-          "start": 9235,
-          "end": 9278,
-          "peak": 9260,
-          "peak_hms": "2:34:20",
-          "laugh_ratio": 0.43,
-          "start_hms": "2:33:55",
-          "end_hms": "2:34:38",
-          "score": 6.15,
-          "type": "risa",
-          "msgs_per_10s": 90,
-          "chat_sample": [
-            "KEK",
-            "ajjaaaajaa",
-            "LOL",
-            "Pffttt",
-            "KEK",
-            "JKASDKJADSJKADSJ",
-            "Jajajajajajaja",
-            "lol",
-            "KEK alv",
-            "LOL",
-            "PepeLmao",
-            "KEK"
-          ]
-        },
-        {
-          "start": 9425,
-          "end": 9468,
-          "peak": 9450,
-          "peak_hms": "2:37:30",
-          "laugh_ratio": 0.01,
-          "start_hms": "2:37:05",
-          "end_hms": "2:37:48",
-          "score": 7.05,
-          "type": "hype",
-          "msgs_per_10s": 96,
-          "chat_sample": [
-            "W Evon",
-            "Feliz cum",
-            "W",
-            "W",
-            "W",
-            "Creo que tienes que seguir con la historia ya que no tienes dealer",
-            "juanito has jugado ya al billar?",
-            "W",
-            "W ͏",
-            "W",
-            "W evon!",
-            "W"
-          ]
-        },
-        {
-          "start": 9745,
-          "end": 9788,
-          "peak": 9770,
-          "peak_hms": "2:42:50",
-          "laugh_ratio": 0.01,
-          "start_hms": "2:42:25",
-          "end_hms": "2:43:08",
-          "score": 7.61,
-          "type": "hype",
-          "msgs_per_10s": 105,
-          "chat_sample": [
-            "W",
-            "W",
-            "OOOO",
-            "GRANDEEEE",
-            "illojuanIllo illojuanIllo",
-            "OOOO",
-            "W",
-            "POR QUE ESCUCHO TU VOZ HIPER BAJA LOCO??",
-            "W",
-            "W",
-            "te da la ubicacion y lo puedes robar",
-            "w"
-          ]
-        },
-        {
-          "start": 15945,
-          "end": 15988,
-          "peak": 15970,
-          "peak_hms": "4:26:10",
-          "laugh_ratio": 0.13,
-          "start_hms": "4:25:45",
-          "end_hms": "4:26:28",
-          "score": 7.06,
-          "type": "hype",
-          "msgs_per_10s": 103,
-          "chat_sample": [
-            "COLIENDO",
-            "LOL",
-            "corre y salta",
-            "O7",
-            "o7",
-            "MADRE LOL",
-            "o7",
-            "o7",
-            "COLIENDO",
-            "jkAKJJKAKAJKAJKJA",
-            "o7",
-            "OhNo"
-          ]
-        },
-        {
-          "start": 22545,
-          "end": 22588,
-          "peak": 22570,
-          "peak_hms": "6:16:10",
-          "laugh_ratio": 0.05,
-          "start_hms": "6:15:45",
-          "end_hms": "6:16:28",
-          "score": 10.73,
-          "type": "hype",
-          "msgs_per_10s": 111,
-          "chat_sample": [
-            "o7",
-            "07",
-            "o7",
-            "o7 o7",
-            "AMIGAZO o7",
-            "o7",
-            "o7",
-            "o7",
-            "o7 ͏",
-            "o7 Fly free",
-            "o7 Rip",
-            "Rip"
-          ]
-        },
-        {
-          "start": 27805,
-          "end": 27848,
-          "peak": 27830,
-          "peak_hms": "7:43:50",
-          "laugh_ratio": 0.43,
-          "start_hms": "7:43:25",
-          "end_hms": "7:44:08",
-          "score": 6.97,
-          "type": "risa",
-          "msgs_per_10s": 72,
-          "chat_sample": [
-            "KEK",
-            "Huh",
-            "KEK",
-            "LOL",
-            "LOL",
-            "JSADJASDJASDJ",
-            "KEK",
-            "LOL",
-            "JASJDJAHSDJAHSD",
-            "KEK",
-            "KEK",
-            "JAJAJAJAAJAJAJAJAJAJ"
-          ]
-        }
-      ],
-      "viewer_clips": [
-        {
-          "title": "Ea*ster Eggazo \"Qué es este Juego?\"",
-          "views": 1892,
-          "vod_offset": 20386,
-          "vod_offset_hms": "5:39:46",
-          "duration": 60,
-          "url": "https://www.twitch.tv/illojuan/clip/HomelyPlayfulChimpanzeeHassanChop-e2AgFBsrixYbnet5"
-        },
-        {
-          "title": "tas bien? lmao",
-          "views": 691,
-          "vod_offset": 22098,
-          "vod_offset_hms": "6:08:18",
-          "duration": 30,
-          "url": "https://www.twitch.tv/illojuan/clip/LazyCrepuscularElephantRlyTho-eDm1k29Romx-3A4d"
-        },
-        {
-          "title": "algo hay",
-          "views": 560,
-          "vod_offset": 8771,
-          "vod_offset_hms": "2:26:11",
-          "duration": 17.5,
-          "url": "https://www.twitch.tv/illojuan/clip/FitAffluentKathy4Head-rc_rJgqkBqglMUzY"
-        },
-        {
-          "title": "y sin avisar",
-          "views": 538,
-          "vod_offset": 13788,
-          "vod_offset_hms": "3:49:48",
-          "duration": 30,
-          "url": "https://www.twitch.tv/illojuan/clip/SingleRamshackleWolverineCmonBruh-i0QqKt40zmMyP7xU"
-        },
-        {
-          "title": "rraaawr",
-          "views": 416,
-          "vod_offset": 7749,
-          "vod_offset_hms": "2:09:09",
-          "duration": 5,
-          "url": "https://www.twitch.tv/illojuan/clip/ShortSassyHerdDendiFace-dHjvxLCt1GAqKFBq"
-        },
-        {
-          "title": "iLLoNPC!!",
-          "views": 348,
-          "vod_offset": 14743,
-          "vod_offset_hms": "4:05:43",
-          "duration": 25.3,
-          "url": "https://www.twitch.tv/illojuan/clip/IcyFastSalamanderMcaT-1q9qo35WHOn19S-l"
-        },
-        {
-          "title": "rumanada historica",
-          "views": 341,
-          "vod_offset": 5935,
-          "vod_offset_hms": "1:38:55",
-          "duration": 13.3,
-          "url": "https://www.twitch.tv/illojuan/clip/RealSuspiciousPterodactylCurseLit-Voj1_Oh3q5jZIM8A"
-        },
-        {
-          "title": "mi bici :(",
-          "views": 305,
-          "vod_offset": 9272,
-          "vod_offset_hms": "2:34:32",
-          "duration": 34.6,
-          "url": "https://www.twitch.tv/illojuan/clip/CalmCrypticOkapiFreakinStinkin-e5h1VtOfGHNdHYY8"
-        },
-        {
-          "title": "despejado",
-          "views": 243,
-          "vod_offset": 16692,
-          "vod_offset_hms": "4:38:12",
-          "duration": 30,
-          "url": "https://www.twitch.tv/illojuan/clip/TubularCrackySharkFailFish-jhPtDlqTxtxQNuT1"
-        },
-        {
-          "title": "cómo lo saco",
-          "views": 193,
-          "vod_offset": 16793,
-          "vod_offset_hms": "4:39:53",
-          "duration": 15.4,
-          "url": "https://www.twitch.tv/illojuan/clip/NaiveCloudyAlfalfaAsianGlow-TfV87bEQOSR7R1KC"
-        },
-        {
-          "title": "La coleta 🙏",
-          "views": 170,
-          "vod_offset": 22084,
-          "vod_offset_hms": "6:08:04",
-          "duration": 20.8,
-          "url": "https://www.twitch.tv/illojuan/clip/MoistFamousBaconUncleNox-Q8pzWoJu5gksxabq"
-        },
-        {
-          "title": "Tigre",
-          "views": 157,
-          "vod_offset": 16980,
-          "vod_offset_hms": "4:43:00",
-          "duration": 30,
-          "url": "https://www.twitch.tv/illojuan/clip/CogentResoluteOstrichLitFam-Ipt42QSXWXVwLHVM"
-        },
-        {
-          "title": "pepe",
-          "views": 143,
-          "vod_offset": 12884,
-          "vod_offset_hms": "3:34:44",
-          "duration": 5,
-          "url": "https://www.twitch.tv/illojuan/clip/TransparentPrettiestDragonfruitJonCarnage-Z3TTv36Hz7idJ7cu"
-        },
-        {
-          "title": "mierdon",
-          "views": 114,
-          "vod_offset": 21448,
-          "vod_offset_hms": "5:57:28",
-          "duration": 17.4,
-          "url": "https://www.twitch.tv/illojuan/clip/SilkySpeedyTermiteRitzMitz-NVpkbmvwq07dbi3k"
-        },
-        {
-          "title": "que lindo el perrito",
-          "views": 110,
-          "vod_offset": 19236,
-          "vod_offset_hms": "5:20:36",
-          "duration": 30,
-          "url": "https://www.twitch.tv/illojuan/clip/SarcasticWrongIcecreamAMPEnergyCherry-HFDEtvFdXHJInlwl"
-        }
-      ]
-    },
-    {
-      "channel": "xqc",
-      "display_name": "xQc",
-      "lang": "en",
-      "vod_id": "2937629817",
-      "vod_url": "https://www.twitch.tv/videos/2937629817",
-      "title": "⌛DROPS⌛60 FPS⌛GTA 6⌛BEATING THE GAME⌛THE FINAL HOURS⌛DONT MISS IT⌛BEST ENDING ONLY⌛BEST PLAYER OF GAMES⌛FULL REVIEW AFTER⌛COOL⌛",
-      "game": "Just Chatting",
-      "created_at": "2026-11-22T19:29:17Z",
-      "length_seconds": 33390,
-      "length_hms": "9:16:30",
-      "gta_ranges": [
-        {
-          "start_hms": "0:46:26",
-          "end_hms": "0:46:26"
-        }
-      ],
-      "chat_peaks": [],
-      "viewer_clips": [
-        {
-          "title": "XQC Camera Roll",
-          "views": 1528,
-          "vod_offset": 8241,
-          "vod_offset_hms": "2:17:21",
-          "duration": 45.6,
-          "url": "https://www.twitch.tv/xqc/clip/KathishVivaciousBadgerEleGiggle-EFtXHIk7I9GBwi-O"
-        },
-        {
-          "title": "m.ar neyma",
-          "views": 44,
-          "vod_offset": 21986,
-          "vod_offset_hms": "6:06:26",
-          "duration": 60,
-          "url": "https://www.twitch.tv/xqc/clip/SmilingThankfulPizzaMcaT-HZvBVbwiMUQfE3nb"
-        },
-        {
-          "title": "Insurance fraud speedrun",
-          "views": 11,
-          "vod_offset": 13191,
-          "vod_offset_hms": "3:39:51",
-          "duration": 13.7,
-          "url": "https://www.twitch.tv/xqc/clip/AbstruseFairStapleDendiFace-BZRg_UXQ6n1f9uzV"
-        },
-        {
-          "title": "XQC Saves one for the bank",
-          "views": 11,
-          "vod_offset": 4743,
-          "vod_offset_hms": "1:19:03",
-          "duration": 18.5,
-          "url": "https://www.twitch.tv/xqc/clip/AgileMushyGiraffeSwiftRage-icNxnBYqHxkd1GJC"
-        },
-        {
-          "title": "⌛DROPS⌛60 FPS⌛GTA 6⌛BEATING THE GAME⌛THE FINAL HOURS⌛DONT MISS IT⌛BEST ENDING ONLY⌛BEST PLAYER OF GAMES⌛FULL REVIEW AFTER⌛COOL⌛",
-          "views": 7,
-          "vod_offset": 22110,
-          "vod_offset_hms": "6:08:30",
-          "duration": 60,
-          "url": "https://www.twitch.tv/xqc/clip/PrettyYummyWolverineRalpherZ-CbNQWLrc6DkY0C1V"
-        },
-        {
-          "title": "cover your bowls",
-          "views": 7,
-          "vod_offset": 21936,
-          "vod_offset_hms": "6:05:36",
-          "duration": 10.5,
-          "url": "https://www.twitch.tv/xqc/clip/TriumphantCrispyTeaKappaClaus-R3Pya8QAJVdLsbdp"
-        },
-        {
-          "title": "WTF",
-          "views": 7,
-          "vod_offset": 19746,
-          "vod_offset_hms": "5:29:06",
-          "duration": 30,
-          "url": "https://www.twitch.tv/xqc/clip/HungryDirtyLorisKappaWealth-j6hKHfFP72saGbxF"
-        },
-        {
-          "title": "Fart",
-          "views": 7,
-          "vod_offset": 30549,
-          "vod_offset_hms": "8:29:09",
-          "duration": 14.4,
-          "url": "https://www.twitch.tv/xqc/clip/LaconicSourOrangeEleGiggle-Tmmo7Qskou5nPhri"
-        },
-        {
-          "title": "WHAM!",
-          "views": 7,
-          "vod_offset": 32755,
-          "vod_offset_hms": "9:05:55",
-          "duration": 30,
-          "url": "https://www.twitch.tv/xqc/clip/ElegantPlausibleMooseHoneyBadger-EBsETucsm_1rY8oQ"
-        },
-        {
-          "title": "Ms",
-          "views": 5,
-          "vod_offset": 4841,
-          "vod_offset_hms": "1:20:41",
-          "duration": 30,
-          "url": "https://www.twitch.tv/xqc/clip/TolerantTriangularPresidentStrawBeary-eTk7V41Uox9eqOeR"
-        },
-        {
-          "title": "khjkhjkjh",
-          "views": 5,
-          "vod_offset": 15663,
-          "vod_offset_hms": "4:21:03",
-          "duration": 21.4,
-          "url": "https://www.twitch.tv/xqc/clip/TrappedSilkyPonyYouDontSay-_0-tJSBjl_8kXUHq"
-        },
-        {
-          "title": "LOL",
-          "views": 5,
-          "vod_offset": 26266,
-          "vod_offset_hms": "7:17:46",
-          "duration": 30,
-          "url": "https://www.twitch.tv/xqc/clip/MildDelightfulGrassSquadGoals-Afu8UNZ9BDES8Q2p"
-        },
-        {
-          "title": "⌛DROPS⌛60 FPS⌛GTA 6⌛BEATING THE GAME⌛THE FINAL HOURS⌛DONT MISS IT⌛BEST ENDING ONLY⌛BEST PLAYER OF GAMES⌛FULL REVIEW AFTER⌛COOL⌛",
-          "views": 5,
-          "vod_offset": 22166,
-          "vod_offset_hms": "6:09:26",
-          "duration": 30,
-          "url": "https://www.twitch.tv/xqc/clip/TenuousGoodNoodleHeyGuys-66jb4N-Qz3dGf0i7"
-        },
-        {
-          "title": "xqc reacts to NIKO BELLIC REVEAL!",
-          "views": 5,
-          "vod_offset": 21947,
-          "vod_offset_hms": "6:05:47",
-          "duration": 40.3,
-          "url": "https://www.twitch.tv/xqc/clip/RamshackleOnerousEelRuleFive-5nySPQasph_zj5E_"
-        },
-        {
-          "title": "a",
-          "views": 5,
-          "vod_offset": 4871,
-          "vod_offset_hms": "1:21:11",
-          "duration": 30,
-          "url": "https://www.twitch.tv/xqc/clip/AbrasiveHardBibimbapTF2John-mFAaCF0tjfe8tE-E"
-        }
-      ]
-    },
-    {
-      "channel": "xqc",
-      "display_name": "xQc",
-      "lang": "en",
-      "vod_id": "2936814907",
-      "vod_url": "https://www.twitch.tv/videos/2936814907",
-      "title": "🫂DROPS🫂60 FPS🫂GTA 6🫂FINISHING GAME IN ONE GO🫂LOCK IT IN🫂YAY🫂THE BEST PLAYER🫂OF ALL TIME🫂IS HERE🫂",
-      "game": "Grand Theft Auto VI",
-      "created_at": "2026-11-22T01:21:19Z",
-      "length_seconds": 30997,
-      "length_hms": "8:36:37",
-      "gta_ranges": [
-        {
-          "start_hms": "0:00:00",
-          "end_hms": "0:01:32"
-        },
-        {
-          "start_hms": "0:30:32",
-          "end_hms": "8:33:56"
-        }
-      ],
-      "chat_peaks": [
-        {
-          "start": 7865,
-          "end": 7908,
-          "peak": 7890,
-          "peak_hms": "2:11:30",
-          "laugh_ratio": 0.51,
-          "start_hms": "2:11:05",
-          "end_hms": "2:11:48",
+          "start": 7685,
+          "end": 7728,
+          "peak": 7710,
+          "peak_hms": "2:08:30",
+          "laugh_ratio": 0.12,
+          "start_hms": "2:08:05",
+          "end_hms": "2:08:48",
           "score": 5.5,
           "type": "risa",
-          "msgs_per_10s": 113,
+          "msgs_per_10s": 96,
           "chat_sample": [
-            "LOL",
-            "LOL ͏",
-            "..........",
-            "LOL",
-            "LOL",
-            "LOL",
-            "LO  ͏",
-            "LOL",
-            "LOL",
-            "LOL",
-            "omE",
-            "WTF LO"
-          ]
-        },
-        {
-          "start": 10335,
-          "end": 10378,
-          "peak": 10360,
-          "peak_hms": "2:52:40",
-          "laugh_ratio": 0.2,
-          "start_hms": "2:52:15",
-          "end_hms": "2:52:58",
-          "score": 5.42,
-          "type": "hype",
-          "msgs_per_10s": 89,
-          "chat_sample": [
-            "cocaine money",
-            "Aware ͏",
-            "LOL",
-            "Aware gg",
-            "LOL",
-            "LOL",
-            "Aware  ͏",
-            "LO",
-            "LO",
-            "???",
-            "SUNYUN",
-            "o7"
-          ]
-        },
-        {
-          "start": 14075,
-          "end": 14118,
-          "peak": 14100,
-          "peak_hms": "3:55:00",
-          "laugh_ratio": 0.44,
-          "start_hms": "3:54:35",
-          "end_hms": "3:55:18",
-          "score": 5.37,
-          "type": "risa",
-          "msgs_per_10s": 121,
-          "chat_sample": [
-            "o7",
-            "LOL",
-            "LO",
-            "LOL IDIOTA",
-            "LOL ͏",
-            "LO",
-            "LOL",
-            "FO",
-            "LOL",
-            "LOL",
-            "OMEGALUL",
-            "LO  4Head"
-          ]
-        },
-        {
-          "start": 15475,
-          "end": 15518,
-          "peak": 15500,
-          "peak_hms": "4:18:20",
-          "laugh_ratio": 0.51,
-          "start_hms": "4:17:55",
-          "end_hms": "4:18:38",
-          "score": 6.7,
-          "type": "risa",
-          "msgs_per_10s": 86,
-          "chat_sample": [
-            "lol",
-            "lol",
-            "13",
-            "LOL",
-            "LO",
-            "LOL",
-            "LO",
-            "LOL",
-            "LOL",
-            "PepeLaugh another one",
-            "13",
-            "13 OMEGALUL"
-          ]
-        },
-        {
-          "start": 16515,
-          "end": 16558,
-          "peak": 16540,
-          "peak_hms": "4:35:40",
-          "laugh_ratio": 0.56,
-          "start_hms": "4:35:15",
-          "end_hms": "4:35:58",
-          "score": 5.67,
-          "type": "risa",
-          "msgs_per_10s": 88,
-          "chat_sample": [
-            "LO",
-            "HE  HONKED LULE",
-            "NOW HONK LOL NOW HONK LOL NOW HONK LOL NOW HONK LOL NOW HONK LOL NOW HONK LOL NOW HONK LOL NOW HONK LOL NOW HONK LOL NOW HONK LOL",
-            "LOL",
-            "LOL",
-            "bugged LOL",
-            "LOL",
-            "13 LOL",
-            "body LOL",
-            "SpeedLaugh",
-            "LOL",
-            "Pepega HONK"
-          ]
-        },
-        {
-          "start": 17775,
-          "end": 17818,
-          "peak": 17800,
-          "peak_hms": "4:56:40",
-          "laugh_ratio": 0.31,
-          "start_hms": "4:56:15",
-          "end_hms": "4:56:58",
-          "score": 6.02,
-          "type": "risa",
-          "msgs_per_10s": 108,
-          "chat_sample": [
-            "o7",
-            "its a supercar ??",
-            "WICKED",
-            "HE AINT MAKING IT LO",
-            "OMEGALUL",
-            "oooooooooooooh",
-            "LOL",
-            "classic",
-            "LOL",
-            "PepeLaugh  ͏",
-            "WICKED",
-            "o7"
-          ]
-        },
-        {
-          "start": 22625,
-          "end": 22668,
-          "peak": 22650,
-          "peak_hms": "6:17:30",
-          "laugh_ratio": 0.37,
-          "start_hms": "6:17:05",
-          "end_hms": "6:17:48",
-          "score": 7.43,
-          "type": "risa",
-          "msgs_per_10s": 107,
-          "chat_sample": [
-            "CAUGHT",
             "?",
-            "LO",
-            "LO",
-            "CAUGHT CAUGHT",
-            "HAHAHAHAHAHA",
-            "dude",
-            "lol ͏",
-            "13 years LO 13 years LO 13 years LO",
-            "CAUGHT",
-            "LO",
-            "Stare"
+            "YO",
+            "Jason en la muerte y tu haciendo secundarias KEK",
+            "puede",
+            "?",
+            "huh",
+            "??",
+            "Jajajja",
+            "LOL",
+            "proyectada LOL",
+            "Kskaka",
+            "huh"
           ]
         },
         {
-          "start": 28135,
-          "end": 28178,
-          "peak": 28160,
-          "peak_hms": "7:49:20",
-          "laugh_ratio": 0.39,
-          "start_hms": "7:48:55",
-          "end_hms": "7:49:38",
-          "score": 6.7,
+          "start": 15055,
+          "end": 15098,
+          "peak": 15080,
+          "peak_hms": "4:11:20",
+          "laugh_ratio": 0.02,
+          "start_hms": "4:10:55",
+          "end_hms": "4:11:38",
+          "score": 2.98,
           "type": "risa",
-          "msgs_per_10s": 108,
+          "msgs_per_10s": 105,
           "chat_sample": [
-            "wideOmE",
-            "LOL",
-            "just call lester 🤣 🤣 🤣 🤣 🤣",
-            "LOL",
-            "???",
-            "HOW CAN YOU BE SO BAD LOL LOL",
-            "OMEGALUL",
-            "lol",
-            "LMFAOO",
-            "o7",
-            "IS HE BLIND?",
-            "LOL ͏"
+            "GOTY",
+            "67",
+            "67",
+            "67",
+            "67",
+            "678",
+            "Juan, q locura",
+            "67",
+            "al menos no hay gorrillas enfoca",
+            "67",
+            "6767",
+            "67"
+          ]
+        },
+        {
+          "start": 15245,
+          "end": 15288,
+          "peak": 15270,
+          "peak_hms": "4:14:30",
+          "laugh_ratio": 0.16,
+          "start_hms": "4:14:05",
+          "end_hms": "4:14:48",
+          "score": 7.42,
+          "type": "risa",
+          "msgs_per_10s": 93,
+          "chat_sample": [
+            "pero es obvio donde van a estar xD",
+            "Re",
+            "Re  SoyR",
+            "Re",
+            "Re Re Re",
+            "illojuanJoy illojuanJoy illojuanJoy",
+            "Re WIDEALERTZero SoyR LO IMITO IGUAAAAL ͏",
+            "Re",
+            "Re",
+            "Re",
+            "Re",
+            "Re"
+          ]
+        },
+        {
+          "start": 22245,
+          "end": 22288,
+          "peak": 22270,
+          "peak_hms": "6:11:10",
+          "laugh_ratio": 0.03,
+          "start_hms": "6:10:45",
+          "end_hms": "6:11:28",
+          "score": 6.19,
+          "type": "risa",
+          "msgs_per_10s": 95,
+          "chat_sample": [
+            "ufffff",
+            "duchita",
+            "BOOOF",
+            "Cheer1000  juan me pase el gta ayer y es la mejor historia de la historia posdata lucia esta tremenda y puta murcia y viva cartagena",
+            "la despertaste",
+            "booofffff",
+            "Ducha ducha",
+            "BOOOF",
+            "booffffff",
+            "KEK",
+            "DIOSSSSSSS",
+            "Que basto"
+          ]
+        },
+        {
+          "start": 22435,
+          "end": 22478,
+          "peak": 22460,
+          "peak_hms": "6:14:20",
+          "laugh_ratio": 0.34,
+          "start_hms": "6:13:55",
+          "end_hms": "6:14:38",
+          "score": 14.92,
+          "type": "risa",
+          "msgs_per_10s": 95,
+          "chat_sample": [
+            "alv wey",
+            "KEK",
+            "KEK",
+            "JAKSKJAKJSAKJSKJA",
+            "JAJKSAJSAK",
+            "KEK",
+            "ajajaajja",
+            "LUL",
+            "rusheada proyectada L de manualll",
+            "injugable",
+            "jajajajajajaja lool",
+            "KEK ͏"
           ]
         }
       ],
       "viewer_clips": [
         {
-          "title": "pipes",
-          "views": 3183,
-          "vod_offset": 901,
-          "vod_offset_hms": "0:15:01",
-          "duration": 43.7,
-          "url": "https://www.twitch.tv/xqc/clip/SlipperyKnottyCiderDxAbomb-IiYHPn3vZVbH91-Z"
+          "title": "Canción de mi país",
+          "views": 1680,
+          "vod_offset": 19489,
+          "vod_offset_hms": "5:24:49",
+          "duration": 17.7,
+          "url": "https://www.twitch.tv/illojuan/clip/SquareObservantSpaghettiAMPEnergy-zJFw-ops85IG8t-b"
         },
         {
-          "title": "XDDDDDDDDDDDDDD????",
-          "views": 731,
-          "vod_offset": 3926,
-          "vod_offset_hms": "1:05:26",
-          "duration": 11.3,
-          "url": "https://www.twitch.tv/xqc/clip/LivelyPopularJayJKanStyle-6l7Ygehf5Ypq7qhX"
+          "title": "illojuan se enfada y borra gta6",
+          "views": 667,
+          "vod_offset": 3936,
+          "vod_offset_hms": "1:05:36",
+          "duration": 24.2,
+          "url": "https://www.twitch.tv/illojuan/clip/BitterOddBaconDoritosChip-3R4Xq2FU7ksHYsHu"
         },
         {
-          "title": "?",
-          "views": 617,
-          "vod_offset": 3584,
-          "vod_offset_hms": "0:59:44",
-          "duration": 60,
-          "url": "https://www.twitch.tv/xqc/clip/SpikyPhilanthropicFerretFrankerZ-vo535leP2r8KJCUc"
+          "title": "GTA VI BUGAZO DE JUAN",
+          "views": 495,
+          "vod_offset": 16559,
+          "vod_offset_hms": "4:35:59",
+          "duration": 5,
+          "url": "https://www.twitch.tv/illojuan/clip/KitschyYummyDillMau5-Hwa6D-yXUNpFTs0w"
         },
         {
-          "title": "xQc's reaction",
-          "views": 337,
-          "vod_offset": 3516,
-          "vod_offset_hms": "0:58:36",
-          "duration": 35,
-          "url": "https://www.twitch.tv/xqc/clip/ArborealComfortablePepperoniSwiftRage-MSq-W0OAyGlvO5qh"
+          "title": "adió",
+          "views": 389,
+          "vod_offset": 11477,
+          "vod_offset_hms": "3:11:17",
+          "duration": 8.8,
+          "url": "https://www.twitch.tv/illojuan/clip/OutstandingAntediluvianNoodleTheTarFu-9pgu6MmEM5qsGlvf"
         },
         {
-          "title": "CINEMA",
-          "views": 270,
-          "vod_offset": 7270,
-          "vod_offset_hms": "2:01:10",
-          "duration": 41.8,
-          "url": "https://www.twitch.tv/xqc/clip/UglyOptimisticLocustUnSane-ffKr1hwTM3hfEYwb"
+          "title": "ovni",
+          "views": 343,
+          "vod_offset": 6867,
+          "vod_offset_hms": "1:54:27",
+          "duration": 14.4,
+          "url": "https://www.twitch.tv/illojuan/clip/AbnegateResolutePistachioTBTacoLeft-uEAEafAt33qt6nYN"
         },
         {
-          "title": "WTF WAS THAT LOL",
-          "views": 182,
-          "vod_offset": 19151,
-          "vod_offset_hms": "5:19:11",
-          "duration": 50.8,
-          "url": "https://www.twitch.tv/xqc/clip/GlutenFreeBillowingGuanacoKappaWealth-TR0fYEafEv2PiNpT"
-        },
-        {
-          "title": "LOL",
-          "views": 147,
-          "vod_offset": 16919,
-          "vod_offset_hms": "4:41:59",
-          "duration": 60,
-          "url": "https://www.twitch.tv/xqc/clip/EnchantingRenownedSalmonRiPepperonis-ht1a8U7FXXemfEg0"
-        },
-        {
-          "title": "dangg 🔥",
-          "views": 130,
-          "vod_offset": 18723,
-          "vod_offset_hms": "5:12:03",
-          "duration": 37.1,
-          "url": "https://www.twitch.tv/xqc/clip/WittyPeppyPastaBrainSlug-qSdu3SMt57mIKoS4"
-        },
-        {
-          "title": "MANDY",
-          "views": 100,
-          "vod_offset": 940,
-          "vod_offset_hms": "0:15:40",
-          "duration": 33.5,
-          "url": "https://www.twitch.tv/xqc/clip/SwissStylishPeachImGlitch-usMo_B4VmlA_Sot_"
-        },
-        {
-          "title": "Game crashes for X mid mission.",
-          "views": 91,
-          "vod_offset": 30318,
-          "vod_offset_hms": "8:25:18",
-          "duration": 60,
-          "url": "https://www.twitch.tv/xqc/clip/NiceEnergeticGoldfishTheThing-caQv2A0rI8_K5xAi"
-        },
-        {
-          "title": "X is confused",
-          "views": 74,
-          "vod_offset": 23388,
-          "vod_offset_hms": "6:29:48",
-          "duration": 39.2,
-          "url": "https://www.twitch.tv/xqc/clip/DeliciousPeacefulTardigradeMingLee-QYNVLFZZ8QJFlERy"
-        },
-        {
-          "title": "WOW...",
-          "views": 55,
-          "vod_offset": 16621,
-          "vod_offset_hms": "4:37:01",
-          "duration": 11.2,
-          "url": "https://www.twitch.tv/xqc/clip/ShakingAbstruseElephantWOOP-ALU_4qK1fq2sNdej"
-        },
-        {
-          "title": "gooner",
-          "views": 50,
-          "vod_offset": 2217,
-          "vod_offset_hms": "0:36:57",
-          "duration": 25.2,
-          "url": "https://www.twitch.tv/xqc/clip/MoistEnchantingYamAMPEnergy-3B5g6gDUbPVQc9yU"
-        },
-        {
-          "title": "On God",
-          "views": 49,
-          "vod_offset": 4966,
-          "vod_offset_hms": "1:22:46",
+          "title": "anus",
+          "views": 233,
+          "vod_offset": 14830,
+          "vod_offset_hms": "4:07:10",
           "duration": 30,
-          "url": "https://www.twitch.tv/xqc/clip/CoyChillyPeppermintWow-Qe3YsiAZ2W-9URyJ"
+          "url": "https://www.twitch.tv/illojuan/clip/LaconicFantasticCucumberAsianGlow-yfKi6-naAHjjfqy-"
         },
         {
-          "title": "he cant fathom these lyrics",
-          "views": 48,
-          "vod_offset": 30119,
-          "vod_offset_hms": "8:21:59",
-          "duration": 30,
-          "url": "https://www.twitch.tv/xqc/clip/ArborealRacyStarlingArsonNoSexy-KVNJ4vuXgG_b4May"
-        }
-      ]
-    },
-    {
-      "channel": "kaicenat",
-      "display_name": "KaiCenat",
-      "lang": "en",
-      "vod_id": "2936683310",
-      "vod_url": "https://www.twitch.tv/videos/2936683310",
-      "title": "🗺️EXPLORING GTA 6🗺️",
-      "game": "Grand Theft Auto VI",
-      "created_at": "2026-11-21T23:02:57Z",
-      "length_seconds": 24289,
-      "length_hms": "6:44:49",
-      "gta_ranges": [
-        {
-          "start_hms": "0:00:00",
-          "end_hms": "4:33:24"
+          "title": "gafada del año",
+          "views": 188,
+          "vod_offset": 5566,
+          "vod_offset_hms": "1:32:46",
+          "duration": 16.2,
+          "url": "https://www.twitch.tv/illojuan/clip/HeartlessCaringTrayBCWarrior-xINJY4hGovwg-nNK"
         },
         {
-          "start_hms": "5:17:47",
-          "end_hms": "6:44:49"
-        }
-      ],
-      "chat_peaks": [
-        {
-          "start": 1815,
-          "end": 1858,
-          "peak": 1840,
-          "peak_hms": "0:30:40",
-          "laugh_ratio": 0.42,
-          "start_hms": "0:30:15",
-          "end_hms": "0:30:58",
-          "score": 5.71,
-          "type": "risa",
-          "msgs_per_10s": 113,
-          "chat_sample": [
-            "Jebaited",
-            "YUP LMAOOOOO",
-            "Cuh l",
-            "😭😭😭😭😭😭",
-            "DAMN",
-            "TakisAllIntense",
-            "🤣🤣",
-            "😂😂😂😂",
-            "🤣🤣🤣🤣",
-            "LOL",
-            ":D",
-            "🔥🔥🔥🔥🤣"
-          ]
+          "title": "buena",
+          "views": 186,
+          "vod_offset": 10242,
+          "vod_offset_hms": "2:50:42",
+          "duration": 5,
+          "url": "https://www.twitch.tv/illojuan/clip/RamshacklePunchyLapwingTBCheesePull-ZUTIElGlaLPvZH4a"
         },
         {
-          "start": 8815,
-          "end": 8858,
-          "peak": 8840,
-          "peak_hms": "2:27:20",
-          "laugh_ratio": 0.7,
-          "start_hms": "2:26:55",
-          "end_hms": "2:27:38",
-          "score": 6.39,
-          "type": "risa",
-          "msgs_per_10s": 44,
-          "chat_sample": [
-            "🤣🤣🤣🤣🤣",
-            "LOOL",
-            "LUL LUL LUL LUL LUL",
-            "LMFAOOO",
-            "😩😩😩😩😩",
-            "lo",
-            "ahhahah",
-            "gta5 car",
-            "LOL",
-            "LOL",
-            "nooooooooooooooooo",
-            "lol"
-          ]
+          "title": "salud",
+          "views": 139,
+          "vod_offset": 8693,
+          "vod_offset_hms": "2:24:53",
+          "duration": 7.9,
+          "url": "https://www.twitch.tv/illojuan/clip/BetterSpikyCocoaWTRuck-4pVFp9qVF5U4-ZIW"
         },
         {
-          "start": 9725,
-          "end": 9768,
-          "peak": 9750,
-          "peak_hms": "2:42:30",
-          "laugh_ratio": 0.01,
-          "start_hms": "2:42:05",
-          "end_hms": "2:42:48",
-          "score": 6.66,
-          "type": "hype",
-          "msgs_per_10s": 112,
-          "chat_sample": [
-            "OOOO ͏",
-            "DAYUM",
-            "W EATS",
-            "WW EATS",
-            "W KAIYAAA\\",
-            "you look good bruh",
-            "YUMY",
-            "Ouuu. I want some",
-            "TS LOOK FYEE",
-            "W eats",
-            "mmm yummy",
-            "Now do a mukbang"
-          ]
+          "title": "CEO",
+          "views": 121,
+          "vod_offset": 21842,
+          "vod_offset_hms": "6:04:02",
+          "duration": 28.2,
+          "url": "https://www.twitch.tv/illojuan/clip/TangibleGentleManateeTwitchRPG-tciiQt5HHl9-zOHJ"
         },
         {
-          "start": 10825,
-          "end": 10868,
-          "peak": 10850,
-          "peak_hms": "3:00:50",
-          "laugh_ratio": 0.39,
-          "start_hms": "3:00:25",
-          "end_hms": "3:01:08",
-          "score": 8.18,
-          "type": "risa",
-          "msgs_per_10s": 69,
-          "chat_sample": [
-            "told you",
-            "LO",
-            "ggs",
-            "hes getting good ngl",
-            "😂",
-            "🤣🤣🤣",
-            "CAPPPPP",
-            "is he giving away copies of gta 6?",
-            "LOOOOOOOOOOOOOL",
-            "LOL",
-            "CLAP",
-            "yeah aii"
-          ]
+          "title": "huh",
+          "views": 114,
+          "vod_offset": 15263,
+          "vod_offset_hms": "4:14:23",
+          "duration": 9.6,
+          "url": "https://www.twitch.tv/illojuan/clip/TallThankfulPonyTebowing-c4NDl4YGlIuKFN-s"
         },
         {
-          "start": 13845,
-          "end": 13888,
-          "peak": 13870,
-          "peak_hms": "3:51:10",
-          "laugh_ratio": 0.35,
-          "start_hms": "3:50:45",
-          "end_hms": "3:51:28",
-          "score": 5.72,
-          "type": "risa",
-          "msgs_per_10s": 51,
-          "chat_sample": [
-            "LOLLLL",
-            "Hhahaha",
-            "LUL",
-            "Damn",
-            "Bruh",
-            "1:1",
-            "LMAOOOOOOO",
-            "Love you kia",
-            "WTH./",
-            "That was cool",
-            "Lol",
-            "LOL"
-          ]
+          "title": "XD",
+          "views": 103,
+          "vod_offset": 3948,
+          "vod_offset_hms": "1:05:48",
+          "duration": 27.6,
+          "url": "https://www.twitch.tv/illojuan/clip/ScrumptiousMoistEggplantPupper-8SfPMep2tTT0wXl4"
         },
         {
-          "start": 14465,
-          "end": 14508,
-          "peak": 14490,
-          "peak_hms": "4:01:30",
-          "laugh_ratio": 0.66,
-          "start_hms": "4:01:05",
-          "end_hms": "4:01:48",
-          "score": 9.07,
-          "type": "risa",
-          "msgs_per_10s": 73,
-          "chat_sample": [
-            "lmao",
-            "lmfao 󠀀",
-            "LOL",
-            "LMAOOO",
-            "😭😭😭😭",
-            "LMAOOOOOOOOOOOOO",
-            "LMAOOO",
-            "lol",
-            "fix the damn car bro",
-            "DESERVED",
-            "Lmfaooooo",
-            "uuughhh XD"
-          ]
+          "title": "cuidado q te ven",
+          "views": 99,
+          "vod_offset": 27374,
+          "vod_offset_hms": "7:36:14",
+          "duration": 22.8,
+          "url": "https://www.twitch.tv/illojuan/clip/WildProductiveKleeLitty-kTgGvlXfNn4sjZsw"
         },
         {
-          "start": 20295,
-          "end": 20338,
-          "peak": 20320,
-          "peak_hms": "5:38:40",
-          "laugh_ratio": 0.54,
-          "start_hms": "5:38:15",
-          "end_hms": "5:38:58",
-          "score": 6.82,
-          "type": "risa",
-          "msgs_per_10s": 50,
-          "chat_sample": [
-            "Brrrrooooo",
-            "LOL",
-            "lmaoooooooooooooooooooooooooo",
-            "Almost",
-            "LOLOLOL",
-            "Lol",
-            "LMAOOOO",
-            "LUL",
-            "nooooooooooooooooooo",
-            "WHAT THE FUKKK",
-            "😭😭😭",
-            "LUL LUL LUL LUL LUL"
-          ]
+          "title": "dios",
+          "views": 60,
+          "vod_offset": 25811,
+          "vod_offset_hms": "7:10:11",
+          "duration": 5,
+          "url": "https://www.twitch.tv/illojuan/clip/YawningUgliestCougarWholeWheat-fp9a4NUaHewQaFiD"
         },
         {
-          "start": 23635,
-          "end": 23678,
-          "peak": 23660,
-          "peak_hms": "6:34:20",
-          "laugh_ratio": 0.53,
-          "start_hms": "6:33:55",
-          "end_hms": "6:34:38",
-          "score": 11.18,
-          "type": "risa",
-          "msgs_per_10s": 97,
-          "chat_sample": [
-            "CLIPPPP THIS SHIT LMAO",
-            "LOLOLOLOLOLOL",
-            "LMAO",
-            "Holy shit",
-            "databaseLOL",
-            "tbpeanutAnimPeanut tbpeanutAnimPeanut tbpeanutAnimPeanut tbpeanutAnimPeanut tbpeanutAnimPeanut tbpeanutAnimPeanut",
-            "lmaoo",
-            "LMFAOOO",
-            "lol",
-            "💀💀💀💀",
-            "LMFAAOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-            "😂😂😂😂😂😂😂"
-          ]
-        }
-      ],
-      "viewer_clips": [
-        {
-          "title": "KAI GOT MOTION 🤪",
-          "views": 8818,
-          "vod_offset": 7528,
-          "vod_offset_hms": "2:05:28",
-          "duration": 30,
-          "url": "https://www.twitch.tv/kaicenat/clip/LaconicConsiderateCaterpillarKippa-gK9T9i4PZk82S-SA"
-        },
-        {
-          "title": "type shit",
-          "views": 4017,
-          "vod_offset": 7574,
-          "vod_offset_hms": "2:06:14",
-          "duration": 39.8,
-          "url": "https://www.twitch.tv/kaicenat/clip/StylishFairChowderDoritosChip-SQ1GCE6-ymT6ih7l"
-        },
-        {
-          "title": "Chat explodes | Grand Theft Auto VI | clipped with twitch-tools.panda-core.net",
-          "views": 2144,
-          "vod_offset": 6588,
-          "vod_offset_hms": "1:49:48",
-          "duration": 30,
-          "url": "https://www.twitch.tv/kaicenat/clip/FancyCallousGuanacoRitzMitz-4iksB4A87tC2UNO-"
-        },
-        {
-          "title": "FINDING EASTER EGGS IN THE STRIP CLUB😭😭😭😭",
-          "views": 1518,
-          "vod_offset": 7282,
-          "vod_offset_hms": "2:01:22",
-          "duration": 30,
-          "url": "https://www.twitch.tv/kaicenat/clip/DeliciousSolidDogDAESuppy-y7ZZPRoHSC_-ACmu"
-        },
-        {
-          "title": "Kai goes on a real GTA 6 mission",
-          "views": 355,
-          "vod_offset": 17192,
-          "vod_offset_hms": "4:46:32",
-          "duration": 30,
-          "url": "https://www.twitch.tv/kaicenat/clip/SpoopyScaryRaccoonRaccAttack-_t4ZGL4ioHd1jAbE"
-        },
-        {
-          "title": "big house",
-          "views": 289,
-          "vod_offset": 5928,
-          "vod_offset_hms": "1:38:48",
-          "duration": 39.3,
-          "url": "https://www.twitch.tv/kaicenat/clip/SpoopyTardyCaribouHumbleLife-DFzuYg42V3nXrk_s"
-        },
-        {
-          "title": "kai having fun 😂😂",
-          "views": 244,
-          "vod_offset": 7424,
-          "vod_offset_hms": "2:03:44",
-          "duration": 30,
-          "url": "https://www.twitch.tv/kaicenat/clip/PrettyDaintyEggnogBudBlast-DDYTJO-V9vfoDpu5"
-        },
-        {
-          "title": "Kai just beat a girl down",
-          "views": 187,
-          "vod_offset": 1838,
-          "vod_offset_hms": "0:30:38",
-          "duration": 30,
-          "url": "https://www.twitch.tv/kaicenat/clip/AntsyAntsyAubergineDerp-urua4dMQcoz5Buvq"
-        },
-        {
-          "title": "jason tweaking",
-          "views": 176,
-          "vod_offset": 23580,
-          "vod_offset_hms": "6:33:00",
-          "duration": 30,
-          "url": "https://www.twitch.tv/kaicenat/clip/TrappedSplendidNightingaleTheTarFu-bFKqYRKUWdXubO3q"
-        },
-        {
-          "title": "run the police in rel life",
-          "views": 125,
-          "vod_offset": 18138,
-          "vod_offset_hms": "5:02:18",
-          "duration": 30,
-          "url": "https://www.twitch.tv/kaicenat/clip/HilariousDreamyAdminRitzMitz-xIadb_jHBf10Dq9k"
-        },
-        {
-          "title": "kai cenat camera is not working #KaiCenat",
-          "views": 117,
-          "vod_offset": 1140,
-          "vod_offset_hms": "0:19:00",
-          "duration": 30,
-          "url": "https://www.twitch.tv/kaicenat/clip/SparklyProductiveZucchiniRlyTho-bn11pCtOqiSrp3Wu"
-        },
-        {
-          "title": "funny",
-          "views": 95,
-          "vod_offset": 1758,
-          "vod_offset_hms": "0:29:18",
-          "duration": 39,
-          "url": "https://www.twitch.tv/kaicenat/clip/PopularDarlingCakeSoBayed-WWvhO1rde8ZfhHkg"
-        },
-        {
-          "title": "iii",
-          "views": 92,
-          "vod_offset": 16585,
-          "vod_offset_hms": "4:36:25",
-          "duration": 30,
-          "url": "https://www.twitch.tv/kaicenat/clip/BigEvilRavenWow-Tushjw3f9_weQ8nS"
-        },
-        {
-          "title": "Kai doing GTA IRL",
-          "views": 79,
-          "vod_offset": 17133,
-          "vod_offset_hms": "4:45:33",
-          "duration": 34.5,
-          "url": "https://www.twitch.tv/kaicenat/clip/CleverCoweringBunnyCeilingCat-Ulh4tu9UixpPzLX7"
-        },
-        {
-          "title": "Kai gets setup on a GTA 6 Mission",
-          "views": 67,
-          "vod_offset": 18074,
-          "vod_offset_hms": "5:01:14",
-          "duration": 50.1,
-          "url": "https://www.twitch.tv/kaicenat/clip/PreciousOptimisticWatermelonKappaRoss-JB7DnQYHBzpBXMkH"
+          "title": "IDOLATRANDO SEGUIDORES",
+          "views": 58,
+          "vod_offset": 21658,
+          "vod_offset_hms": "6:00:58",
+          "duration": 26,
+          "url": "https://www.twitch.tv/illojuan/clip/LivelySaltyTermiteNerfBlueBlaster-uwf3v1SwF8I5n5m3"
         }
       ]
     }
