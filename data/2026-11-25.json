@@ -1,0 +1,330 @@
+{
+  "generated_at": "2026-11-25T04:41:16.007262+00:00",
+  "since": "2026-11-23T22:41:16.007262+00:00",
+  "vods": [
+    {
+      "channel": "kaicenat",
+      "display_name": "KaiCenat",
+      "lang": "en",
+      "vod_id": "2939504732",
+      "vod_url": "https://www.twitch.tv/videos/2939504732",
+      "title": "KAI VS SPEED: FIRST TO MAKE A MILLION DOLLARS IN GTA 6",
+      "game": "Just Chatting",
+      "created_at": "2026-11-24T17:36:25Z",
+      "length_seconds": 17889,
+      "length_hms": "4:58:09",
+      "gta_ranges": [
+        {
+          "start_hms": "0:28:54",
+          "end_hms": "4:58:09"
+        }
+      ],
+      "chat_peaks": [
+        {
+          "start": 4495,
+          "end": 4538,
+          "peak": 4520,
+          "peak_hms": "1:15:20",
+          "laugh_ratio": 0.54,
+          "start_hms": "1:14:55",
+          "end_hms": "1:15:38",
+          "score": 2.91,
+          "type": "risa",
+          "msgs_per_10s": 24,
+          "chat_sample": [
+            "🤣🤣🤣❤️💔❤️💔💔",
+            "THATS DUMB YOU NEED TO RE UP ON AMMO AND ARMOR . WHY WOULD MONEY UPDATE FROM SPEND . YA JUST TRYNA NERF KAI",
+            "YEA THAT IS DUMB",
+            "💔💔💔💔❤️❤️❤️❤️",
+            "my grandpas name is neegy",
+            "@713clutchcity NO DEADASS LOL THAT NIGGA DONT THINK",
+            "LUL LUL",
+            "LOL",
+            "LMFAOOOO",
+            "KAIII U GOTTA SHOOT THE BOXESSS IN THE BANKK FOR MORE MONEYY @KaiCenat !!",
+            "LOL",
+            "LOL"
+          ]
+        },
+        {
+          "start": 4705,
+          "end": 4748,
+          "peak": 4730,
+          "peak_hms": "1:18:50",
+          "laugh_ratio": 0.04,
+          "start_hms": "1:18:25",
+          "end_hms": "1:19:08",
+          "score": 3.68,
+          "type": "hype",
+          "msgs_per_10s": 51,
+          "chat_sample": [
+            "CLEAN",
+            "WWWWW",
+            "Cook boy cook",
+            "W",
+            "WePaid holy",
+            "WWWWWWWW",
+            "OOOO OOOO",
+            "wwwww",
+            "wwwwwwwwwwww",
+            "Wwwwwwww",
+            "Lmfao",
+            "bigggg lick"
+          ]
+        },
+        {
+          "start": 4945,
+          "end": 4988,
+          "peak": 4970,
+          "peak_hms": "1:22:50",
+          "laugh_ratio": 0.34,
+          "start_hms": "1:22:25",
+          "end_hms": "1:23:08",
+          "score": 8.15,
+          "type": "risa",
+          "msgs_per_10s": 41,
+          "chat_sample": [
+            "No Ubers",
+            "143k to 13k, This Cyber Bullying",
+            "😭😭",
+            "wwwwwwwwww",
+            "EZ",
+            "LUL",
+            "police right there",
+            "143k to 13k, This Cyber Bullying 󠀀",
+            "SELL CARS TOO BRO",
+            "lol",
+            "No",
+            "W"
+          ]
+        },
+        {
+          "start": 8975,
+          "end": 9018,
+          "peak": 9000,
+          "peak_hms": "2:30:00",
+          "laugh_ratio": 0.0,
+          "start_hms": "2:29:35",
+          "end_hms": "2:30:18",
+          "score": 3.15,
+          "type": "hype",
+          "msgs_per_10s": 18,
+          "chat_sample": [
+            "W",
+            "Vibeless_Shadow subscribed at Tier 1. They've subscribed for 9 months! kaicSturdyy kaicSturdyy kaicSturdyy",
+            "WWWWWWW",
+            "WWWWWWWWWWWW",
+            "get iasonnnnn",
+            "Www",
+            "W",
+            "WE GET IT !!! @Badra",
+            "Kai check TIKTOK",
+            "!time",
+            "@fav_042 The current time for Kai is 3:06 PM EST",
+            "WW"
+          ]
+        },
+        {
+          "start": 9565,
+          "end": 9608,
+          "peak": 9590,
+          "peak_hms": "2:39:50",
+          "laugh_ratio": 0.0,
+          "start_hms": "2:39:25",
+          "end_hms": "2:40:08",
+          "score": 4.29,
+          "type": "hype",
+          "msgs_per_10s": 30,
+          "chat_sample": [
+            "Do it",
+            "why you not using all bags",
+            "WW",
+            "WW",
+            "w",
+            "This dope",
+            "WWW",
+            "W",
+            "WWWWW",
+            "theagencyWHANDS theagencyWHANDS theagencyWHANDS",
+            "W",
+            "LOCK IN BRO"
+          ]
+        },
+        {
+          "start": 9925,
+          "end": 9968,
+          "peak": 9950,
+          "peak_hms": "2:45:50",
+          "laugh_ratio": 0.42,
+          "start_hms": "2:45:25",
+          "end_hms": "2:46:08",
+          "score": 5.47,
+          "type": "risa",
+          "msgs_per_10s": 26,
+          "chat_sample": [
+            "lol",
+            "LMAO",
+            "How yk when u need gas 😂😂😂",
+            "LMAOOOOOOOOO",
+            "LMFAO",
+            "Diamonds",
+            "HypeLUL HypeLUL",
+            "JAJAJAJJAJAJAJA",
+            "Repair the car",
+            "1loner_dan watched 25 consecutive streams and sparked a watch streak! W",
+            "Repair",
+            "LMAOOO"
+          ]
+        },
+        {
+          "start": 13865,
+          "end": 13908,
+          "peak": 13890,
+          "peak_hms": "3:51:30",
+          "laugh_ratio": 0.0,
+          "start_hms": "3:51:05",
+          "end_hms": "3:51:48",
+          "score": 2.53,
+          "type": "hype",
+          "msgs_per_10s": 37,
+          "chat_sample": [
+            "STAY",
+            "WWWWWW",
+            "w",
+            "OMG",
+            "just sit",
+            "ww",
+            "GO",
+            "Gooooo",
+            "Wwww",
+            "YESSSSS",
+            "w",
+            "DRIVEEEEEEEEE"
+          ]
+        }
+      ],
+      "viewer_clips": [
+        {
+          "title": "lol",
+          "views": 5565,
+          "vod_offset": 10835,
+          "vod_offset_hms": "3:00:35",
+          "duration": 19.4,
+          "url": "https://www.twitch.tv/kaicenat/clip/MistyFastChickpeaBatChest-1l50Cnz_nbghKxmh"
+        },
+        {
+          "title": "ron and marlon?",
+          "views": 1911,
+          "vod_offset": 17420,
+          "vod_offset_hms": "4:50:20",
+          "duration": 40.4,
+          "url": "https://www.twitch.tv/kaicenat/clip/BitterStylishLemurSSSsss-bthG6IGi-VdPRf1u"
+        },
+        {
+          "title": "speed x kay",
+          "views": 325,
+          "vod_offset": 1686,
+          "vod_offset_hms": "0:28:06",
+          "duration": 30.1,
+          "url": "https://www.twitch.tv/kaicenat/clip/TiredGoldenWerewolfStrawBeary-6jFm_HT9SxNzv_EV"
+        },
+        {
+          "title": "shut up 😭",
+          "views": 232,
+          "vod_offset": 2528,
+          "vod_offset_hms": "0:42:08",
+          "duration": 31,
+          "url": "https://www.twitch.tv/kaicenat/clip/PowerfulLitigiousPancakeLitFam-Iqa8P1Bfy2yGQvNw"
+        },
+        {
+          "title": "😂",
+          "views": 164,
+          "vod_offset": 1744,
+          "vod_offset_hms": "0:29:04",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/CulturedFlirtyPepperEleGiggle-UVrnRpC87ubTj_qS"
+        },
+        {
+          "title": "Kai cenat car gives up mid chase and jason wouldnt get back in the car😭😂",
+          "views": 80,
+          "vod_offset": 6974,
+          "vod_offset_hms": "1:56:14",
+          "duration": 60,
+          "url": "https://www.twitch.tv/kaicenat/clip/DarkEvilBobaDogFace-BhjKcxyU2NCkrSiR"
+        },
+        {
+          "title": "funny",
+          "views": 52,
+          "vod_offset": 634,
+          "vod_offset_hms": "0:10:34",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/PuzzledSecretiveTofuJebaited-dMZ_HMBnFZjg-bM-"
+        },
+        {
+          "title": "KAI VS SPEED: FIRST TO MAKE A MILLION DOLLARS IN GTA 6",
+          "views": 45,
+          "vod_offset": 295,
+          "vod_offset_hms": "0:04:55",
+          "duration": 60,
+          "url": "https://www.twitch.tv/kaicenat/clip/BrightEvilPandaUncleNox-2U70RDLOMD-g0sN9"
+        },
+        {
+          "title": "The MATRIX",
+          "views": 40,
+          "vod_offset": 5948,
+          "vod_offset_hms": "1:39:08",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/GoodSilkyJuiceANELE-9XkpXJopcXO4lPFM"
+        },
+        {
+          "title": "kai started late wotuout us",
+          "views": 36,
+          "vod_offset": 478,
+          "vod_offset_hms": "0:07:58",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/VastHonestBulgogiBatChest-tlqRuxqOW5dsh_Gl"
+        },
+        {
+          "title": "Kai Cenat reacts to Nick Eh 30",
+          "views": 34,
+          "vod_offset": 696,
+          "vod_offset_hms": "0:11:36",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/CovertPlumpGaurSmoocherZ-XKvw2mTTZoxzQUhM"
+        },
+        {
+          "title": "Speed rages",
+          "views": 31,
+          "vod_offset": 2570,
+          "vod_offset_hms": "0:42:50",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/ScrumptiousArbitraryFrogTTours-0FWmhdbMBZubrtP3"
+        },
+        {
+          "title": "SPEED WANTS TO QUIT 😂",
+          "views": 28,
+          "vod_offset": 4546,
+          "vod_offset_hms": "1:15:46",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/CogentPeacefulPresidentArsonNoSexy-sSFEiosOZ7aekcTM"
+        },
+        {
+          "title": "KAI VS SPEED: FIRST TO MAKE A MILLION DOLLARS IN GTA 6",
+          "views": 26,
+          "vod_offset": 2188,
+          "vod_offset_hms": "0:36:28",
+          "duration": 30,
+          "url": "https://www.twitch.tv/kaicenat/clip/BovineNaiveTigerGingerPower-GeUDiaNtqlK51IHy"
+        },
+        {
+          "title": "THE MATRIX?",
+          "views": 23,
+          "vod_offset": 5988,
+          "vod_offset_hms": "1:39:48",
+          "duration": 58.6,
+          "url": "https://www.twitch.tv/kaicenat/clip/BitterSpotlessSushiPRChase-xS59sftv3aS0yzC2"
+        }
+      ]
+    }
+  ]
+}
