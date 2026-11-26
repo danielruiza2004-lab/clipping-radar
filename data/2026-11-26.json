@@ -1,0 +1,356 @@
+{
+  "generated_at": "2026-11-26T04:39:13.132481+00:00",
+  "since": "2026-11-24T22:39:13.132481+00:00",
+  "vods": [
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "vod_id": "2940424560",
+      "vod_url": "https://www.twitch.tv/videos/2940424560",
+      "title": "RUSHEADA 🗣️ CUIDAO QUE TE LO PASAS 🗣️ NO CORRAS 🗣️ MÁS LENTO JUAN 🗣️ - Grand Theft Auto VI #6",
+      "game": "Grand Theft Auto VI",
+      "created_at": "2026-11-25T16:06:56Z",
+      "length_seconds": 35480,
+      "length_hms": "9:51:20",
+      "gta_ranges": [
+        {
+          "start_hms": "0:00:00",
+          "end_hms": "9:51:20"
+        }
+      ],
+      "chat_peaks": [
+        {
+          "start": 225,
+          "end": 268,
+          "peak": 250,
+          "peak_hms": "0:04:10",
+          "laugh_ratio": 0.34,
+          "start_hms": "0:03:45",
+          "end_hms": "0:04:28",
+          "score": 2.66,
+          "type": "risa",
+          "msgs_per_10s": 38,
+          "chat_sample": [
+            "LOL",
+            "Jason uwu",
+            "JJSJDJJASJD",
+            "JSAJKSJAKASJ",
+            "ASKDJLAKSJD",
+            "W Lucia",
+            "lol",
+            "illojuanMorocco",
+            "JAjajajja LMFO",
+            "JSAJSAJSA",
+            "KEK",
+            "LOL"
+          ]
+        },
+        {
+          "start": 9005,
+          "end": 9048,
+          "peak": 9030,
+          "peak_hms": "2:30:30",
+          "laugh_ratio": 0.3,
+          "start_hms": "2:30:05",
+          "end_hms": "2:30:48",
+          "score": 6.8,
+          "type": "risa",
+          "msgs_per_10s": 97,
+          "chat_sample": [
+            "LOL",
+            "es indigenteee",
+            "toma",
+            "por wn",
+            "SJKAJSKJASJKAQJK",
+            "L AURA",
+            "cortisol",
+            "????",
+            "LOL LOL",
+            "AJAJJA",
+            "JAJAJAJAJA",
+            "JAJAJJAJAJJA"
+          ]
+        },
+        {
+          "start": 9185,
+          "end": 9228,
+          "peak": 9210,
+          "peak_hms": "2:33:30",
+          "laugh_ratio": 0.16,
+          "start_hms": "2:33:05",
+          "end_hms": "2:33:48",
+          "score": 3.6,
+          "type": "risa",
+          "msgs_per_10s": 50,
+          "chat_sample": [
+            "LOL",
+            "KEK",
+            "LOL",
+            "BOOF",
+            "Esa era Andy",
+            "KEK ͏",
+            "full tca",
+            "LOL",
+            "KEK",
+            "SHEEEEESH",
+            "LOL",
+            "QUESITOS"
+          ]
+        },
+        {
+          "start": 17735,
+          "end": 17778,
+          "peak": 17760,
+          "peak_hms": "4:56:00",
+          "laugh_ratio": 0.27,
+          "start_hms": "4:55:35",
+          "end_hms": "4:56:18",
+          "score": 4.71,
+          "type": "risa",
+          "msgs_per_10s": 52,
+          "chat_sample": [
+            "peluqueria",
+            "kek",
+            "PAPIS",
+            "AJKSGKLJAJKLGJKLAGJKLA",
+            "LOL",
+            "peluqueria?",
+            "Binoculars",
+            "w",
+            "KEK",
+            "seee",
+            "ASDKJSJKDJKADSDAS",
+            "que locura"
+          ]
+        },
+        {
+          "start": 17975,
+          "end": 18018,
+          "peak": 18000,
+          "peak_hms": "5:00:00",
+          "laugh_ratio": 0.32,
+          "start_hms": "4:59:35",
+          "end_hms": "5:00:18",
+          "score": 6.57,
+          "type": "risa",
+          "msgs_per_10s": 84,
+          "chat_sample": [
+            "hahahahaha",
+            "AKLSJDALSKDJALKSDJA",
+            "JAJAJAJJA",
+            "LOL",
+            "KEK",
+            "KEK ͏",
+            "LOL",
+            "ASASJAKSJKASAS",
+            "KEK ͏",
+            "illojuanCalva",
+            "LOL",
+            "AKLSDJAÑSLKDAJÑSD"
+          ]
+        },
+        {
+          "start": 18135,
+          "end": 18178,
+          "peak": 18160,
+          "peak_hms": "5:02:40",
+          "laugh_ratio": 0.11,
+          "start_hms": "5:02:15",
+          "end_hms": "5:02:58",
+          "score": 2.97,
+          "type": "risa",
+          "msgs_per_10s": 54,
+          "chat_sample": [
+            "Que ascoo",
+            "autito delujo",
+            "y YO",
+            "Su natita por encima 😭😭😭😭",
+            "el coche",
+            "normal, la verdad",
+            "Hombre no",
+            "Hasta vos",
+            "Para no hacerlo",
+            "normal",
+            "normal",
+            "que barbaridad de comentario acaba de soltar jaja"
+          ]
+        },
+        {
+          "start": 26635,
+          "end": 26678,
+          "peak": 26660,
+          "peak_hms": "7:24:20",
+          "laugh_ratio": 0.02,
+          "start_hms": "7:23:55",
+          "end_hms": "7:24:38",
+          "score": 2.6,
+          "type": "risa",
+          "msgs_per_10s": 56,
+          "chat_sample": [
+            "SE PUEDE SE PUEDE",
+            "Killu",
+            "huh",
+            "Pero juan, por el amor de dios es solamente volar y saltar ͏",
+            "que hasta la guitarra mia llora cuando dice adios",
+            "Es mejorable",
+            "Controles",
+            "p",
+            "Follado max",
+            "Está fácil",
+            "y sin chocar",
+            "huh"
+          ]
+        },
+        {
+          "start": 26785,
+          "end": 26828,
+          "peak": 26810,
+          "peak_hms": "7:26:50",
+          "laugh_ratio": 0.19,
+          "start_hms": "7:26:25",
+          "end_hms": "7:27:08",
+          "score": 9.99,
+          "type": "risa",
+          "msgs_per_10s": 113,
+          "chat_sample": [
+            "Noooo ͏",
+            "NOWAY",
+            "juawn, si ya no te estas divirtiendo, no lo hagas",
+            "KEK",
+            "HOLS",
+            "FOCUS",
+            "uii",
+            "Smadge",
+            "HOLD",
+            "OOOO OOOO OOOO",
+            "jsadjasdj",
+            "HOLD"
+          ]
+        }
+      ],
+      "viewer_clips": [
+        {
+          "title": "EL COCHE",
+          "views": 1786,
+          "vod_offset": 19691,
+          "vod_offset_hms": "5:28:11",
+          "duration": 19.6,
+          "url": "https://www.twitch.tv/illojuan/clip/CrackyApatheticMeatloafShadyLulu-JehvNaPWimJCSHE3"
+        },
+        {
+          "title": "Viva el Nudismo!!!",
+          "views": 941,
+          "vod_offset": 28064,
+          "vod_offset_hms": "7:47:44",
+          "duration": 45.4,
+          "url": "https://www.twitch.tv/illojuan/clip/ProudLuckyAxeOhMyDog-nVG0HtPeeu1mT614"
+        },
+        {
+          "title": "\"Cuando vas a la Casa Empeños…\"",
+          "views": 634,
+          "vod_offset": 15927,
+          "vod_offset_hms": "4:25:27",
+          "duration": 13.6,
+          "url": "https://www.twitch.tv/illojuan/clip/CleverFairCroquetteFrankerZ-UQrk056P6sHmUWK3"
+        },
+        {
+          "title": "Refrencia Baity",
+          "views": 549,
+          "vod_offset": 6227,
+          "vod_offset_hms": "1:43:47",
+          "duration": 23.4,
+          "url": "https://www.twitch.tv/illojuan/clip/RelievedBlushingPhoneKippa-rxm1ooewFgvilR5Q"
+        },
+        {
+          "title": "sitcom",
+          "views": 496,
+          "vod_offset": 6800,
+          "vod_offset_hms": "1:53:20",
+          "duration": 19.8,
+          "url": "https://www.twitch.tv/illojuan/clip/JollyComfortableSparrowJonCarnage-fCCEA6T-iAe1lHGR"
+        },
+        {
+          "title": "alienn",
+          "views": 343,
+          "vod_offset": 25035,
+          "vod_offset_hms": "6:57:15",
+          "duration": 41,
+          "url": "https://www.twitch.tv/illojuan/clip/AuspiciousBlightedWolverineKAPOW-JignRGx0pneqaRqQ"
+        },
+        {
+          "title": "aparco aquí",
+          "views": 301,
+          "vod_offset": 9912,
+          "vod_offset_hms": "2:45:12",
+          "duration": 6.1,
+          "url": "https://www.twitch.tv/illojuan/clip/FlirtyFunnyPorcupineSeemsGood-VtM4EP-Rh7kqlmQ9"
+        },
+        {
+          "title": "Clip del año",
+          "views": 298,
+          "vod_offset": 3986,
+          "vod_offset_hms": "1:06:26",
+          "duration": 29.9,
+          "url": "https://www.twitch.tv/illojuan/clip/InterestingSoftKimchiBloodTrail-x1Vrt7fhwK47WnUo"
+        },
+        {
+          "title": "le llega a donde juan?",
+          "views": 253,
+          "vod_offset": 28404,
+          "vod_offset_hms": "7:53:24",
+          "duration": 30,
+          "url": "https://www.twitch.tv/illojuan/clip/SpotlessIgnorantMomPunchTrees-REkZts3DCZZYQgW3"
+        },
+        {
+          "title": ":0",
+          "views": 233,
+          "vod_offset": 25061,
+          "vod_offset_hms": "6:57:41",
+          "duration": 60,
+          "url": "https://www.twitch.tv/illojuan/clip/SpinelessBrainyKleeSSSsss-rHw_e3H8LbRzUvzp"
+        },
+        {
+          "title": "DAMN",
+          "views": 228,
+          "vod_offset": 23604,
+          "vod_offset_hms": "6:33:24",
+          "duration": 11,
+          "url": "https://www.twitch.tv/illojuan/clip/SteamyCulturedJellyfishTBTacoLeft-NM4W2j5qg6YDSNlF"
+        },
+        {
+          "title": "TIMING  llamada Nerdge",
+          "views": 188,
+          "vod_offset": 22996,
+          "vod_offset_hms": "6:23:16",
+          "duration": 16.3,
+          "url": "https://www.twitch.tv/illojuan/clip/BombasticSpinelessWaterTTours-WKpm6jRcegUfptyt"
+        },
+        {
+          "title": "Aim assist ?",
+          "views": 163,
+          "vod_offset": 28029,
+          "vod_offset_hms": "7:47:09",
+          "duration": 14,
+          "url": "https://www.twitch.tv/illojuan/clip/SlickStrongNarwhalStoneLightning-gRwDX7-czdaslk-v"
+        },
+        {
+          "title": "Algeciras",
+          "views": 162,
+          "vod_offset": 8466,
+          "vod_offset_hms": "2:21:06",
+          "duration": 28.3,
+          "url": "https://www.twitch.tv/illojuan/clip/DifferentSmoothGoshawkSmoocherZ-DRZr5YxjLVl93tgR"
+        },
+        {
+          "title": "emotivo",
+          "views": 156,
+          "vod_offset": 5318,
+          "vod_offset_hms": "1:28:38",
+          "duration": 30,
+          "url": "https://www.twitch.tv/illojuan/clip/CourteousDeadSlothTinyFace-NSRq7-a4FyXp4fxe"
+        }
+      ]
+    }
+  ]
+}
