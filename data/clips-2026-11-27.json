@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-27",
+  "release_tag": "clips-2026-11-27",
+  "clips": [
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "n": 1,
+      "type": "hype",
+      "score": 36.78,
+      "source": "clips",
+      "hook": "13 años rockstar",
+      "layout": "face",
+      "views": 1762,
+      "reaction_db": 16.9,
+      "facecam": [
+        0.0276,
+        0.491,
+        0.1464,
+        0.2033
+      ],
+      "duration": 32.0,
+      "vod_url": "https://www.twitch.tv/videos/2941530066",
+      "vod_title": "25 FPS 🧠 0 HORAS COTIZADAS 🙏🏻 BUSCAMOS EL BÚNKER 🔍 - Grand Theft Auto VI #7",
+      "vod_time": "2:37:55",
+      "transcript": "",
+      "file": "2026-11-27_illojuan_01_hype.mp4",
+      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-27/2026-11-27_illojuan_01_hype.mp4",
+      "size_mb": 14.2
+    },
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "n": 2,
+      "type": "hype",
+      "score": 12.47,
+      "source": "clips",
+      "hook": "",
+      "layout": "face",
+      "views": 335,
+      "reaction_db": 9.9,
+      "facecam": [
+        0.0276,
+        0.4854,
+        0.1464,
+        0.2033
+      ],
+      "duration": 60,
+      "vod_url": "https://www.twitch.tv/videos/2941530066",
+      "vod_title": "25 FPS 🧠 0 HORAS COTIZADAS 🙏🏻 BUSCAMOS EL BÚNKER 🔍 - Grand Theft Auto VI #7",
+      "vod_time": "1:29:38",
+      "transcript": "",
+      "file": "2026-11-27_illojuan_02_hype.mp4",
+      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-27/2026-11-27_illojuan_02_hype.mp4",
+      "size_mb": 37.5
+    },
+    {
+      "channel": "illojuan",
+      "display_name": "IlloJuan",
+      "lang": "es",
+      "n": 3,
+      "type": "hype",
+      "score": 12.04,
+      "source": "clips",
+      "hook": "",
+      "layout": "face",
+      "views": 144,
+      "reaction_db": 11.7,
+      "facecam": [
+        0.0276,
+        0.4776,
+        0.1464,
+        0.2033
+      ],
+      "duration": 20.0,
+      "vod_url": "https://www.twitch.tv/videos/2941530066",
+      "vod_title": "25 FPS 🧠 0 HORAS COTIZADAS 🙏🏻 BUSCAMOS EL BÚNKER 🔍 - Grand Theft Auto VI #7",
+      "vod_time": "4:58:52",
+      "transcript": "",
+      "file": "2026-11-27_illojuan_03_hype.mp4",
+      "url": "https://github.com/danielruiza2004-lab/clipping-radar/releases/download/clips-2026-11-27/2026-11-27_illojuan_03_hype.mp4",
+      "size_mb": 6.3
+    }
+  ]
+}
